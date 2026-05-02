@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Orgânico Inteligente – Cultivando Saúde no Sertão Produtivo. Programa de ensino, pesquisa e extensão dedicado à agroecologia e produção orgânica no Sertão Produtivo da Bahia.">
+  <title>Orgânico Inteligente – Cultivando Saúde no Sertão Produtivo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="topo">
+
+<a href="#main-content" class="skip-link">Ir para o conteúdo principal</a>
+
+<!-- ACESSIBILIDADE BAR -->
+<div class="acess-bar" role="toolbar" aria-label="Ferramentas de acessibilidade">
+  <span>Acessibilidade:</span>
+  <button class="acess-btn" onclick="toggleContraste()" aria-label="Alternar alto contraste" title="Alto Contraste">🌓 Contraste</button>
+  <button class="acess-btn" onclick="aumentarFonte()" aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
+  <button class="acess-btn" onclick="diminuirFonte()" aria-label="Diminuir fonte" title="Diminuir fonte">A-</button>
+  <button class="acess-btn" onclick="toggleLeituraSimples()" aria-label="Leitura simplificada" title="Leitura simples">📖 Leitura fácil</button>
+</div>
+
+<!-- NAVEGAÇÃO -->
+<nav role="navigation" aria-label="Menu principal">
+  <div class="nav-inner">
+    <a href="#topo" class="nav-logo" aria-label="Página inicial - Orgânico Inteligente">
+      <img src="assets/images/logo/logo.jpeg" alt="Logo Orgânico Inteligente" class="nav-logo-img">
+      <div class="nav-logo-text">
+        <span class="top">Orgânico Inteligente</span>
+        <span class="bottom">Cultivando Saúde no Sertão Produtivo</span>
+      </div>
+    </a>
+
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Abrir menu" aria-expanded="false" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links" role="menubar">
+      <li><a href="#sobre" role="menuitem">Sobre</a></li>
+      <li><a href="#acoes" role="menuitem">Ações</a></li>
+      <li><a href="#territorio" role="menuitem">Território</a></li>
+      <li><a href="#conteudos" role="menuitem">Conteúdos</a></li>
+      <li><a href="#eventos" role="menuitem">Eventos</a></li>
+      <li><a href="#parceiros" role="menuitem">Parceiros</a></li>
+      <li><a href="#noticias" role="menuitem">Notícias</a></li>
+      <li><a href="#contato" class="nav-cta" role="menuitem">Cadastre-se</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<!-- ===== HERO SLIDESHOW ===== -->
+<section class="hero" aria-label="Galeria de imagens do projeto">
+  <div class="slideshow" id="heroSlideshow">
+
+    <div class="slide active"><img src="assets/images/img1.jpg"  alt="Orgânico Inteligente – campo e agricultores, imagem 1"></div>
+    <div class="slide"><img src="assets/images/img2.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 2"></div>
+    <div class="slide"><img src="assets/images/img3.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 3"></div>
+    <div class="slide"><img src="assets/images/img4.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 4"></div>
+    <div class="slide"><img src="assets/images/img5.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 5"></div>
+    <div class="slide"><img src="assets/images/img6.jpg"  alt="Orgânico Inteligente – campo e agricultores, imagem 6"></div>
+    <div class="slide"><img src="assets/images/img7.jpg"  alt="Orgânico Inteligente – campo e agricultores, imagem 7"></div>
+    <div class="slide"><img src="assets/images/img8.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 8"></div>
+
+    <button class="slide-btn slide-prev" aria-label="Imagem anterior">&#8249;</button>
+    <button class="slide-btn slide-next" aria-label="Próxima imagem">&#8250;</button>
+
+    <div class="slide-dots" role="tablist" aria-label="Navegação do slideshow">
+      <button class="dot active" role="tab" aria-label="Imagem 1" aria-selected="true"></button>
+      <button class="dot" role="tab" aria-label="Imagem 2" aria-selected="false"></button>
+      <button class="dot" role="tab" aria-label="Imagem 3" aria-selected="false"></button>
+      <button class="dot" role="tab" aria-label="Imagem 4" aria-selected="false"></button>
+      <button class="dot" role="tab" aria-label="Imagem 5" aria-selected="false"></button>
+      <button class="dot" role="tab" aria-label="Imagem 6" aria-selected="false"></button>
+      <button class="dot" role="tab" aria-label="Imagem 7" aria-selected="false"></button>
+      <button class="dot" role="tab" aria-label="Imagem 8" aria-selected="false"></button>
+    </div>
+
+  </div>
+</section>
+
+<!-- STATS BAND -->
+<div class="stats-band" role="region" aria-label="Impacto do projeto em números">
+  <div class="stats-grid">
+    <div class="stat-card reveal">
+      <div class="stat-icon" aria-hidden="true">🧑‍🌾</div>
+      <div class="stat-num">300+</div>
+      <div class="stat-label">Agricultores capacitados</div>
+    </div>
+    <div class="stat-card reveal reveal-delay-1">
+      <div class="stat-icon" aria-hidden="true">📜</div>
+      <div class="stat-num">85</div>
+      <div class="stat-label">Certificações orgânicas</div>
+    </div>
+    <div class="stat-card reveal reveal-delay-2">
+      <div class="stat-icon" aria-hidden="true">🌎</div>
+      <div class="stat-num">12</div>
+      <div class="stat-label">Municípios no Sertão</div>
+    </div>
+    <div class="stat-card reveal reveal-delay-3">
+      <div class="stat-icon" aria-hidden="true">🎓</div>
+      <div class="stat-num">50+</div>
+      <div class="stat-label">Oficinas realizadas</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SOBRE ===== -->
+<section class="sobre" id="sobre" aria-label="Sobre o Orgânico Inteligente">
+  <div class="section-inner">
+    <div class="sobre-grid">
+      <div class="sobre-visual reveal">
+        <div class="sobre-img-card">
+          <h3>Nossa História</h3>
+          <p>O Orgânico Inteligente surgiu da necessidade de criar pontes entre o saber científico e o saber do campo. Desde o início, nosso foco é apoiar famílias agricultoras na transição para sistemas de produção mais saudáveis, sustentáveis e rentáveis.</p>
+        </div>
+        <div class="sobre-mvv">
+          <div class="mvv-item">
+            <div class="mvv-title">🎯 Missão</div>
+            <p>Fortalecer a agroecologia no Sertão Produtivo com ciência e sabedoria popular.</p>
+          </div>
+          <div class="mvv-item">
+            <div class="mvv-title">🔭 Visão</div>
+            <p>Ser referência em produção orgânica e desenvolvimento rural sustentável na Bahia.</p>
+          </div>
+          <div class="mvv-item">
+            <div class="mvv-title">💚 Valores</div>
+            <p>Sustentabilidade, solidariedade, conhecimento e respeito à terra.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sobre-content reveal reveal-delay-1">
+        <div class="section-tag">🏛️ Institucional</div>
+        <h2 class="section-title">Conectando universidade, campo e comunidade</h2>
+        <p>O <strong>Orgânico Inteligente</strong> é um programa de ensino, pesquisa e extensão que atua diretamente no território do Sertão Produtivo da Bahia, uma região marcada pela agricultura familiar, pela resistência e pela riqueza cultural.</p>
+        <p>Trabalhamos com agricultores e agricultoras na transição do modelo convencional para sistemas agroecológicos, oferecendo suporte técnico, capacitação, certificação e acesso a mercados. Nossa abordagem combina rigor científico com valorização do saber tradicional.</p>
+        <p>O projeto integra estudantes, professores, pesquisadores e comunidades — criando um ciclo virtuoso de conhecimento que gera impacto real na vida das pessoas e na conservação do meio ambiente.</p>
+
+        <div class="if-badge" aria-label="Programa de Ensino, Pesquisa e Extensão">
+          <span>🌱</span>
+          <div><strong>Programa de Ensino, Pesquisa e Extensão</strong><br>Sertão Produtivo da Bahia</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AÇÕES ===== -->
+<section class="acoes" id="acoes" aria-label="Ações e projetos">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">⚙️ O que fazemos</div>
+      <h2 class="section-title">Ações que transformam o campo</h2>
+      <p class="section-desc">Do laboratório à roça, desenvolvemos atividades que fortalecem a produção orgânica e a vida no campo.</p>
+    </div>
+
+    <div class="acoes-grid">
+      <div class="acao-card reveal">
+        <div class="acao-icon">🔬</div>
+        <h3>Pesquisa Agroecológica</h3>
+        <p>Desenvolvemos pesquisas sobre manejo de solo, controle biológico de pragas, compostagem e sistemas produtivos adaptados ao Semiárido baiano.</p>
+        <div class="acao-tags">
+          <span class="acao-tag">Solo</span>
+          <span class="acao-tag">Biologia</span>
+          <span class="acao-tag">Semiárido</span>
+        </div>
+      </div>
+
+      <div class="acao-card reveal reveal-delay-1">
+        <div class="acao-icon">🤝</div>
+        <h3>Extensão Rural</h3>
+        <p>Levamos conhecimento técnico diretamente às propriedades rurais, com visitas, acompanhamento e suporte contínuo às famílias agricultoras.</p>
+        <div class="acao-tags">
+          <span class="acao-tag">Visitas</span>
+          <span class="acao-tag">Assistência técnica</span>
+        </div>
+      </div>
+
+      <div class="acao-card reveal reveal-delay-2">
+        <div class="acao-icon">📚</div>
+        <h3>Oficinas e Capacitações</h3>
+        <p>Realizamos cursos, workshops e dias de campo sobre agricultura orgânica, manejo agroecológico, compostagem, irrigação de baixo custo e muito mais.</p>
+        <div class="acao-tags">
+          <span class="acao-tag">Cursos</span>
+          <span class="acao-tag">Workshops</span>
+          <span class="acao-tag">Dias de campo</span>
+        </div>
+      </div>
+
+      <div class="acao-card reveal reveal-delay-3">
+        <div class="acao-icon">📜</div>
+        <h3>Certificação Orgânica</h3>
+        <p>Apoiamos a certificação participativa de grupos de agricultores, garantindo acesso a mercados diferenciados e melhores preços pelo produto orgânico.</p>
+        <div class="acao-tags">
+          <span class="acao-tag">SPG</span>
+          <span class="acao-tag">Certificação</span>
+        </div>
+      </div>
+
+      <div class="acao-card reveal">
+        <div class="acao-icon">🛠️</div>
+        <h3>Tecnologias Sociais</h3>
+        <p>Desenvolvemos e difundimos tecnologias de baixo custo adaptadas à realidade do Sertão: biodigestores, cisternas, composteiras e sistemas de captação de água.</p>
+        <div class="acao-tags">
+          <span class="acao-tag">Inovação</span>
+          <span class="acao-tag">Baixo custo</span>
+        </div>
+      </div>
+
+      <div class="acao-card reveal reveal-delay-1">
+        <div class="acao-icon">🌾</div>
+        <h3>Feiras Agroecológicas</h3>
+        <p>Organizamos a SEAPO e outras feiras que conectam produtores orgânicos diretamente aos consumidores, valorizando o alimento saudável e a renda familiar.</p>
+        <div class="acao-tags">
+          <span class="acao-tag">SEAPO</span>
+          <span class="acao-tag">Feiras</span>
+          <span class="acao-tag">Mercado</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TERRITÓRIO ===== -->
+<section class="territorio" id="territorio" aria-label="Território de atuação e resultados">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">📍 Onde atuamos</div>
+      <h2 class="section-title">Impacto em todo o Sertão Produtivo</h2>
+      <p class="section-desc">Nossa atuação abrange municípios do Território do Sertão Produtivo, levando agroecologia e transformação social.</p>
+    </div>
+
+    <div class="territorio-grid">
+      <div class="mapa-container reveal">
+        <h3>📌 Municípios Atendidos</h3>
+        <div class="municipios-grid" role="list" aria-label="Lista de municípios">
+          <div class="municipio-chip" role="listitem" tabindex="0">Guanambi</div>
+          <div class="municipio-chip" role="listitem" tabindex="0">Candiba</div>
+          <div class="municipio-chip" role="listitem" tabindex="0">Caetité</div>
+          <div class="municipio-chip" role="listitem" tabindex="0">Pindaí</div>
+          <div class="municipio-chip" role="listitem" tabindex="0">Palmas de Monte Alto</div>
+          <div class="municipio-chip" role="listitem" tabindex="0">Urandi</div>
+          <div class="municipio-chip" role="listitem" tabindex="0">Lagoa Real</div>
+          <div class="municipio-chip" role="listitem" tabindex="0">Brumado</div>
+          <div class="municipio-chip" role="listitem" tabindex="0">Dom Basílio</div>
+          <div class="municipio-chip" role="listitem" tabindex="0">Igaporã</div>
+          <div class="municipio-chip" role="listitem" tabindex="0">Ibiassucê</div>
+          <div class="municipio-chip" role="listitem" tabindex="0">Tanhaçu</div>
+        </div>
+
+        <div style="margin-top:24px; padding:16px; background: rgba(74,124,47,0.06); border-radius:12px; font-size:13px; color:var(--texto-suave);">
+          🗺️ <strong>Território do Sertão Produtivo</strong> — Bahia, Brasil. Região semiárida com forte presença da agricultura familiar e rica biodiversidade da Caatinga.
+        </div>
+      </div>
+
+      <div class="resultado-cards reveal reveal-delay-1">
+        <div class="resultado-card">
+          <div class="resultado-icon">🥬</div>
+          <div>
+            <div class="resultado-num">+40%</div>
+            <div class="resultado-label">Aumento médio na renda familiar</div>
+          </div>
+        </div>
+        <div class="resultado-card">
+          <div class="resultado-icon">📜</div>
+          <div>
+            <div class="resultado-num">85</div>
+            <div class="resultado-label">Agricultores com certificação orgânica</div>
+          </div>
+        </div>
+        <div class="resultado-card">
+          <div class="resultado-icon">🌱</div>
+          <div>
+            <div class="resultado-num">500+</div>
+            <div class="resultado-label">Hectares em transição agroecológica</div>
+          </div>
+        </div>
+        <div class="resultado-card">
+          <div class="resultado-icon">🍎</div>
+          <div>
+            <div class="resultado-num">20+</div>
+            <div class="resultado-label">Variedades de alimentos orgânicos produzidos</div>
+          </div>
+        </div>
+        <div class="resultado-card">
+          <div class="resultado-icon">👩‍🌾</div>
+          <div>
+            <div class="resultado-num">60%</div>
+            <div class="resultado-label">Das famílias atendidas lideradas por mulheres</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DEPOIMENTOS ===== -->
+<section class="depoimentos" aria-label="Depoimentos de agricultores">
+  <div class="dep-inner">
+    <div class="dep-header">
+      <div class="section-tag" style="color:var(--dourado); background:rgba(232,160,32,0.15);">💬 Vozes do Campo</div>
+      <h2 class="section-title">O que dizem nossos agricultores</h2>
+      <p class="section-desc">Histórias reais de transformação e esperança no Sertão Produtivo.</p>
+    </div>
+
+    <div class="dep-grid">
+      <div class="dep-card reveal">
+        <div class="dep-stars" aria-label="5 estrelas">★★★★★</div>
+        <p class="dep-text">"Antes eu usava muito agrotóxico e gastava demais. Com o Orgânico Inteligente aprendi a fazer composto, controle biológico e minha produção melhorou muito. Minha família come melhor e ganho mais."</p>
+        <div class="dep-author">
+          <div class="dep-avatar" aria-hidden="true">👩</div>
+          <div>
+            <div class="dep-name">Maria das Graças Silva</div>
+            <div class="dep-city">📍 Candiba, BA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dep-card reveal reveal-delay-1">
+        <div class="dep-stars" aria-label="5 estrelas">★★★★★</div>
+        <p class="dep-text">"A certificação orgânica que consegui com o apoio do projeto abriu portas que eu nem imaginava. Hoje vendo em feiras, supermercados e meu produto tem valor. O orgânico salvou minha propriedade."</p>
+        <div class="dep-author">
+          <div class="dep-avatar" aria-hidden="true">👨</div>
+          <div>
+            <div class="dep-name">José Raimundo Costa</div>
+            <div class="dep-city">📍 Pindaí, BA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dep-card reveal reveal-delay-2">
+        <div class="dep-stars" aria-label="5 estrelas">★★★★★</div>
+        <p class="dep-text">"As oficinas do projeto mudaram minha visão. Aprendi que a terra é um ser vivo e que cuidar dela com respeito é cuidar de mim e dos meus filhos. A agroecologia é o caminho."</p>
+        <div class="dep-author">
+          <div class="dep-avatar" aria-hidden="true">👩</div>
+          <div>
+            <div class="dep-name">Ana Lúcia Ferreira</div>
+            <div class="dep-city">📍 Caetité, BA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTEÚDOS ===== -->
+<section class="conteudos" id="conteudos" aria-label="Conteúdos educativos e materiais">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">📖 Aprendizado</div>
+      <h2 class="section-title">Conteúdos Educativos</h2>
+      <p class="section-desc">Materiais gratuitos para agricultores, estudantes e técnicos interessados em agroecologia.</p>
+    </div>
+
+    <div class="conteudos-grid">
+      <div class="conteudo-card reveal">
+        <div class="conteudo-thumb" aria-hidden="true">📗</div>
+        <div class="conteudo-body">
+          <h4>Guia de Compostagem para o Semiárido</h4>
+          <p>Aprenda a transformar resíduos orgânicos em adubo de qualidade, adaptado às condições do Sertão.</p>
+          <a href="#" class="conteudo-link" aria-label="Baixar guia de compostagem">Baixar PDF →</a>
+        </div>
+      </div>
+
+      <div class="conteudo-card reveal reveal-delay-1">
+        <div class="conteudo-thumb" aria-hidden="true">🎬</div>
+        <div class="conteudo-body">
+          <h4>Vídeos: Controle Biológico de Pragas</h4>
+          <p>Série em linguagem simples mostrando como combater pragas sem agrotóxico usando inimigos naturais.</p>
+          <a href="#" class="conteudo-link" aria-label="Acessar vídeos sobre controle biológico">Ver Vídeos →</a>
+        </div>
+      </div>
+
+      <div class="conteudo-card reveal reveal-delay-2">
+        <div class="conteudo-thumb" aria-hidden="true">💧</div>
+        <div class="conteudo-body">
+          <h4>Cartilha: Irrigação de Baixo Custo</h4>
+          <p>Tecnologias acessíveis para economizar água e irrigar hortas e pomares com eficiência no Sertão.</p>
+          <a href="#" class="conteudo-link" aria-label="Baixar cartilha de irrigação">Baixar Cartilha →</a>
+        </div>
+      </div>
+
+      <div class="conteudo-card reveal reveal-delay-3">
+        <div class="conteudo-thumb" aria-hidden="true">🌿</div>
+        <div class="conteudo-body">
+          <h4>Boas Práticas Agroecológicas</h4>
+          <p>Manual completo de práticas para transição ao sistema orgânico, incluindo manejo de solo e biodiversidade.</p>
+          <a href="#" class="conteudo-link" aria-label="Acessar manual de boas práticas">Ver Manual →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EVENTOS ===== -->
+<section class="eventos" id="eventos" aria-label="Eventos e agenda">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">📅 Agenda</div>
+      <h2 class="section-title">Eventos e Atividades</h2>
+      <p class="section-desc">Participe das nossas feiras, seminários e encontros agroecológicos.</p>
+    </div>
+
+    <div class="eventos-grid">
+      <div class="evento-destaque reveal">
+        <div class="evento-badge">🌟 Evento Principal</div>
+        <h3>SEAPO – Semana de Agroecologia e Produção Orgânica</h3>
+        <p>O maior evento agroecológico do Sertão Produtivo reúne agricultores, pesquisadores, estudantes e comunidade em dias de celebração, troca de saberes, feira de produtos orgânicos e apresentações culturais.</p>
+        <div class="evento-meta">
+          <div class="evento-meta-item">📅 Outubro 2026</div>
+          <div class="evento-meta-item">📍 Guanambi, BA</div>
+          <div class="evento-meta-item">🎟️ Gratuito</div>
+        </div>
+      </div>
+
+      <div class="agenda-lista reveal reveal-delay-1">
+        <div class="agenda-item">
+          <div class="agenda-data"><div class="mes">Jun</div><div class="dia">14</div></div>
+          <div class="agenda-info">
+            <h4>Dia de Campo – Compostagem</h4>
+            <p>📍 Candiba, BA • 8h–12h</p>
+          </div>
+        </div>
+
+        <div class="agenda-item">
+          <div class="agenda-data"><div class="mes">Jul</div><div class="dia">08</div></div>
+          <div class="agenda-info">
+            <h4>Oficina: Controle Biológico</h4>
+            <p>📍 Guanambi, BA • 14h–18h</p>
+          </div>
+        </div>
+
+        <div class="agenda-item">
+          <div class="agenda-data"><div class="mes">Ago</div><div class="dia">20</div></div>
+          <div class="agenda-info">
+            <h4>Feira Orgânica do Sertão</h4>
+            <p>📍 Praça Central – Guanambi • 6h–13h</p>
+          </div>
+        </div>
+
+        <div class="agenda-item">
+          <div class="agenda-data"><div class="mes">Set</div><div class="dia">15</div></div>
+          <div class="agenda-info">
+            <h4>Reunião SPG – Certificação</h4>
+            <p>📍 Pindaí, BA • 9h–12h</p>
+          </div>
+        </div>
+
+        <div class="agenda-item">
+          <div class="agenda-data" style="background:var(--dourado); color:var(--marrom);"><div class="mes">Out</div><div class="dia">🌾</div></div>
+          <div class="agenda-info">
+            <h4>SEAPO 2026</h4>
+            <p>📍 Guanambi, BA • Evento principal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PARCEIROS ===== -->
+<section class="parceiros" id="parceiros" aria-label="Parceiros e instituições">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">🤝 Parcerias</div>
+      <h2 class="section-title">Quem nos apoia</h2>
+      <p class="section-desc">Uma rede de instituições comprometidas com o desenvolvimento sustentável do Sertão.</p>
+    </div>
+
+    <div class="parceiros-grid">
+      <div class="parceiro-card reveal">
+        <div class="parceiro-icon">🏫</div>
+        <h4>IF Baiano</h4>
+        <p>Instituto Federal Baiano, instituição âncora do projeto com suporte técnico, infraestrutura e recursos humanos.</p>
+      </div>
+      <div class="parceiro-card reveal reveal-delay-1">
+        <div class="parceiro-icon">🌍</div>
+        <h4>EMBRAPA Semiárido</h4>
+        <p>Parceria em pesquisa e desenvolvimento de tecnologias adaptadas ao clima semiárido brasileiro.</p>
+      </div>
+      <div class="parceiro-card reveal reveal-delay-2">
+        <div class="parceiro-icon">🏛️</div>
+        <h4>Prefeituras Municipais</h4>
+        <p>Articulação com gestões municipais do Sertão Produtivo para ampliar o alcance das ações.</p>
+      </div>
+      <div class="parceiro-card reveal reveal-delay-3">
+        <div class="parceiro-icon">👩‍🌾</div>
+        <h4>Associações de Agricultores</h4>
+        <p>Parcerias com sindicatos rurais, cooperativas e associações de agricultores familiares da região.</p>
+      </div>
+      <div class="parceiro-card reveal">
+        <div class="parceiro-icon">🏥</div>
+        <h4>SEAGRI Bahia</h4>
+        <p>Secretaria de Agricultura do Estado da Bahia, apoiando políticas de produção orgânica e extensão rural.</p>
+      </div>
+      <div class="parceiro-card reveal reveal-delay-1">
+        <div class="parceiro-icon">🎓</div>
+        <h4>UESB / UFBA</h4>
+        <p>Universidades parceiras em pesquisa, compartilhamento de expertise e formação de profissionais.</p>
+      </div>
+      <div class="parceiro-card reveal reveal-delay-2">
+        <div class="parceiro-icon">🌱</div>
+        <h4>Redes Agroecológicas</h4>
+        <p>Articulação com a Rede de Agroecologia e o Movimento dos Trabalhadores Rurais da Bahia.</p>
+      </div>
+      <div class="parceiro-card reveal reveal-delay-3">
+        <div class="parceiro-icon">🇧🇷</div>
+        <h4>MDA / INCRA</h4>
+        <p>Ministério do Desenvolvimento Agrário e INCRA, apoiando a reforma agrária e agricultura familiar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NOTÍCIAS ===== -->
+<section class="noticias" id="noticias" aria-label="Notícias e atualizações">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">📰 Novidades</div>
+      <h2 class="section-title">Últimas Notícias</h2>
+      <p class="section-desc">Acompanhe as ações do Orgânico Inteligente no território.</p>
+    </div>
+
+    <div class="noticias-grid">
+      <div class="noticia-card reveal">
+        <div class="noticia-thumb" aria-hidden="true">
+          🌿
+          <div class="noticia-categoria">Extensão</div>
+        </div>
+        <div class="noticia-body">
+          <div class="noticia-data">28 ABR 2026</div>
+          <h3>Agricultores de Candiba recebem capacitação em manejo de solo orgânico</h3>
+          <p>Mais de 40 famílias participaram de dia de campo sobre adubação verde e preparo de composto orgânico para hortas...</p>
+          <a href="#" class="noticia-link" aria-label="Ler mais sobre capacitação em Candiba">Ler mais →</a>
+        </div>
+      </div>
+
+      <div class="noticia-card reveal reveal-delay-1">
+        <div class="noticia-thumb" aria-hidden="true">
+          🌾
+          <div class="noticia-categoria">Certificação</div>
+        </div>
+        <div class="noticia-body">
+          <div class="noticia-data">15 ABR 2026</div>
+          <h3>Novo grupo obtém certificação orgânica participativa no Sertão Produtivo</h3>
+          <p>Grupo de 12 agricultores de Pindaí e Guanambi conquista certificação que abre portas para mercados premium...</p>
+          <a href="#" class="noticia-link" aria-label="Ler mais sobre certificação orgânica">Ler mais →</a>
+        </div>
+      </div>
+
+      <div class="noticia-card reveal reveal-delay-2">
+        <div class="noticia-thumb" aria-hidden="true">
+          🎓
+          <div class="noticia-categoria">Pesquisa</div>
+        </div>
+        <div class="noticia-body">
+          <div class="noticia-data">02 ABR 2026</div>
+          <h3>Orgânico Inteligente e EMBRAPA firmam parceria para pesquisa sobre mandacaru orgânico</h3>
+          <p>Acordo de cooperação vai desenvolver tecnologias de aproveitamento do mandacaru para alimentação animal orgânica...</p>
+          <a href="#" class="noticia-link" aria-label="Ler mais sobre parceria de pesquisa">Ler mais →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== CONTATO ===== -->
+<section class="contato" id="contato" aria-label="Contato e localização">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">📬 Fale Conosco</div>
+      <h2 class="section-title">Entre em contato</h2>
+      <p class="section-desc">Tem dúvidas, quer participar ou propor uma parceria? Estamos aqui.</p>
+    </div>
+
+    <div class="contato-grid contato-grid--single">
+      <div class="contato-info reveal">
+        <h3>Orgânico Inteligente</h3>
+        <p>Estamos em Guanambi, BA, prontos para atender agricultores, estudantes, parceiros e a comunidade em geral.</p>
+
+        <div class="contato-items">
+          <div class="contato-item">
+            <div class="contato-item-icon">📍</div>
+            <div>
+              <h4>Endereço</h4>
+              <p>Zona Rural, s/n – Guanambi, BA</p>
+            </div>
+          </div>
+          <div class="contato-item">
+            <div class="contato-item-icon">📞</div>
+            <div>
+              <h4>Telefone / WhatsApp</h4>
+              <p>(77) 3452-0000</p>
+            </div>
+          </div>
+          <div class="contato-item">
+            <div class="contato-item-icon">📧</div>
+            <div>
+              <h4>E-mail</h4>
+              <p>organicointeligente@ifbaiano.edu.br</p>
+            </div>
+          </div>
+          <div class="contato-item">
+            <div class="contato-item-icon">🕐</div>
+            <div>
+              <h4>Atendimento</h4>
+              <p>Segunda a Sexta: 8h às 17h</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links" aria-label="Redes sociais">
+          <a href="#" class="social-btn" aria-label="Instagram do Orgânico Inteligente">📸 Instagram</a>
+          <a href="#" class="social-btn" aria-label="Facebook do Orgânico Inteligente">👍 Facebook</a>
+          <a href="#" class="social-btn" aria-label="YouTube do Orgânico Inteligente">▶️ YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/images/logo/logo.jpeg" alt="Logo Orgânico Inteligente" class="footer-logo-img">
+          <div class="footer-logo-text">
+            <div class="top">Orgânico Inteligente</div>
+            <div class="bottom">Cultivando Saúde no Sertão</div>
+          </div>
+        </div>
+        <p>Programa de ensino, pesquisa e extensão dedicado ao fortalecimento da agroecologia e produção orgânica no Sertão Produtivo da Bahia.</p>
+        <p style="margin-top:12px; font-size:12px; color:rgba(255,255,255,0.4);">organicointeligente.com.br</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>O Projeto</h4>
+        <ul>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#acoes">Nossas ações</a></li>
+          <li><a href="#territorio">Território</a></li>
+          <li><a href="#parceiros">Parceiros</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Recursos</h4>
+        <ul>
+          <li><a href="#conteudos">Materiais educativos</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#noticias">Notícias</a></li>
+          <li><a href="#contato">Cadastre-se</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:organicointeligente@ifbaiano.edu.br">E-mail</a></li>
+          <li><a href="#">WhatsApp</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Orgânico Inteligente · Todos os direitos reservados</p>
+      <p>Cultivando Saúde no Sertão Produtivo 🌱</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast notification -->
+<div id="toast" style="position:fixed; bottom:24px; right:24px; background:var(--verde); color:white; padding:16px 24px; border-radius:12px; font-size:14px; font-weight:600; opacity:0; transform:translateY(20px); transition:all 0.3s; z-index:9999; max-width:300px; box-shadow:0 8px 24px rgba(0,0,0,0.2);" role="alert" aria-live="polite"></div>
+
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
