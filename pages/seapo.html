@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="X SEAPO &ndash; Seminário de Agroecologia e Produção Orgânica. 21 de agosto de 2026, IF Baiano Campus Guanambi. Palestras, minicursos, certificação orgânica e feira agroecológica.">
+  <title>X SEAPO 2026 | Orgânico Inteligente</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .xseapo-hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--verde);overflow:hidden;text-align:center}
+    .xseapo-hero-bg{position:absolute;inset:0;background-image:url('../assets/images/seapo/iii-seapo-seminario.jpeg');background-size:cover;background-position:center;opacity:.18}
+    .xseapo-hero-inner{position:relative;z-index:2;padding:120px 24px 80px;max-width:860px;margin:0 auto}
+    .xseapo-edicao{display:inline-block;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--dourado);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:100px;padding:6px 20px;margin-bottom:32px}
+    .xseapo-hero h1{font-family:'Playfair Display',serif;font-size:clamp(56px,12vw,120px);font-weight:900;color:white;line-height:1;letter-spacing:-2px;margin-bottom:8px}
+    .xseapo-hero h1 em{font-style:normal;color:var(--dourado)}
+    .xseapo-hero-sub{font-family:'Space Mono',monospace;font-size:13px;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:32px}
+    .xseapo-data-badge{display:inline-flex;align-items:center;gap:10px;background:var(--dourado);color:var(--verde);font-family:'Space Mono',monospace;font-weight:700;font-size:15px;padding:12px 28px;border-radius:100px;margin-bottom:24px}
+    .xseapo-local{font-size:14px;color:rgba(255,255,255,.6);letter-spacing:1px;margin-bottom:48px}
+    .xseapo-hero-desc{font-size:17px;color:rgba(255,255,255,.85);line-height:1.75;max-width:640px;margin:0 auto 48px}
+    .xseapo-cta-group{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    .btn-primario{background:var(--dourado);color:var(--verde);font-weight:700;font-size:15px;padding:14px 32px;border-radius:100px;text-decoration:none;transition:transform .2s,box-shadow .2s}
+    .btn-primario:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+    .btn-secundario{background:transparent;color:white;font-weight:600;font-size:15px;padding:14px 32px;border-radius:100px;border:2px solid rgba(255,255,255,.35);text-decoration:none;transition:border-color .2s,background .2s}
+    .btn-secundario:hover{border-color:white;background:rgba(255,255,255,.08)}
+    .xseapo-aviso{background:var(--dourado);color:var(--verde);text-align:center;padding:14px 24px;font-size:13px;font-weight:600;letter-spacing:.5px}
+    .xseapo-aviso span{font-family:'Space Mono',monospace}
+    .xseapo-destaques{background:var(--creme);padding:80px 24px}
+    .xseapo-destaques-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:52px}
+    .xseapo-destaque-card{background:white;border-radius:20px;padding:32px 24px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+    .xseapo-destaque-card .icon{font-size:36px;margin-bottom:16px;display:block}
+    .xseapo-destaque-card h3{font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);margin-bottom:8px}
+    .xseapo-destaque-card p{font-size:14px;color:var(--texto-suave);line-height:1.6}
+    .xseapo-prog{background:white;padding:80px 24px}
+    .prog-dia-label{display:inline-flex;align-items:center;gap:8px;background:var(--verde);color:white;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;padding:8px 20px;border-radius:100px;margin-bottom:40px}
+    .prog-turno{margin-bottom:52px}
+    .prog-turno-titulo{font-family:'Playfair Display',serif;font-size:22px;color:var(--verde);margin-bottom:24px;padding-bottom:12px;border-bottom:2px solid var(--cinza);display:flex;align-items:center;gap:10px}
+    .prog-lista{display:flex;flex-direction:column;gap:12px}
+    .prog-item{display:grid;grid-template-columns:110px 1fr;gap:20px;align-items:start;background:var(--cinza);border-radius:14px;padding:18px 24px;transition:transform .15s}
+    .prog-item:hover{transform:translateX(4px)}
+    .prog-item.destaque{background:var(--creme);border-left:4px solid var(--dourado)}
+    .prog-item.especial{background:#f0f7ed;border-left:4px solid var(--verde-claro)}
+    .prog-horario{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:var(--verde);padding-top:2px}
+    .prog-titulo{font-weight:600;font-size:15px;color:#1a2e1a;margin-bottom:4px}
+    .prog-speaker{font-size:13px;color:var(--texto-suave);font-style:italic}
+    .prog-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:100px;margin-bottom:6px}
+    .prog-tag.palestra{background:#e8f3e8;color:var(--verde)}
+    .prog-tag.cerimonia{background:#fff3cd;color:#7a6000}
+    .prog-tag.lancamento{background:#f3e8f8;color:#6a2e8a}
+    .minicursos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .minicurso-card{background:var(--cinza);border-radius:14px;padding:20px;border-top:3px solid var(--verde-claro)}
+    .minicurso-card .mc-horario{font-family:'Space Mono',monospace;font-size:11px;color:var(--verde);font-weight:700;margin-bottom:8px}
+    .minicurso-card h4{font-size:14px;font-weight:600;color:#1a2e1a;margin-bottom:6px;line-height:1.4}
+    .minicurso-card .mc-ministrante{font-size:12px;color:var(--texto-suave);font-style:italic;margin-bottom:4px}
+    .minicurso-card .mc-sala{font-size:11px;color:var(--verde);font-weight:600}
+    .xseapo-stands{background:var(--creme);padding:60px 24px}
+    .stands-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+    .stand-chip{background:white;border:1.5px solid var(--verde-claro);color:var(--verde);font-size:13px;font-weight:600;padding:8px 18px;border-radius:100px}
+    .xseapo-inscricoes{background:var(--verde);padding:80px 24px;text-align:center}
+    .xseapo-inscricoes h2{font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,44px);color:white;margin-bottom:16px}
+    .xseapo-inscricoes p{color:rgba(255,255,255,.8);font-size:16px;line-height:1.7;max-width:520px;margin:0 auto 36px}
+    .badge-breve{display:inline-block;background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.3);color:var(--dourado);font-family:'Space Mono',monospace;font-size:12px;letter-spacing:2px;padding:8px 20px;border-radius:100px;margin-bottom:28px}
+    .xseapo-memoria{background:white;padding:80px 24px}
+    .memoria-mini-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}
+    .memoria-mini-card{border-left:3px solid var(--verde-claro);padding-left:16px}
+    .memoria-mini-card strong{font-family:'Space Mono',monospace;font-size:22px;color:var(--verde);display:block;margin-bottom:4px}
+    .memoria-mini-card span{font-size:13px;color:var(--texto-suave)}
+    .xseapo-videos{background:var(--cinza);padding:80px 24px}
+    .xseapo-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+    .xseapo-video-item{border-radius:16px;overflow:hidden;background:white;box-shadow:0 2px 16px rgba(0,0,0,.07)}
+    .xseapo-video-item iframe{width:100%;aspect-ratio:16/9;display:block;border:0}
+    .xseapo-video-item div{padding:16px 20px}
+    .xseapo-video-item h3{font-size:15px;font-weight:600;color:var(--verde);margin-bottom:4px}
+    .xseapo-video-item p{font-size:13px;color:var(--texto-suave)}
+    @media(max-width:1024px){.xseapo-destaques-grid{grid-template-columns:repeat(2,1fr)}.minicursos-grid{grid-template-columns:repeat(2,1fr)}.memoria-mini-grid{grid-template-columns:repeat(2,1fr)}.xseapo-video-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:640px){.xseapo-destaques-grid{grid-template-columns:1fr}.minicursos-grid{grid-template-columns:1fr}.prog-item{grid-template-columns:1fr;gap:4px}.memoria-mini-grid{grid-template-columns:repeat(2,1fr)}.xseapo-video-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body id="topo">
+
+<a href="#main-content" class="skip-link">Ir para o conteúdo principal</a>
+
+<div class="acess-bar" role="toolbar" aria-label="Ferramentas de acessibilidade">
+  <span>Acessibilidade:</span>
+  <button class="acess-btn" onclick="toggleContraste()" aria-label="Alternar alto contraste" title="Alto Contraste">&#127763; Contraste</button>
+  <button class="acess-btn" onclick="aumentarFonte()" aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
+  <button class="acess-btn" onclick="diminuirFonte()" aria-label="Diminuir fonte" title="Diminuir fonte">A-</button>
+  <button class="acess-btn" onclick="toggleLeituraSimples()" aria-label="Leitura simplificada" title="Leitura simples">&#128214; Leitura f&#225;cil</button>
+</div>
+
+<nav role="navigation" aria-label="Menu principal">
+  <div class="nav-inner">
+    <a href="../index.html#topo" class="nav-logo" aria-label="P&#225;gina inicial - Org&#226;nico Inteligente">
+      <img src="../assets/images/logo/logo.jpeg" alt="Logo Org&#226;nico Inteligente" class="nav-logo-img">
+      <div class="nav-logo-text">
+        <span class="top">Org&#226;nico Inteligente</span>
+        <span class="bottom">Cultivando Sa&#250;de no Sert&#227;o Produtivo</span>
+      </div>
+    </a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Abrir menu" aria-expanded="false" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links" role="menubar"></ul>
+  </div>
+</nav>
+<script src="../assets/js/nav.js"></script>
+
+<main id="main-content">
+
+  <section class="xseapo-hero" aria-label="X SEAPO 2026">
+    <div class="xseapo-hero-bg"></div>
+    <div class="xseapo-hero-inner">
+      <div class="xseapo-edicao">10&#170; Edi&#231;&#227;o &middot; IF Baiano Campus Guanambi</div>
+      <h1><em>X</em> SEAPO</h1>
+      <p class="xseapo-hero-sub">Semin&#225;rio de Agroecologia e Produ&#231;&#227;o Org&#226;nica</p>
+      <div class="xseapo-data-badge">&#128197; 21 de agosto de 2026</div>
+      <p class="xseapo-local">IF Baiano &middot; Campus Guanambi &middot; Bahia</p>
+      <p class="xseapo-hero-desc">Dez edi&#231;&#245;es construindo ci&#234;ncia com cheiro de terra. O X SEAPO re&#250;ne agricultores, pesquisadores, estudantes, extensionistas e comunidade em torno da agroecologia, da produ&#231;&#227;o org&#226;nica e do futuro do Sert&#227;o Produtivo.</p>
+      <div class="xseapo-cta-group">
+        <a href="#programacao" class="btn-primario">Ver Programa&#231;&#227;o</a>
+        <a href="#inscricoes" class="btn-secundario">Inscri&#231;&#245;es em breve</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="xseapo-aviso" role="status">
+    <span>&#9888; PROGRAMA&#199;&#195;O PRELIMINAR</span> &mdash; Os dados abaixo est&#227;o sendo finalizados. Aguarde a confirma&#231;&#227;o oficial.
+  </div>
+
+  <section class="xseapo-destaques" aria-label="O que esperar do X SEAPO">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-tag">&#127806; O que esperar</div>
+        <h2 class="section-title">Um dia inteiro de agroecologia no Sert&#227;o</h2>
+        <p class="section-desc">O X SEAPO celebra dez anos de um semin&#225;rio que cresceu com o territ&#243;rio e com as pessoas que o fazem acontecer.</p>
+      </div>
+      <div class="xseapo-destaques-grid">
+        <div class="xseapo-destaque-card reveal">
+          <span class="icon">&#127908;</span>
+          <h3>Palestras</h3>
+          <p>Especialistas nacionais sobre emerg&#234;ncia clim&#225;tica, conhecimento ind&#237;gena e produ&#231;&#227;o org&#226;nica na Bahia.</p>
+        </div>
+        <div class="xseapo-destaque-card reveal reveal-delay-1">
+          <span class="icon">&#127807;</span>
+          <h3>Minicursos</h3>
+          <p>Mais de 10 oficinas simult&#226;neas: pragas, aves org&#226;nicas, irriga&#231;&#227;o, aduba&#231;&#227;o, PANCs, PNAE e muito mais.</p>
+        </div>
+        <div class="xseapo-destaque-card reveal reveal-delay-2">
+          <span class="icon">&#128220;</span>
+          <h3>Certifica&#231;&#227;o</h3>
+          <p>Entrega oficial dos certificados de Conformidade Org&#226;nica a agricultores do territ&#243;rio.</p>
+        </div>
+        <div class="xseapo-destaque-card reveal reveal-delay-3">
+          <span class="icon">&#127958;</span>
+          <h3>Stands &amp; Feira</h3>
+          <p>Expositores e produtos a confirmar — fique ligado nas novidades!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="xseapo-prog" id="programacao" aria-label="Programa&#231;&#227;o do X SEAPO">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-tag">&#128203; Programa&#231;&#227;o</div>
+        <h2 class="section-title">21 de agosto de 2026</h2>
+        <p class="section-desc">Programa&#231;&#227;o preliminar, sujeita a ajustes. Confirme os hor&#225;rios pr&#243;ximo ao evento.</p>
+      </div>
+
+      <div class="prog-dia-label">&#128197; Quinta-feira &middot; 21/08/2026</div>
+
+      <div class="prog-turno">
+        <h3 class="prog-turno-titulo">&#127749; Manh&#227; &mdash; Audit&#243;rio Principal</h3>
+        <div class="prog-lista">
+          <div class="prog-item destaque">
+            <div class="prog-horario">08h00</div>
+            <div>
+              <span class="prog-tag cerimonia">Abertura</span>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-horario">08h30&ndash;09h30</div>
+            <div>
+              <span class="prog-tag palestra">Palestra</span>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-horario">09h30&ndash;10h30</div>
+            <div>
+              <span class="prog-tag palestra">Palestra</span>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-horario">10h30&ndash;11h00</div>
+            <div>
+              <span class="prog-tag palestra">Palestra</span>
+            </div>
+          </div>
+          <div class="prog-item destaque">
+            <div class="prog-horario">11h00</div>
+            <div>
+              <span class="prog-tag cerimonia">Cerim&#244;nia</span>
+            </div>
+          </div>
+          <div class="prog-item especial">
+            <div class="prog-horario">11h00</div>
+            <div>
+              <span class="prog-tag lancamento">Lan&#231;amento</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prog-turno">
+        <h3 class="prog-turno-titulo">&#9728;&#65039; Tarde &mdash; Minicursos Simult&#226;neos (13h &#224;s 17h)</h3>
+        <div class="minicursos-grid">
+          <div class="minicurso-card reveal">
+            <span style="display:inline-block;background:#e8f3e8;color:var(--verde);font-size:11px;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:8px;">Minicurso</span>
+            <div class="mc-horario">13h00 &ndash; 17h00</div>
+            <div class="mc-sala">📍 Local a confirmar</div>
+          </div>
+          <div class="minicurso-card reveal reveal-delay-1">
+            <span style="display:inline-block;background:#e8f3e8;color:var(--verde);font-size:11px;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:8px;">Minicurso</span>
+            <div class="mc-horario">13h00 &ndash; 17h00</div>
+            <div class="mc-sala">📍 Local a confirmar</div>
+          </div>
+          <div class="minicurso-card reveal reveal-delay-2">
+            <span style="display:inline-block;background:#e8f3e8;color:var(--verde);font-size:11px;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:8px;">Minicurso</span>
+            <div class="mc-horario">13h00 &ndash; 17h00</div>
+            <div class="mc-sala">📍 Local a confirmar</div>
+          </div>
+          <div class="minicurso-card reveal">
+            <span style="display:inline-block;background:#e8f3e8;color:var(--verde);font-size:11px;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:8px;">Minicurso</span>
+            <div class="mc-horario">13h00 &ndash; 17h00</div>
+            <div class="mc-sala">📍 Local a confirmar</div>
+          </div>
+          <div class="minicurso-card reveal reveal-delay-1">
+            <span style="display:inline-block;background:#e8f3e8;color:var(--verde);font-size:11px;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:8px;">Minicurso</span>
+            <div class="mc-horario">13h00 &ndash; 17h00</div>
+            <div class="mc-sala">📍 Local a confirmar</div>
+          </div>
+          <div class="minicurso-card reveal reveal-delay-2">
+            <span style="display:inline-block;background:#e8f3e8;color:var(--verde);font-size:11px;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:8px;">Minicurso</span>
+            <div class="mc-horario">13h00 &ndash; 17h00</div>
+            <div class="mc-sala">📍 Local a confirmar</div>
+          </div>
+          <div class="minicurso-card reveal">
+            <span style="display:inline-block;background:#e8f3e8;color:var(--verde);font-size:11px;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:8px;">Minicurso</span>
+            <div class="mc-horario">13h00 &ndash; 17h00</div>
+            <div class="mc-sala">📍 Local a confirmar</div>
+          </div>
+          <div class="minicurso-card reveal reveal-delay-1">
+            <span style="display:inline-block;background:#e8f3e8;color:var(--verde);font-size:11px;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:8px;">Minicurso</span>
+            <div class="mc-horario">13h00 &ndash; 17h00</div>
+            <div class="mc-sala">📍 Local a confirmar</div>
+          </div>
+          <div class="minicurso-card reveal reveal-delay-2">
+            <span style="display:inline-block;background:#e8f3e8;color:var(--verde);font-size:11px;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:8px;">Minicurso</span>
+            <div class="mc-horario">13h00 &ndash; 17h00</div>
+            <div class="mc-sala">📍 Local a confirmar</div>
+          </div>
+          <div class="minicurso-card reveal">
+            <span style="display:inline-block;background:#e8f3e8;color:var(--verde);font-size:11px;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:8px;">Minicurso</span>
+            <div class="mc-horario">13h00 &ndash; 17h00</div>
+            <div class="mc-sala">📍 Local a confirmar</div>
+          </div>
+          <div class="minicurso-card reveal reveal-delay-1">
+            <span style="display:inline-block;background:#e8f3e8;color:var(--verde);font-size:11px;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:8px;">Minicurso</span>
+            <div class="mc-horario">13h00 &ndash; 17h00</div>
+            <div class="mc-sala">📍 Local a confirmar</div>
+          </div>
+          <div class="minicurso-card reveal reveal-delay-2">
+            <span style="display:inline-block;background:#e8f3e8;color:var(--verde);font-size:11px;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:8px;">Minicurso</span>
+            <div class="mc-horario">13h00 &ndash; 17h00</div>
+            <div class="mc-sala">📍 Local a confirmar</div>
+          </div>
+          <div class="minicurso-card reveal">
+            <span style="display:inline-block;background:#e8f3e8;color:var(--verde);font-size:11px;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:8px;">Minicurso</span>
+            <div class="mc-horario">13h00 &ndash; 17h00</div>
+            <div class="mc-sala">📍 Local a confirmar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="xseapo-stands" aria-label="Stands do X SEAPO">
+    <div class="section-inner">
+      <div class="section-tag">🪒 Feira & Stands</div>
+      <h2 class="section-title" style="margin-top:12px;">Tem muito mais vindo por aí</h2>
+      <p style="color:var(--texto-suave);margin-top:8px;max-width:560px;">Expositores, produtos, saberes e biodiversidade — tudo ao ar livre, ao longo de todo o dia. Os stands serão revelados em breve.</p>
+      <div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap;align-items:center;">
+        <span style="background:white;border:1.5px dashed var(--verde-claro);color:var(--verde);font-size:13px;font-weight:600;padding:8px 22px;border-radius:100px;opacity:0.55;">? ? ?</span>
+        <span style="background:white;border:1.5px dashed var(--verde-claro);color:var(--verde);font-size:13px;font-weight:600;padding:8px 22px;border-radius:100px;opacity:0.55;">? ? ?</span>
+        <span style="background:white;border:1.5px dashed var(--verde-claro);color:var(--verde);font-size:13px;font-weight:600;padding:8px 22px;border-radius:100px;opacity:0.55;">? ? ?</span>
+        <span style="color:var(--texto-suave);font-size:13px;font-style:italic;">+ muito mais</span>
+      </div>
+    
+    </div>
+  </section>
+
+  <section class="xseapo-inscricoes" id="inscricoes" aria-label="Inscri&#231;&#245;es X SEAPO">
+    <div class="section-inner">
+      <div class="badge-breve">EM BREVE</div>
+      <h2>Inscri&#231;&#245;es abrindo em breve</h2>
+      <p>A programa&#231;&#227;o est&#225; sendo finalizada e as inscri&#231;&#245;es ser&#227;o abertas em breve. Fique de olho nas nossas redes sociais para n&#227;o perder nenhuma novidade do maior semin&#225;rio de agroecologia do Sert&#227;o Produtivo.</p>
+      <div class="xseapo-cta-group">
+        <a href="https://instagram.com/organicointeligente" target="_blank" rel="noopener noreferrer" class="btn-primario">Seguir no Instagram</a>
+        <a href="https://wa.me/5577999505979" target="_blank" rel="noopener noreferrer" class="btn-secundario">Falar pelo WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="xseapo-memoria" aria-label="Mem&#243;ria do SEAPO">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-tag">&#128204; Trajet&#243;ria</div>
+        <h2 class="section-title">Nove edi&#231;&#245;es que semearam o X SEAPO</h2>
+        <p class="section-desc">Desde 2017, o SEAPO re&#250;ne ci&#234;ncia, extens&#227;o e agricultura familiar no IF Baiano Campus Guanambi.</p>
+      </div>
+      <div class="memoria-mini-grid">
+        <div class="memoria-mini-card reveal">
+          <strong>2017</strong>
+          <span>I SEAPO &mdash; a primeira semente plantada pelo NEAPO</span>
+        </div>
+        <div class="memoria-mini-card reveal reveal-delay-1">
+          <strong>2019</strong>
+          <span>III SEAPO &mdash; 20+ munic&#237;pios e 14 oficinas simult&#226;neas</span>
+        </div>
+        <div class="memoria-mini-card reveal reveal-delay-2">
+          <strong>2020</strong>
+          <span>IV SEAPO &mdash; edi&#231;&#227;o online em plena pandemia</span>
+        </div>
+        <div class="memoria-mini-card reveal reveal-delay-3">
+          <strong>2023</strong>
+          <span>VII SEAPO &mdash; internacionaliza&#231;&#227;o e novos temas</span>
+        </div>
+      </div>
+      <div class="seapo-photo-grid" style="margin-top:48px;">
+        <figure>
+          <img src="../assets/images/seapo/iii-seapo-feira.jpeg" alt="Feira agroecol&#243;gica no III SEAPO">
+          <figcaption>A feira agroecol&#243;gica &#233; uma das marcas permanentes do evento.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/images/seapo/certificacao-organicos.jpeg" alt="Entrega de certificados org&#226;nicos">
+          <figcaption>Entrega de certificados: o reconhecimento que transforma trajet&#243;rias.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/images/seapo/vii-seapo-card.png" alt="Card VII SEAPO">
+          <figcaption>VII SEAPO &mdash; 2023: debate, ci&#234;ncia e comunidade.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="xseapo-videos" id="videos" aria-label="V&#237;deos do SEAPO">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-tag">&#9654;&#65039; Mem&#243;ria em v&#237;deo</div>
+        <h2 class="section-title">Reviva as edi&#231;&#245;es anteriores</h2>
+        <p class="section-desc">Palestras, registros e momentos das edi&#231;&#245;es que constru&#237;ram o X SEAPO.</p>
+      </div>
+      <div class="xseapo-video-grid">
+        <div class="xseapo-video-item reveal">
+          <iframe src="https://www.youtube.com/embed/iEi2y3k1BB8" title="VII Semin&#225;rio de Agroecologia e Produ&#231;&#227;o Org&#226;nica" loading="lazy" allowfullscreen></iframe>
+          <div><h3>VII SEAPO</h3><p>Produ&#231;&#227;o org&#226;nica, oficinas e feira agroecol&#243;gica.</p></div>
+        </div>
+        <div class="xseapo-video-item reveal reveal-delay-1">
+          <iframe src="https://www.youtube.com/embed/IceU5ckoIcM" title="VI Semin&#225;rio de Agroecologia e Produ&#231;&#227;o Org&#226;nica" loading="lazy" allowfullscreen></iframe>
+          <div><h3>VI SEAPO</h3><p>Palestras e atividades da sexta edi&#231;&#227;o.</p></div>
+        </div>
+        <div class="xseapo-video-item reveal reveal-delay-2">
+          <iframe src="https://www.youtube.com/embed/pGqZ2fwKD1Y" title="III Semin&#225;rio de Agroecologia e Produ&#231;&#227;o Org&#226;nica" loading="lazy" allowfullscreen></iframe>
+          <div><h3>III SEAPO</h3><p>Mem&#243;ria da feira de base agroecol&#243;gica.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="../assets/images/logoAdesivos.png" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/images/logoOrganicoInteligente.png" alt="Logo Org&#226;nico Inteligente" class="footer-logo-img footer-logo-img--full">
+          </a>
+        </div>
+        <p>Programa de ensino, pesquisa e extens&#227;o dedicado ao fortalecimento da agroecologia e produ&#231;&#227;o org&#226;nica no Sert&#227;o Produtivo da Bahia.</p>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li><a href="../index.html#sobre">Sobre n&#243;s</a></li>
+          <li><a href="../index.html#acoes">Nossas a&#231;&#245;es</a></li>
+          <li><a href="../index.html#territorio">Territ&#243;rio</a></li>
+          <li><a href="../index.html#parceiros">Parceiros</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li><a href="conteudos-educativos.html">Conte&#250;dos Educativos</a></li>
+          <li><a href="seapo.html">X SEAPO</a></li>
+          <li><a href="../index.html#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li><a href="https://eventos.ifbaiano.edu.br/portal/2-seminario-agroecologia-guanambi/" target="_blank" rel="noopener noreferrer">Site VIII SEAPO</a></li>
+          <li><a href="https://eventos.ifbaiano.edu.br/portal/2-seminario-agroecologia-guanambi/i-seapo/" target="_blank" rel="noopener noreferrer">Edi&#231;&#245;es anteriores</a></li>
+          <li><a href="https://www.youtube.com/@ifbaianocampusguanambi" target="_blank" rel="noopener noreferrer">YouTube IF Baiano</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&#169; 2026 Org&#226;nico Inteligente &middot; Todos os direitos reservados</p>
+      <p>Cultivando Sa&#250;de no Sert&#227;o Produtivo &#127807;</p>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" style="position:fixed;bottom:24px;right:24px;background:var(--verde);color:white;padding:16px 24px;border-radius:12px;font-size:14px;font-weight:600;opacity:0;transform:translateY(20px);transition:all 0.3s;z-index:9999;max-width:300px;box-shadow:0 8px 24px rgba(0,0,0,.2);" role="alert" aria-live="polite"></div>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
