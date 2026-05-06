@@ -146,6 +146,7 @@
 
   .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
   .hamburger span { width: 24px; height: 2px; background: var(--verde); border-radius: 2px; transition: 0.3s; }
+  .hamburger:focus { outline: 2px solid var(--verde); outline-offset: 4px; border-radius: 4px; }
 
   /* ===== HERO SLIDESHOW ===== */
   .hero {
@@ -1537,7 +1538,7 @@
   .reveal-delay-4 { transition-delay: 0.4s; }
 
   /* ===== READER MODE ===== */
-  .reader-mode body { font-size: 120%; letter-spacing: 0.05em; }
+  body.leitura-simples { font-size: 120%; letter-spacing: 0.05em; line-height: 1.9; }
 
   /* Skip to content */
   .skip-link {

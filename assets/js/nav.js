@@ -20,7 +20,7 @@
   for (var i = 0; i < items.length; i++) {
     var item = items[i];
     var isCurrent = item.file && item.file === currentFile;
-    html += '<li><a href="' + item.href + '" role="menuitem"'
+    html += '<li role="none"><a href="' + item.href + '" role="menuitem"'
       + (isCurrent ? ' aria-current="page"' : '')
       + '>' + item.label + '</a></li>';
   }

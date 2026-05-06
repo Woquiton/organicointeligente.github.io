@@ -13,24 +13,32 @@
   }
 
   // === Acessibilidade ===
-  let fonteAtual = 100;
+  let fonteAtual = parseInt(localStorage.getItem('acess-fonte') || '100', 10);
+  if (fonteAtual !== 100) document.body.style.fontSize = fonteAtual + '%';
+  if (localStorage.getItem('acess-contraste') === '1') document.body.classList.add('alto-contraste');
+  if (localStorage.getItem('acess-leitura') === '1') document.body.classList.add('leitura-simples');
+
   function aumentarFonte() {
     fonteAtual = Math.min(fonteAtual + 10, 140);
     document.body.style.fontSize = fonteAtual + '%';
+    localStorage.setItem('acess-fonte', fonteAtual);
     showToast('Fonte aumentada para ' + fonteAtual + '%');
   }
   function diminuirFonte() {
     fonteAtual = Math.max(fonteAtual - 10, 80);
     document.body.style.fontSize = fonteAtual + '%';
+    localStorage.setItem('acess-fonte', fonteAtual);
     showToast('Fonte reduzida para ' + fonteAtual + '%');
   }
   function toggleContraste() {
     document.body.classList.toggle('alto-contraste');
     const on = document.body.classList.contains('alto-contraste');
+    localStorage.setItem('acess-contraste', on ? '1' : '0');
     showToast(on ? 'Alto contraste ativado' : 'Contraste normal');
   }
   function toggleLeituraSimples() {
     const on = document.body.classList.toggle('leitura-simples');
+    localStorage.setItem('acess-leitura', on ? '1' : '0');
     if (on) {
       document.querySelectorAll('p').forEach(p => {
         if (!p.dataset.orig) { p.dataset.orig = p.innerHTML; }
