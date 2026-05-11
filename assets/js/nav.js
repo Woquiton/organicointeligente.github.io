@@ -9,6 +9,7 @@
     { label: 'A\u00e7\u00f5es',       href: base + '#acoes' },
     { label: 'Territ\u00f3rio',       href: base + '#territorio' },
     { label: 'Conte\u00fados Educativos', href: pagesBase + 'conteudos-educativos.html', file: 'conteudos-educativos.html' },
+    { label: 'Certifica\u00e7\u00e3o',        href: pagesBase + 'certificacao.html', file: 'certificacao.html' },
     { label: 'X SEAPO',               href: pagesBase + 'seapo.html', file: 'seapo.html' },
     { label: 'Parceiros',             href: base + '#parceiros' },
   ];
