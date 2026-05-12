@@ -14,21 +14,27 @@
 
   // === Acessibilidade ===
   let fonteAtual = parseInt(localStorage.getItem('acess-fonte') || '100', 10);
-  if (fonteAtual !== 100) document.body.style.fontSize = fonteAtual + '%';
+  if (fonteAtual !== 100) document.body.style.zoom = fonteAtual / 100;
   if (localStorage.getItem('acess-contraste') === '1') document.body.classList.add('alto-contraste');
   if (localStorage.getItem('acess-leitura') === '1') document.body.classList.add('leitura-simples');
 
   function aumentarFonte() {
     fonteAtual = Math.min(fonteAtual + 10, 140);
-    document.body.style.fontSize = fonteAtual + '%';
+    document.body.style.zoom = fonteAtual / 100;
     localStorage.setItem('acess-fonte', fonteAtual);
     showToast('Fonte aumentada para ' + fonteAtual + '%');
   }
   function diminuirFonte() {
     fonteAtual = Math.max(fonteAtual - 10, 80);
-    document.body.style.fontSize = fonteAtual + '%';
+    document.body.style.zoom = fonteAtual / 100;
     localStorage.setItem('acess-fonte', fonteAtual);
     showToast('Fonte reduzida para ' + fonteAtual + '%');
+  }
+  function resetarFonte() {
+    fonteAtual = 100;
+    document.body.style.zoom = 1;
+    localStorage.setItem('acess-fonte', fonteAtual);
+    showToast('Fonte redefinida para o padrão');
   }
   function toggleContraste() {
     document.body.classList.toggle('alto-contraste');

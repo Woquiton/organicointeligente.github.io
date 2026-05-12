@@ -53,6 +53,9 @@
     gap: 12px;
     font-size: 12px;
     font-family: 'DM Sans', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
   }
 
   .acess-bar span { opacity: 0.8; }
@@ -77,7 +80,7 @@
     background: rgba(251,246,238,0.97);
     backdrop-filter: blur(12px);
     position: sticky;
-    top: 0;
+    top: 36px;
     z-index: 1000;
     border-bottom: 2px solid rgba(74,124,47,0.15);
     box-shadow: 0 2px 20px rgba(45,80,22,0.08);
@@ -357,7 +360,7 @@
     display: grid;
     grid-template-columns: 280px 1fr;
     gap: 48px;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 56px;
     padding-top: 48px;
     border-top: 2px solid rgba(74,124,47,0.15);
