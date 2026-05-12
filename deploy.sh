@@ -25,4 +25,4 @@ git push origin main
 
 echo ""
 echo "✅ Publicado! GitHub Pages atualiza em ~1 min."
-echo "   https://woquiton.github.io/organicointeligente"
+echo "   https://organicointeligente.github.io"

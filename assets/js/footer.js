@@ -15,7 +15,6 @@
     + '</a>'
     + '</div>'
     + '<p>Programa de ensino, pesquisa e extens\u00e3o dedicado ao fortalecimento da agroecologia e produ\u00e7\u00e3o org\u00e2nica no Sert\u00e3o Produtivo da Bahia.</p>'
-    + '<p style="margin-top:12px;font-size:12px;color:rgba(255,255,255,0.4);">IF Baiano Campus Guanambi</p>'
     + '</div>'
 
     // Col O Projeto
