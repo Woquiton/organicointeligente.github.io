@@ -39,11 +39,6 @@
   function toggleLeituraSimples() {
     const on = document.body.classList.toggle('leitura-simples');
     localStorage.setItem('acess-leitura', on ? '1' : '0');
-    if (on) {
-      document.querySelectorAll('p').forEach(p => {
-        if (!p.dataset.orig) { p.dataset.orig = p.innerHTML; }
-      });
-    }
     showToast(on ? 'Modo leitura fácil ativado' : 'Modo normal');
   }
 
