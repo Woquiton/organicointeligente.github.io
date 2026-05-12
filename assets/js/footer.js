@@ -46,7 +46,6 @@
     + '<li><a href="mailto:organicointeligente@ifbaiano.edu.br">E-mail</a></li>'
     + '<li><a href="https://wa.me/5577999501979" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>'
     + '<li><a href="https://instagram.com/organicointeligente" target="_blank" rel="noopener noreferrer">Instagram</a></li>'
-    + '<li><a href="https://www.youtube.com/@ifbaianocampusguanambi" target="_blank" rel="noopener noreferrer">YouTube</a></li>'
     + '</ul>'
     + '</div>'
 
