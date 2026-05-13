@@ -1564,6 +1564,8 @@
   }
 
   @media (max-width: 768px) {
+    .acess-bar { display: none; }
+    nav { top: 0; }
     .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: white; padding: 20px; border-bottom: 1px solid rgba(74,124,47,0.1); box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
     .nav-links.open { display: flex; }
     .hamburger { display: flex; }
