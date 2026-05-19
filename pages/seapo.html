@@ -21,7 +21,7 @@
   <meta name="description" content="X SEAPO &ndash; Seminário de Agroecologia e Produção Orgânica. 21 de agosto de 2026, IF Baiano Campus Guanambi. Palestras, minicursos, certificação orgânica e feira agroecológica.">
   <title>X SEAPO 2026 | Orgânico Inteligente</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css?v=202605130733">
+  <link rel="stylesheet" href="../assets/css/style.css?v=202605191551">
   <style>
     .xseapo-hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--verde);overflow:hidden;text-align:center}
     .xseapo-hero-bg{position:absolute;inset:0;background-image:url('../assets/images/seapo/iii-seapo-seminario.jpeg');background-size:cover;background-position:center;opacity:.18}
@@ -87,8 +87,57 @@
     .xseapo-video-item div{padding:16px 20px}
     .xseapo-video-item h3{font-size:15px;font-weight:600;color:var(--verde);margin-bottom:4px}
     .xseapo-video-item p{font-size:13px;color:var(--texto-suave)}
-    @media(max-width:1024px){.xseapo-destaques-grid{grid-template-columns:repeat(2,1fr)}.minicursos-grid{grid-template-columns:repeat(2,1fr)}.memoria-mini-grid{grid-template-columns:repeat(2,1fr)}.xseapo-video-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:640px){.xseapo-destaques-grid{grid-template-columns:1fr}.minicursos-grid{grid-template-columns:1fr}.prog-item{grid-template-columns:1fr;gap:4px}.memoria-mini-grid{grid-template-columns:repeat(2,1fr)}.xseapo-video-grid{grid-template-columns:1fr}}
+    /* Fotos dos palestrantes – prog-items */
+    .prog-speaker-row{display:flex;align-items:center;gap:12px;margin-top:8px}
+    .prog-foto{width:52px;height:52px;border-radius:50%;object-fit:cover;border:2.5px solid var(--verde-claro);flex-shrink:0;box-shadow:0 3px 10px rgba(0,0,0,.14)}
+    /* Fotos dos ministrantes – minicurso-cards */
+    .mc-foto{width:84px;height:84px;border-radius:50%;object-fit:cover;border:3px solid var(--verde-claro);display:block;margin:0 auto 14px;box-shadow:0 4px 14px rgba(0,0,0,.14);transition:transform .2s}
+    .minicurso-card:hover .mc-foto{transform:scale(1.06)}
+    .mc-fotos-dupla{display:flex;justify-content:center;gap:0;margin-bottom:14px}
+    .mc-fotos-dupla .mc-foto{width:66px;height:66px;margin:0;border:3px solid white;outline:2.5px solid var(--verde-claro)}
+    .mc-fotos-dupla .mc-foto:last-child{margin-left:-18px}
+    /* Subnav do X SEAPO */
+    .seapo-subnav{background:white;border-bottom:1.5px solid var(--cinza);position:sticky;top:60px;z-index:90}
+    .seapo-subnav-inner{display:flex;align-items:center;max-width:1140px;margin:0 auto;overflow-x:auto;scrollbar-width:none;padding:0 24px}
+    .seapo-subnav-inner::-webkit-scrollbar{display:none}
+    .seapo-subnav a{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;padding:15px 18px;font-size:13px;font-weight:600;color:var(--texto-suave);text-decoration:none;border-bottom:2.5px solid transparent;transition:color .15s,border-color .15s}
+    .seapo-subnav a:hover{color:var(--verde);border-bottom-color:var(--verde)}
+    .seapo-subnav .subnav-badge{background:#fef3c7;color:#92400e;font-size:10px;font-weight:700;letter-spacing:.5px;padding:2px 8px;border-radius:100px}
+    /* Submissão */
+    .xseapo-submissao{background:var(--creme);padding:80px 24px}
+    .submissao-prazo-banner{display:flex;align-items:center;gap:24px;background:white;border-radius:18px;padding:28px 32px;margin-bottom:44px;border-left:4px solid var(--dourado);box-shadow:0 2px 16px rgba(0,0,0,.06)}
+    .prazo-icon{font-size:40px;flex-shrink:0}
+    .prazo-label{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--texto-suave);margin-bottom:4px}
+    .prazo-data{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--verde);line-height:1.1}
+    .prazo-note{font-size:13px;color:var(--texto-suave);margin-top:6px;line-height:1.5}
+    .submissao-modalidades{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:40px}
+    .submissao-mod-card{background:white;border-radius:16px;padding:28px 24px;box-shadow:0 2px 12px rgba(0,0,0,.05);border-top:3px solid var(--verde-claro)}
+    .submissao-mod-card .sm-icon{font-size:30px;display:block;margin-bottom:14px}
+    .submissao-mod-card h4{font-family:'Playfair Display',serif;font-size:17px;color:var(--verde);margin-bottom:8px}
+    .submissao-mod-card p{font-size:13px;color:var(--texto-suave);line-height:1.65}
+    .submissao-ctas{display:flex;gap:14px;flex-wrap:wrap}
+    .btn-drive{display:inline-flex;align-items:center;gap:8px;background:var(--verde);color:white;font-weight:700;font-size:14px;padding:14px 28px;border-radius:100px;text-decoration:none;transition:transform .2s,box-shadow .2s}
+    .btn-drive:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.18)}
+    .btn-drive-sec{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--verde);font-weight:600;font-size:14px;padding:14px 28px;border-radius:100px;border:2px solid var(--verde);text-decoration:none;transition:background .2s,color .2s}
+    .btn-drive-sec:hover{background:var(--verde);color:white}
+    /* Hospedagem */
+    .xseapo-hospedagem{background:white;padding:80px 24px}
+    .hoteis-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+    .hotel-card{background:var(--cinza);border-radius:18px;padding:24px;display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
+    .hotel-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.1)}
+    .hotel-nome{font-family:'Playfair Display',serif;font-size:17px;color:var(--verde);margin-bottom:8px}
+    .hotel-endereco{font-size:12px;color:var(--texto-suave);line-height:1.55;margin-bottom:8px}
+    .hotel-tel{font-size:13px;font-weight:700;color:var(--verde);margin-bottom:16px;display:block;text-decoration:none}
+    .hotel-tel:hover{text-decoration:underline}
+    .hotel-precos{display:flex;border-top:1.5px solid rgba(0,0,0,.07);padding-top:16px;margin-top:auto}
+    .hotel-preco-item{flex:1;text-align:center}
+    .hotel-preco-item+.hotel-preco-item{border-left:1.5px solid rgba(0,0,0,.07)}
+    .hotel-preco-tipo{font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--texto-suave);margin-bottom:5px}
+    .hotel-preco-valor{font-family:'Space Mono',monospace;font-size:13px;font-weight:700;color:var(--verde)}
+    .hotel-ligar{display:block;text-align:center;background:var(--verde);color:white;font-size:12px;font-weight:700;padding:9px 0;border-radius:100px;text-decoration:none;margin-top:16px;transition:opacity .15s}
+    .hotel-ligar:hover{opacity:.85}
+    @media(max-width:1024px){.xseapo-destaques-grid{grid-template-columns:repeat(2,1fr)}.minicursos-grid{grid-template-columns:repeat(2,1fr)}.memoria-mini-grid{grid-template-columns:repeat(2,1fr)}.xseapo-video-grid{grid-template-columns:repeat(2,1fr)}.hoteis-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:640px){.xseapo-destaques-grid{grid-template-columns:1fr}.minicursos-grid{grid-template-columns:1fr}.prog-item{grid-template-columns:1fr;gap:4px}.prog-foto{width:44px;height:44px}.memoria-mini-grid{grid-template-columns:repeat(2,1fr)}.xseapo-video-grid{grid-template-columns:1fr}.submissao-modalidades{grid-template-columns:1fr}.hoteis-grid{grid-template-columns:1fr}.submissao-prazo-banner{flex-direction:column;gap:12px;text-align:center}}
   </style>
 </head>
 <body id="topo">
@@ -119,7 +168,7 @@
     <ul class="nav-links" id="nav-links" role="menubar"></ul>
   </div>
 </nav>
-<script src="../assets/js/nav.js?v=202605130733"></script>
+<script src="../assets/js/nav.js?v=202605191551"></script>
 
 <main id="main-content">
 
@@ -138,6 +187,16 @@
       </div>
     </div>
   </section>
+
+  <nav class="seapo-subnav" aria-label="Navega&#231;&#227;o X SEAPO">
+    <div class="seapo-subnav-inner">
+      <a href="#programacao">&#128197; Programa&#231;&#227;o</a>
+      <a href="#submissao">&#128196; Submiss&#227;o <span class="subnav-badge">At&#233; 20/07</span></a>
+      <a href="#hospedagem">&#127968; Hospedagem</a>
+      <a href="#inscricoes">&#9997;&#65039; Inscri&#231;&#245;es</a>
+      <a href="#videos">&#9654;&#65039; V&#237;deos</a>
+    </div>
+  </nav>
 
   <section class="xseapo-destaques" aria-label="O que esperar do X SEAPO">
     <div class="section-inner">
@@ -196,7 +255,10 @@
             <div>
               <span class="prog-tag palestra">Palestra Magna</span>
               <div class="prog-titulo">ORGÂNICO INTELIGENTE: Saúde para o Sertão Produtivo</div>
-              <div class="prog-speaker">Felizarda Bebé &mdash; Fundadora do Programa Orgânico Inteligente</div>
+              <div class="prog-speaker-row">
+                <img src="../assets/images/pessoasSeapo/felizarda.jpeg" class="prog-foto" alt="Felizarda Bebé">
+                <div class="prog-speaker">Felizarda Beb&eacute; &mdash; Fundadora do Programa Org&acirc;nico Inteligente</div>
+              </div>
             </div>
           </div>
 
@@ -204,8 +266,11 @@
             <div class="prog-horario">09h30&ndash;10h30</div>
             <div>
               <span class="prog-tag palestra">Palestra</span>
-              <div class="prog-titulo">Produção Orgânica na Bahia</div>
-              <div class="prog-speaker">Thercio Vieira &mdash; Coordenador da CPORg Bahia</div>
+              <div class="prog-titulo">Produ&ccedil;&atilde;o Org&acirc;nica na Bahia</div>
+              <div class="prog-speaker-row">
+                <img src="../assets/images/pessoasSeapo/thercio.jpeg" class="prog-foto" alt="Thercio Vieira">
+                <div class="prog-speaker">Thercio Vieira &mdash; Coordenador da CPORg Bahia</div>
+              </div>
             </div>
           </div>
 
@@ -213,8 +278,11 @@
             <div class="prog-horario">10h30&ndash;11h00</div>
             <div>
               <span class="prog-tag palestra">Palestra</span>
-              <div class="prog-titulo">Experiências em Produção Orgânica com o Núcleo Raízes do Sertão – Povos da Mata</div>
-              <div class="prog-speaker">Paula Ferreira</div>
+              <div class="prog-titulo">Experi&ecirc;ncias em Produ&ccedil;&atilde;o Org&acirc;nica com o N&uacute;cleo Ra&iacute;zes do Sert&atilde;o &ndash; Povos da Mata</div>
+              <div class="prog-speaker-row">
+                <img src="../assets/images/pessoasSeapo/indefinido.png" class="prog-foto" alt="Paula Ferreira">
+                <div class="prog-speaker">Paula Ferreira</div>
+              </div>
             </div>
           </div>
 
@@ -266,70 +334,84 @@
         <div class="minicursos-grid">
 
           <div class="minicurso-card reveal">
+            <img src="../assets/images/pessoasSeapo/indefinido.png" class="mc-foto" alt="Dr. Marcelo Fialho de Moura">
             <div class="mc-horario">13h00 &ndash; 17h00</div>
-            <h4>Controle de Insetos na Agricultura Orgânica</h4>
+            <h4>Controle de Insetos na Agricultura Org&acirc;nica</h4>
             <div class="mc-ministrante">Dr. Marcelo Fialho de Moura</div>
-            <div class="mc-sala">Sala 04 &ndash; Pavilhão II Agronomia</div>
+            <div class="mc-sala">Sala 04 &ndash; Pavilh&atilde;o II Agronomia</div>
           </div>
 
           <div class="minicurso-card reveal reveal-delay-1">
+            <img src="../assets/images/pessoasSeapo/priscila.jpeg" class="mc-foto" alt="Priscila Magalhães">
             <div class="mc-horario">13h00 &ndash; 17h00</div>
-            <h4>Fabricação e Uso de Biofertilizantes</h4>
-            <div class="mc-ministrante">Priscila Magalhães</div>
+            <h4>Fabrica&ccedil;&atilde;o e Uso de Biofertilizantes</h4>
+            <div class="mc-ministrante">Priscila Magalh&atilde;es</div>
           </div>
 
           <div class="minicurso-card reveal reveal-delay-2">
+            <img src="../assets/images/pessoasSeapo/lazaro.jpeg" class="mc-foto" alt="Lázaro Oliveira">
             <div class="mc-horario">13h00 &ndash; 17h00</div>
-            <h4>Fabricação e Uso de Extratos Vegetais na Adubação de Plantas</h4>
-            <div class="mc-ministrante">Lázaro Oliveira</div>
+            <h4>Fabrica&ccedil;&atilde;o e Uso de Extratos Vegetais na Aduba&ccedil;&atilde;o de Plantas</h4>
+            <div class="mc-ministrante">L&aacute;zaro Oliveira</div>
           </div>
 
           <div class="minicurso-card reveal">
+            <div class="mc-fotos-dupla">
+              <img src="../assets/images/pessoasSeapo/indefinido.png" class="mc-foto" alt="Dr. Bruno Henrique Crespo Porto">
+              <img src="../assets/images/pessoasSeapo/indefinido.png" class="mc-foto" alt="Pedro Teles">
+            </div>
             <div class="mc-horario">13h00 &ndash; 17h00</div>
-            <h4>Campanha Nacional dos Orgânicos</h4>
+            <h4>Campanha Nacional dos Org&acirc;nicos</h4>
             <div class="mc-ministrante">Dr. Bruno Henrique Crespo Porto</div>
-            <div class="mc-ministrante">Pedro Teles &mdash; Ministério da Agricultura</div>
+            <div class="mc-ministrante">Pedro Teles &mdash; Minist&eacute;rio da Agricultura</div>
           </div>
 
           <div class="minicurso-card reveal reveal-delay-1">
+            <img src="../assets/images/pessoasSeapo/enoc.jpeg" class="mc-foto" alt="MSc. Enok Donato">
             <div class="mc-horario">13h00 &ndash; 17h00</div>
-            <h4>Criação de Aves Orgânicas</h4>
-            <div class="mc-ministrante">MSc. Enok Donato &mdash; Mestre em Produção Orgânica</div>
+            <h4>Cria&ccedil;&atilde;o de Aves Org&acirc;nicas</h4>
+            <div class="mc-ministrante">MSc. Enok Donato &mdash; Mestre em Produ&ccedil;&atilde;o Org&acirc;nica</div>
           </div>
 
           <div class="minicurso-card reveal reveal-delay-2">
+            <img src="../assets/images/pessoasSeapo/joice.jpeg" class="mc-foto" alt="Dra. Joice Andrade Bonfim Castro">
             <div class="mc-horario">13h00 &ndash; 17h00</div>
-            <h4>Plantas Medicinais Orgânicas e Rentáveis</h4>
+            <h4>Plantas Medicinais Org&acirc;nicas e Rent&aacute;veis</h4>
             <div class="mc-ministrante">Dra. Joice Andrade Bonfim Castro</div>
           </div>
 
           <div class="minicurso-card reveal">
+            <img src="../assets/images/pessoasSeapo/marceloGomes.jpeg" class="mc-foto" alt="Marcelo Gomes">
             <div class="mc-horario">13h00 &ndash; 17h00</div>
-            <h4>PNAE e PAA para Produtos Orgânicos</h4>
+            <h4>PNAE e PAA para Produtos Org&acirc;nicos</h4>
             <div class="mc-ministrante">Marcelo Gomes</div>
           </div>
 
           <div class="minicurso-card reveal reveal-delay-1">
+            <img src="../assets/images/pessoasSeapo/elisRegina.jpeg" class="mc-foto" alt="Elis Regina">
             <div class="mc-horario">13h00 &ndash; 17h00</div>
-            <h4>Minhocultura Orgânica e Rentável</h4>
-            <div class="mc-ministrante">Elis Regina &mdash; Química e Agricultora Orgânica</div>
+            <h4>Minhocultura Org&acirc;nica e Rent&aacute;vel</h4>
+            <div class="mc-ministrante">Elis Regina &mdash; Qu&iacute;mica e Agricultora Org&acirc;nica</div>
           </div>
 
           <div class="minicurso-card reveal reveal-delay-2">
+            <img src="../assets/images/pessoasSeapo/indefinido.png" class="mc-foto" alt="Dra. Aureluci Alves Aquino">
             <div class="mc-horario">13h00 &ndash; 17h00</div>
-            <h4>Qualidade da Água para Irrigação e Higienização de Hortaliças Orgânicas</h4>
+            <h4>Qualidade da &Aacute;gua para Irriga&ccedil;&atilde;o e Higieniza&ccedil;&atilde;o de Hortali&ccedil;as Org&acirc;nicas</h4>
             <div class="mc-ministrante">Dra. Aureluci Alves Aquino</div>
           </div>
 
           <div class="minicurso-card reveal">
+            <img src="../assets/images/pessoasSeapo/rogeria.jpeg" class="mc-foto" alt="Rogeria Silva Sousa">
             <div class="mc-horario">13h00 &ndash; 17h00</div>
-            <h4>Cobertura do Solo para Sistemas Orgânicos</h4>
+            <h4>Cobertura do Solo para Sistemas Org&acirc;nicos</h4>
             <div class="mc-ministrante">Rogeria Silva Sousa</div>
           </div>
 
           <div class="minicurso-card reveal reveal-delay-1">
+            <img src="../assets/images/pessoasSeapo/indefinido.png" class="mc-foto" alt="Dra. Normane Mirele">
             <div class="mc-horario">13h00 &ndash; 17h00</div>
-            <h4>Saberes e Sabores do Sertão: Caracterização de PANCs Utilizadas na Alimentação Popular</h4>
+            <h4>Saberes e Sabores do Sert&atilde;o: Caracteriza&ccedil;&atilde;o de PANCs Utilizadas na Alimenta&ccedil;&atilde;o Popular</h4>
             <div class="mc-ministrante">Dra. Normane Mirele</div>
           </div>
 
@@ -354,6 +436,162 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <section class="xseapo-submissao" id="submissao" aria-label="Submiss&#227;o de Trabalhos Cient&#237;ficos">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-tag">&#128196; Trabalhos Cient&#237;ficos</div>
+        <h2 class="section-title">Submiss&#227;o de Trabalhos</h2>
+        <p class="section-desc">Compartilhe sua pesquisa em agroecologia e produ&#231;&#227;o org&#226;nica com a comunidade cient&#237;fica do X SEAPO.</p>
+      </div>
+
+      <div class="submissao-prazo-banner">
+        <div class="prazo-icon">&#9203;</div>
+        <div>
+          <div class="prazo-label">Prazo de submiss&#227;o</div>
+          <div class="prazo-data">20 de julho de 2026</div>
+          <div class="prazo-note">Baixe o template da sua modalidade, siga o tutorial e envie dentro do prazo.</div>
+        </div>
+      </div>
+
+      <div class="submissao-modalidades">
+        <div class="submissao-mod-card reveal">
+          <span class="sm-icon">&#128221;</span>
+          <h4>Resumo</h4>
+          <p>Apresenta&#231;&#227;o condensada da pesquisa. Utilize o <em>template de resumo</em> dispon&#237;vel no Drive para formata&#231;&#227;o correta.</p>
+        </div>
+        <div class="submissao-mod-card reveal reveal-delay-1">
+          <span class="sm-icon">&#128203;</span>
+          <h4>Relato de Experi&#234;ncia</h4>
+          <p>Compartilhe pr&#225;ticas e viv&#234;ncias no campo da agroecologia. Use o <em>template de relato</em> dispon&#237;vel no Drive.</p>
+        </div>
+        <div class="submissao-mod-card reveal reveal-delay-2">
+          <span class="sm-icon">&#128218;</span>
+          <h4>Artigo Cient&#237;fico</h4>
+          <p>Contribui&#231;&#227;o completa com resultados de pesquisa. Utilize o <em>template de artigo</em> dispon&#237;vel no Drive.</p>
+        </div>
+      </div>
+
+      <div class="submissao-ctas">
+        <a href="https://drive.google.com/drive/folders/1dssgPhYdo8rrXUWgNH3kmb9ffvEi1KkO?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-drive">&#128229; Baixar Templates</a>
+        <a href="https://drive.google.com/drive/folders/1dssgPhYdo8rrXUWgNH3kmb9ffvEi1KkO?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-drive-sec">&#9654;&#65039; Tutorial de Submiss&#227;o (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="xseapo-hospedagem" id="hospedagem" aria-label="Hot&#233;is em Guanambi">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-tag">&#127968; Hospedagem</div>
+        <h2 class="section-title">Hot&#233;is em Guanambi</h2>
+        <p class="section-desc">Sugest&#245;es de hospedagem em Guanambi para facilitar o planejamento dos participantes. As informa&#231;&#245;es e valores s&#227;o de responsabilidade de cada estabelecimento &mdash; recomendamos confirmar disponibilidade e pre&#231;os diretamente com os hot&#233;is antes de realizar a reserva. O X SEAPO n&#227;o possui v&#237;nculo com nenhum dos estabelecimentos listados.</p>
+      </div>
+      <div class="hoteis-grid">
+
+        <div class="hotel-card reveal">
+          <div class="hotel-nome">Hotel Portal Guanambi</div>
+          <div class="hotel-endereco">Av. Rogaciano Francisco de Moraes, 130 &mdash; S&#227;o Francisco, Guanambi&nbsp;&#8209;&nbsp;BA, 46430-000</div>
+          <a href="tel:+557734512673" class="hotel-tel">&#128222; (77) 3451-2673</a>
+          <div class="hotel-precos">
+            <div class="hotel-preco-item">
+              <div class="hotel-preco-tipo">Individual</div>
+              <div class="hotel-preco-valor">R$&nbsp;160</div>
+            </div>
+            <div class="hotel-preco-item">
+              <div class="hotel-preco-tipo">Duplo</div>
+              <div class="hotel-preco-valor">R$&nbsp;260</div>
+            </div>
+            <div class="hotel-preco-item">
+              <div class="hotel-preco-tipo">Triplo</div>
+              <div class="hotel-preco-valor">R$&nbsp;320</div>
+            </div>
+          </div>
+          <a href="tel:+557734512673" class="hotel-ligar">Ligar agora</a>
+        </div>
+
+        <div class="hotel-card reveal reveal-delay-1">
+          <div class="hotel-nome">O Neves Hotel</div>
+          <div class="hotel-endereco">Rua Est&#243;gio Costa, 425 &mdash; S&#227;o Francisco, Guanambi&nbsp;&#8209;&nbsp;BA, 46430-000</div>
+          <a href="tel:+557734513386" class="hotel-tel">&#128222; (77) 3451-3386</a>
+          <div class="hotel-precos">
+            <div class="hotel-preco-item">
+              <div class="hotel-preco-tipo">Individual</div>
+              <div class="hotel-preco-valor">R$&nbsp;283</div>
+            </div>
+            <div class="hotel-preco-item">
+              <div class="hotel-preco-tipo">Duplo</div>
+              <div class="hotel-preco-valor">R$&nbsp;365</div>
+            </div>
+            <div class="hotel-preco-item">
+              <div class="hotel-preco-tipo">Triplo</div>
+              <div class="hotel-preco-valor">R$&nbsp;365</div>
+            </div>
+          </div>
+          <a href="tel:+557734513386" class="hotel-ligar">Ligar agora</a>
+        </div>
+
+        <div class="hotel-card reveal reveal-delay-2">
+          <div class="hotel-nome">Mape Hotel</div>
+          <div class="hotel-endereco">Rua Joaquim Manoel, 130 &mdash; Centro, Guanambi&nbsp;&#8209;&nbsp;BA, 46430-000</div>
+          <a href="tel:+557734512771" class="hotel-tel">&#128222; (77) 3451-2771</a>
+          <div class="hotel-precos">
+            <div class="hotel-preco-item">
+              <div class="hotel-preco-tipo">Individual</div>
+              <div class="hotel-preco-valor">R$&nbsp;150</div>
+            </div>
+            <div class="hotel-preco-item">
+              <div class="hotel-preco-tipo">Duplo</div>
+              <div class="hotel-preco-valor">R$&nbsp;240</div>
+            </div>
+            <div class="hotel-preco-item">
+              <div class="hotel-preco-tipo">Triplo</div>
+              <div class="hotel-preco-valor">R$&nbsp;300</div>
+            </div>
+          </div>
+          <a href="tel:+557734512771" class="hotel-ligar">Ligar agora</a>
+        </div>
+
+        <div class="hotel-card reveal">
+          <div class="hotel-nome">Nico Palace Hotel</div>
+          <div class="hotel-endereco">Pra&#231;a Manoel Novaes, 30 &mdash; Centro, Guanambi&nbsp;&#8209;&nbsp;BA, 46430-000</div>
+          <div class="hotel-precos" style="margin-top:auto">
+            <div class="hotel-preco-item">
+              <div class="hotel-preco-tipo">Individual</div>
+              <div class="hotel-preco-valor">R$&nbsp;120</div>
+            </div>
+            <div class="hotel-preco-item">
+              <div class="hotel-preco-tipo">Duplo</div>
+              <div class="hotel-preco-valor">R$&nbsp;220</div>
+            </div>
+            <div class="hotel-preco-item">
+              <div class="hotel-preco-tipo">Triplo</div>
+              <div class="hotel-preco-valor">R$&nbsp;260</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hotel-card reveal reveal-delay-1">
+          <div class="hotel-nome">Hotel do B&eacute;o</div>
+          <div class="hotel-endereco">Av. Pref. Jos&eacute; Neves Teixeira, 80 &mdash; Guanambi&nbsp;&#8209;&nbsp;BA, 46430-000</div>
+          <div class="hotel-precos" style="margin-top:auto">
+            <div class="hotel-preco-item">
+              <div class="hotel-preco-tipo">Individual</div>
+              <div class="hotel-preco-valor">R$&nbsp;90</div>
+            </div>
+            <div class="hotel-preco-item">
+              <div class="hotel-preco-tipo">Duplo</div>
+              <div class="hotel-preco-valor">R$&nbsp;120</div>
+            </div>
+            <div class="hotel-preco-item">
+              <div class="hotel-preco-tipo">Triplo</div>
+              <div class="hotel-preco-valor">R$&nbsp;150</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -437,10 +675,10 @@
 </main>
 
 <footer role="contentinfo" id="site-footer"></footer>
-<script src="../assets/js/footer.js?v=202605130733"></script>
+<script src="../assets/js/footer.js?v=202605191551"></script>
 
 <div id="toast" style="position:fixed;bottom:24px;right:24px;background:var(--verde);color:white;padding:16px 24px;border-radius:12px;font-size:14px;font-weight:600;opacity:0;transform:translateY(20px);transition:all 0.3s;z-index:9999;max-width:300px;box-shadow:0 8px 24px rgba(0,0,0,.2);" role="alert" aria-live="polite"></div>
 
-<script src="../assets/js/main.js?v=202605130733"></script>
+<script src="../assets/js/main.js?v=202605191551"></script>
 </body>
 </html>
