@@ -1,17 +1,19 @@
 (function () {
+  var t = window.i18n ? window.i18n.t.bind(window.i18n) : function (k) { return k; };
+
   var inPages = window.location.pathname.indexOf('/pages/') !== -1;
   var base = inPages ? '../index.html' : '';
   var pagesBase = inPages ? '' : 'pages/';
   var currentFile = window.location.pathname.split('/').pop() || 'index.html';
 
   var items = [
-    { label: 'Sobre',                 href: base + '#sobre' },
-    { label: 'A\u00e7\u00f5es',       href: base + '#acoes' },
-    { label: 'Territ\u00f3rio',       href: base + '#territorio' },
-    { label: 'Conte\u00fados Educativos', href: pagesBase + 'conteudos-educativos.html', file: 'conteudos-educativos.html' },
-    { label: 'Certifica\u00e7\u00e3o',        href: pagesBase + 'certificacao.html', file: 'certificacao.html' },
-    { label: 'X SEAPO',               href: pagesBase + 'seapo.html', file: 'seapo.html' },
-    { label: 'Parceiros',             href: base + '#parceiros' },
+    { key: 'nav.sobre',        href: base + '#sobre' },
+    { key: 'nav.acoes',        href: base + '#acoes' },
+    { key: 'nav.territorio',   href: base + '#territorio' },
+    { key: 'nav.conteudos',    href: pagesBase + 'conteudos-educativos.html', file: 'conteudos-educativos.html' },
+    { key: 'nav.certificacao', href: pagesBase + 'certificacao.html',         file: 'certificacao.html' },
+    { key: 'nav.seapo',        href: pagesBase + 'seapo.html',                file: 'seapo.html' },
+    { key: 'nav.parceiros',    href: base + '#parceiros' },
   ];
 
   var ul = document.getElementById('nav-links');
@@ -23,7 +25,7 @@
     var isCurrent = item.file && item.file === currentFile;
     html += '<li role="none"><a href="' + item.href + '" role="menuitem"'
       + (isCurrent ? ' aria-current="page"' : '')
-      + '>' + item.label + '</a></li>';
+      + '>' + t(item.key) + '</a></li>';
   }
   ul.innerHTML = html;
 })();

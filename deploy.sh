@@ -8,10 +8,11 @@ MSG=${1:-"deploy $V"}
 echo "🔄 Atualizando versão do cache: v=$V"
 
 # Atualiza ?v= em todos os HTML (CSS e JS locais)
-for f in index.html pages/seapo.html pages/conteudos-educativos.html; do
+for f in index.html pages/seapo.html pages/conteudos-educativos.html pages/certificacao.html; do
   # Troca ?v=XXXXX existente ou adiciona ?v= novo
   sed -i '' -E \
     -e "s|(href=\"[^\"]+/style\.css)(\?v=[^\"]*)?\"|\1?v=$V\"|g" \
+    -e "s|(src=\"[^\"]+/i18n\.js)(\?v=[^\"]*)?\"|\1?v=$V\"|g" \
     -e "s|(src=\"[^\"]+/main\.js)(\?v=[^\"]*)?\"|\1?v=$V\"|g" \
     -e "s|(src=\"[^\"]+/nav\.js)(\?v=[^\"]*)?\"|\1?v=$V\"|g" \
     -e "s|(src=\"[^\"]+/footer\.js)(\?v=[^\"]*)?\"|\1?v=$V\"|g" \

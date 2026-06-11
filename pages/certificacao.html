@@ -14,10 +14,13 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Certificação Orgânica Participativa – Orgânico Inteligente. Entenda como funciona o processo de certificação pelo Sistema Participativo de Garantia (SPG) da Rede Povos da Mata.">
+  <meta name="description" content="Certificação Orgânica Participativa – Orgânico Inteligente. Entenda como funciona o processo de certificação pelo Sistema Participativo de Garantia (SPG) da Rede Povos da Mata." data-i18n-content="cert.meta_desc">
   <meta name="keywords" content="certificação orgânica, SPG, sistema participativo de garantia, produção orgânica, Guanambi, Bahia, Rede Povos da Mata, agricultura familiar">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://organicointeligente.com.br/pages/certificacao.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://organicointeligente.com.br/pages/certificacao.html">
+  <link rel="alternate" hreflang="en" href="https://organicointeligente.com.br/pages/certificacao.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://organicointeligente.com.br/pages/certificacao.html">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://organicointeligente.com.br/pages/certificacao.html">
   <meta property="og:site_name" content="Orgânico Inteligente">
@@ -27,7 +30,12 @@
   <meta property="og:image" content="https://organicointeligente.com.br/assets/images/slideshow/img0.jpeg">
   <title>Certificação Orgânica Participativa | Orgânico Inteligente</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css?v=202605111200">
+  <link rel="stylesheet" href="../assets/css/style.css?v=202606111820">
+  <style>
+    .nav-lang-toggle{background:none;border:1px solid rgba(74,124,47,.3);color:var(--texto-suave);font-family:'Space Mono',monospace;font-size:12px;padding:4px 10px;border-radius:8px;cursor:pointer;transition:.2s;display:flex;align-items:center;gap:2px;white-space:nowrap;flex-shrink:0;}
+    .nav-lang-toggle:hover{background:rgba(74,124,47,.1);color:var(--verde);}
+  </style>
+  <script src="../assets/js/i18n.js?v=202606111820"></script>
   <style>
     /* ===== HERO ===== */
     .cert-hero {
@@ -602,140 +610,147 @@
     }
   </style>
 </head>
-<body id="topo">
+<body id="topo" data-i18n-title="cert.page_title">
 
-<a href="#main-content" class="skip-link">Ir para o conteúdo principal</a>
+<a href="#main-content" class="skip-link" data-i18n="nav.skip">Ir para o conteúdo principal</a>
 
 <!-- Barra de acessibilidade -->
-<div class="acess-bar" role="toolbar" aria-label="Ferramentas de acessibilidade">
-  <span>Acessibilidade:</span>
-  <button class="acess-btn" onclick="toggleContraste()" aria-label="Alternar alto contraste" title="Alto Contraste">&#127763; Contraste</button>
-  <button class="acess-btn" onclick="aumentarFonte()" aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
-  <button class="acess-btn" onclick="resetarFonte()" aria-label="Fonte padrão" title="Fonte padrão">A</button>
-  <button class="acess-btn" onclick="diminuirFonte()" aria-label="Diminuir fonte" title="Diminuir fonte">A-</button>
-  <button class="acess-btn" onclick="toggleLeituraSimples()" aria-label="Leitura simplificada" title="Leitura simples">&#128214; Leitura f&#225;cil</button>
+<div class="acess-bar" role="toolbar" data-i18n-attr="aria-label:acess.bar_aria" aria-label="Ferramentas de acessibilidade">
+  <span data-i18n="acess.label">Acessibilidade:</span>
+  <button class="acess-btn" onclick="toggleContraste()" data-i18n-attr="aria-label:acess.contraste_aria;title:acess.contraste_title" aria-label="Alternar alto contraste" title="Alto Contraste" data-i18n="acess.contraste">&#127763; Contraste</button>
+  <button class="acess-btn" onclick="aumentarFonte()" data-i18n-attr="aria-label:acess.aumentar_aria;title:acess.aumentar_title" aria-label="Aumentar fonte" title="Aumentar fonte" data-i18n="acess.aumentar">A+</button>
+  <button class="acess-btn" onclick="resetarFonte()" data-i18n-attr="aria-label:acess.resetar_aria;title:acess.resetar_title" aria-label="Fonte padrão" title="Fonte padrão" data-i18n="acess.resetar">A</button>
+  <button class="acess-btn" onclick="diminuirFonte()" data-i18n-attr="aria-label:acess.diminuir_aria;title:acess.diminuir_title" aria-label="Diminuir fonte" title="Diminuir fonte" data-i18n="acess.diminuir">A-</button>
+  <button class="acess-btn" onclick="toggleLeituraSimples()" data-i18n-attr="aria-label:acess.leitura_aria;title:acess.leitura_title" aria-label="Leitura simplificada" title="Leitura simples" data-i18n="acess.leitura">&#128214; Leitura f&#225;cil</button>
 </div>
 
 <!-- Navegação -->
-<nav role="navigation" aria-label="Menu principal">
+<nav role="navigation" data-i18n-attr="aria-label:nav.aria_main" aria-label="Menu principal">
   <div class="nav-inner">
-    <a href="../index.html#topo" class="nav-logo" aria-label="Página inicial – Orgânico Inteligente">
+    <a href="../index.html#topo" class="nav-logo" data-i18n-attr="aria-label:nav.logo_aria" aria-label="Página inicial – Orgânico Inteligente">
       <img src="../assets/images/logo/logo_icon.png" alt="Logo Orgânico Inteligente" class="nav-logo-img">
       <div class="nav-logo-text">
         <span class="top">Orgânico Inteligente</span>
-        <span class="bottom">Cultivando Saúde no Sertão Produtivo</span>
+        <span class="bottom" data-i18n="nav.tagline">Cultivando Saúde no Sertão Produtivo</span>
       </div>
     </a>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Abrir menu" aria-expanded="false" id="hamburger">
+    <button class="hamburger" onclick="toggleMenu()" data-i18n-attr="aria-label:nav.hamburger_aria" aria-label="Abrir menu" aria-expanded="false" id="hamburger">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="nav-links" role="menubar"></ul>
+    <button class="nav-lang-toggle" id="lang-toggle" onclick="toggleLang()"
+            aria-label="Mudar para inglês"
+            data-i18n-attr="aria-label:lang.toggle_aria">
+      <span class="lang-pt" aria-hidden="true">PT</span>
+      <span class="lang-sep" aria-hidden="true"> | </span>
+      <span class="lang-en" aria-hidden="true">EN</span>
+    </button>
   </div>
 </nav>
-<script src="../assets/js/nav.js?v=202605111200"></script>
+<script src="../assets/js/nav.js?v=202606111820"></script>
 
 <main id="main-content">
 
   <!-- ===== HERO ===== -->
-  <section class="cert-hero" aria-label="Certificação Orgânica Participativa">
+  <section class="cert-hero" data-i18n-attr="aria-label:cert.hero_aria" aria-label="Certificação Orgânica Participativa">
     <div class="cert-hero-bg"></div>
     <div class="cert-hero-inner">
       <h1>Certificação <em>Orgânica</em></h1>
-      <p class="cert-hero-sub">Sistema Participativo de Garantia</p>
-      <p class="cert-hero-desc">
+      <p class="cert-hero-sub" data-i18n="cert.hero_sub">Sistema Participativo de Garantia</p>
+      <p class="cert-hero-desc" data-i18n="cert.hero_desc">
         Entenda como funciona o processo de certificação orgânica do Orgânico Inteligente, integrado à Rede de Agroecologia Povos da Mata, e como você pode fazer parte dessa rede que transforma a produção no Sertão.
       </p>
       <div class="cert-cta-group">
-        <a href="#etapas" class="btn-primario">Ver as etapas</a>
-        <a href="https://wa.me/5577999501979" target="_blank" rel="noopener noreferrer" class="btn-secundario">Falar pelo WhatsApp</a>
+        <a href="#etapas" class="btn-primario" data-i18n="cert.cta_etapas">Ver as etapas</a>
+        <a href="https://wa.me/5577999501979" target="_blank" rel="noopener noreferrer" class="btn-secundario" data-i18n="cert.cta_whatsapp">Falar pelo WhatsApp</a>
       </div>
     </div>
   </section>
 
   <!-- ===== MÉTRICAS ===== -->
-  <div class="cert-metricas" aria-label="Números da certificação">
+  <div class="cert-metricas" data-i18n-attr="aria-label:cert.metricas_aria" aria-label="Números da certificação">
     <div class="cert-metricas-grid">
       <div class="cert-metrica">
         <strong>44</strong>
-        <span>Agricultores Certificados</span>
+        <span data-i18n="cert.metric1_label">Agricultores Certificados</span>
       </div>
       <div class="cert-metrica">
         <strong>8</strong>
-        <span>Etapas do Processo</span>
+        <span data-i18n="cert.metric2_label">Etapas do Processo</span>
       </div>
       <div class="cert-metrica">
         <strong>1 ano</strong>
-        <span>Validade do Certificado</span>
+        <span data-i18n="cert.metric3_label">Validade do Certificado</span>
       </div>
       <div class="cert-metrica">
         <strong>6m–2a</strong>
-        <span>Tempo de Transição</span>
+        <span data-i18n="cert.metric4_label">Tempo de Transição</span>
       </div>
     </div>
   </div>
 
   <!-- ===== INTRO ===== -->
-  <section class="cert-intro" aria-label="O que é a certificação orgânica participativa">
+  <section class="cert-intro" data-i18n-attr="aria-label:cert.intro_aria" aria-label="O que é a certificação orgânica participativa">
     <div class="cert-intro-inner">
       <div class="cert-intro-texto reveal">
-        <div class="secao-tag">🌱 O que é</div>
-        <h2>Certificação Orgânica Participativa</h2>
-        <p>
+        <div class="secao-tag" data-i18n="cert.intro_tag">🌱 O que é</div>
+        <h2 data-i18n="cert.intro_titulo">Certificação Orgânica Participativa</h2>
+        <p data-i18n="cert.intro_p1">
           O Sistema Participativo de Garantia (SPG) é uma forma democrática e comunitária de certificar a produção orgânica. Diferente da certificação por auditoria, no SPG são os próprios agricultores, consumidores e técnicos que se organizam em grupos e núcleos para garantir, coletivamente, a conformidade com os princípios da agricultura orgânica.
         </p>
-        <p>
+        <p data-i18n="cert.intro_p2">
           O Orgânico Inteligente integra a <strong>Rede de Agroecologia Povos da Mata</strong> por meio do <strong>Núcleo Sertão Feliz</strong>, que reúne grupos de agricultores familiares do Sertão Produtivo e do Sudoeste Baiano, promovendo a certificação com base na confiança mútua, na transparência e no compromisso com a agroecologia.
         </p>
-        <p>
+        <p data-i18n="cert.intro_p3">
           Todos os produtores passam pelo processo de <strong>transição ou conversão</strong> agroecológica, dependendo da realidade de cada unidade produtiva.
         </p>
       </div>
       <div class="cert-destaque-box reveal reveal-delay-1">
         <span class="icon-grande">🏅</span>
-        <h3>Por que se certificar?</h3>
-        <p>
+        <h3 data-i18n="cert.destaque_titulo">Por que se certificar?</h3>
+        <p data-i18n="cert.destaque_desc">
           A certificação orgânica garante acesso a mercados diferenciados, preços melhores pelos produtos, fortalecimento da identidade agroecológica e acesso a programas governamentais como o PAA e o PNAE, além de consolidar a confiança dos consumidores.
         </p>
         <div class="cert-tags">
-          <span class="cert-tag">Melhores preços</span>
-          <span class="cert-tag">Acesso ao PAA</span>
-          <span class="cert-tag">Acesso ao PNAE</span>
-          <span class="cert-tag">Identidade orgânica</span>
-          <span class="cert-tag">Feiras especializadas</span>
+          <span class="cert-tag" data-i18n="cert.tag_precos">Melhores preços</span>
+          <span class="cert-tag" data-i18n="cert.tag_paa">Acesso ao PAA</span>
+          <span class="cert-tag" data-i18n="cert.tag_pnae">Acesso ao PNAE</span>
+          <span class="cert-tag" data-i18n="cert.tag_identidade">Identidade orgânica</span>
+          <span class="cert-tag" data-i18n="cert.tag_feiras">Feiras especializadas</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ===== ESTRUTURA ===== -->
-  <section class="cert-estrutura" aria-label="Estrutura do sistema participativo">
+  <section class="cert-estrutura" data-i18n-attr="aria-label:cert.estrutura_aria" aria-label="Estrutura do sistema participativo">
     <div class="cert-estrutura-inner">
       <div class="section-header">
-        <div class="secao-tag">🏗️ Como se organiza</div>
-        <h2 class="secao-titulo">Estrutura do SPG</h2>
-        <p class="secao-desc">O sistema é organizado em três níveis que funcionam de forma colaborativa e democrática.</p>
+        <div class="secao-tag" data-i18n="cert.estrutura_tag">🏗️ Como se organiza</div>
+        <h2 class="secao-titulo" data-i18n="cert.estrutura_titulo">Estrutura do SPG</h2>
+        <p class="secao-desc" data-i18n="cert.estrutura_desc">O sistema é organizado em três níveis que funcionam de forma colaborativa e democrática.</p>
       </div>
       <div class="estrutura-grid">
 
         <div class="estrutura-card reveal">
           <span class="ecard-icon">👨‍👩‍👧‍👦</span>
-          <h3>Grupo</h3>
-          <p>Formado por 3 a 12 agricultores que se conhecem, confiam uns nos outros e se visitam mutuamente para verificar as boas práticas agroecológicas.</p>
-          <span class="ecard-num">3 a 12 agricultores</span>
+          <h3 data-i18n="cert.grupo_titulo">Grupo</h3>
+          <p data-i18n="cert.grupo_desc">Formado por 3 a 12 agricultores que se conhecem, confiam uns nos outros e se visitam mutuamente para verificar as boas práticas agroecológicas.</p>
+          <span class="ecard-num" data-i18n="cert.grupo_num">3 a 12 agricultores</span>
         </div>
 
         <div class="estrutura-card reveal reveal-delay-1">
           <span class="ecard-icon">🌐</span>
-          <h3>Núcleo</h3>
-          <p>Composto por no mínimo 3 grupos. O Núcleo <strong>Sertão Feliz</strong> coordena os grupos do Sertão Produtivo e do Sudoeste Baiano.</p>
-          <span class="ecard-num">Mín. 3 grupos</span>
+          <h3 data-i18n="cert.nucleo_titulo">Núcleo</h3>
+          <p data-i18n="cert.nucleo_desc">Composto por no mínimo 3 grupos. O Núcleo <strong>Sertão Feliz</strong> coordena os grupos do Sertão Produtivo e do Sudoeste Baiano.</p>
+          <span class="ecard-num" data-i18n="cert.nucleo_num">Mín. 3 grupos</span>
         </div>
 
         <div class="estrutura-card reveal reveal-delay-2">
           <span class="ecard-icon">🕸️</span>
-          <h3>Rede</h3>
-          <p>A <strong>Rede Povos da Mata</strong> reúne todos os núcleos, emite os certificados e garante a integração entre os agricultores de toda a Bahia.</p>
-          <span class="ecard-num">Rede estadual</span>
+          <h3 data-i18n="cert.rede_titulo">Rede</h3>
+          <p data-i18n="cert.rede_desc">A <strong>Rede Povos da Mata</strong> reúne todos os núcleos, emite os certificados e garante a integração entre os agricultores de toda a Bahia.</p>
+          <span class="ecard-num" data-i18n="cert.rede_num">Rede estadual</span>
         </div>
 
       </div>
@@ -743,23 +758,23 @@
   </section>
 
   <!-- ===== AVISO TEMPO ===== -->
-  <div class="cert-aviso" aria-label="Atenção: tempo de certificação">
+  <div class="cert-aviso" data-i18n-attr="aria-label:cert.aviso_aria" aria-label="Atenção: tempo de certificação">
     <div class="cert-aviso-inner">
       <span class="aviso-icon">⏳</span>
       <div class="cert-aviso-texto">
-        <strong>O processo completo pode levar de 6 meses a 2 anos</strong>
-        <span>O tempo varia conforme o histórico de uso de insumos convencionais e a realidade de cada unidade produtiva. Todos passam por transição ou conversão agroecológica.</span>
+        <strong data-i18n="cert.aviso_titulo">O processo completo pode levar de 6 meses a 2 anos</strong>
+        <span data-i18n="cert.aviso_texto">O tempo varia conforme o histórico de uso de insumos convencionais e a realidade de cada unidade produtiva. Todos passam por transição ou conversão agroecológica.</span>
       </div>
     </div>
   </div>
 
   <!-- ===== ETAPAS ===== -->
-  <section class="cert-etapas" id="etapas" aria-label="Etapas do processo de certificação">
+  <section class="cert-etapas" id="etapas" data-i18n-attr="aria-label:cert.etapas_aria" aria-label="Etapas do processo de certificação">
     <div class="cert-etapas-inner">
       <div class="section-header" style="text-align:center; margin-bottom:0;">
-        <div class="secao-tag">📋 Passo a passo</div>
-        <h2 class="secao-titulo">As 8 Etapas da Certificação</h2>
-        <p class="secao-desc" style="max-width:580px;margin:0 auto;">
+        <div class="secao-tag" data-i18n="cert.etapas_tag">📋 Passo a passo</div>
+        <h2 class="secao-titulo" data-i18n="cert.etapas_titulo">As 8 Etapas da Certificação</h2>
+        <p class="secao-desc" style="max-width:580px;margin:0 auto;" data-i18n="cert.etapas_desc">
           Desde o primeiro contato até a emissão do certificado, veja o caminho completo para se tornar um produtor orgânico certificado.
         </p>
       </div>
@@ -770,8 +785,8 @@
         <div class="etapa reveal" role="listitem">
           <div class="etapa-num verde">1</div>
           <div class="etapa-corpo">
-            <h3>Entre em contato com o Núcleo Sertão Feliz</h3>
-            <p>O primeiro passo é entrar em contato pelo número disponível neste site para iniciar a conversa sobre sua inclusão no processo.</p>
+            <h3 data-i18n="cert.etapa1_titulo">Entre em contato com o Núcleo Sertão Feliz</h3>
+            <p data-i18n="cert.etapa1_desc">O primeiro passo é entrar em contato pelo número disponível neste site para iniciar a conversa sobre sua inclusão no processo.</p>
           </div>
         </div>
 
@@ -779,8 +794,8 @@
         <div class="etapa reveal" role="listitem">
           <div class="etapa-num verde">2</div>
           <div class="etapa-corpo">
-            <h3>Indicação e visita do Grupo mais próximo</h3>
-            <p>O Núcleo vai indicar o Grupo de agricultores mais próximo a você. Esse Grupo organizará um comitê para visitar a sua unidade produtiva, conhecer a propriedade e apresentar as informações sobre o funcionamento e a documentação necessária para o cadastro.</p>
+            <h3 data-i18n="cert.etapa2_titulo">Indicação e visita do Grupo mais próximo</h3>
+            <p data-i18n="cert.etapa2_desc">O Núcleo vai indicar o Grupo de agricultores mais próximo a você. Esse Grupo organizará um comitê para visitar a sua unidade produtiva, conhecer a propriedade e apresentar as informações sobre o funcionamento e a documentação necessária para o cadastro.</p>
           </div>
         </div>
 
@@ -788,8 +803,8 @@
         <div class="etapa reveal" role="listitem">
           <div class="etapa-num verde">3</div>
           <div class="etapa-corpo">
-            <h3>Aprovação pelo Grupo e Adesão</h3>
-            <p>Sua aprovação ocorre com a aceitação dos integrantes do Grupo, após conhecerem a família e a unidade produtiva. Finalmente, você é incluído na <strong>Ata de Adesão do Grupo</strong>.</p>
+            <h3 data-i18n="cert.etapa3_titulo">Aprovação pelo Grupo e Adesão</h3>
+            <p data-i18n="cert.etapa3_desc">Sua aprovação ocorre com a aceitação dos integrantes do Grupo, após conhecerem a família e a unidade produtiva. Finalmente, você é incluído na <strong>Ata de Adesão do Grupo</strong>.</p>
           </div>
         </div>
 
@@ -797,12 +812,12 @@
         <div class="etapa reveal" role="listitem">
           <div class="etapa-num dourado">4</div>
           <div class="etapa-corpo">
-            <h3>Preenchimento da documentação obrigatória</h3>
-            <p>Após ingressar no Grupo, você deverá preencher os seguintes documentos:</p>
+            <h3 data-i18n="cert.etapa4_titulo">Preenchimento da documentação obrigatória</h3>
+            <p data-i18n="cert.etapa4_desc">Após ingressar no Grupo, você deverá preencher os seguintes documentos:</p>
             <ul class="docs-lista">
-              <li>Cadastro e Termo de Responsabilidade</li>
-              <li>Plano de Manejo da Unidade Produtiva</li>
-              <li>Caderno de Campo</li>
+              <li data-i18n="cert.doc1">Cadastro e Termo de Responsabilidade</li>
+              <li data-i18n="cert.doc2">Plano de Manejo da Unidade Produtiva</li>
+              <li data-i18n="cert.doc3">Caderno de Campo</li>
             </ul>
           </div>
         </div>
@@ -811,8 +826,8 @@
         <div class="etapa reveal" role="listitem">
           <div class="etapa-num verde">5</div>
           <div class="etapa-corpo">
-            <h3>Visitas periódicas entre os membros do Grupo</h3>
-            <p>Periodicamente, todas as unidades produtivas que compõem o Grupo deverão ser visitadas com o preenchimento do <strong>Roteiro de Visitas</strong>, com todos os membros presentes.</p>
+            <h3 data-i18n="cert.etapa5_titulo">Visitas periódicas entre os membros do Grupo</h3>
+            <p data-i18n="cert.etapa5_desc">Periodicamente, todas as unidades produtivas que compõem o Grupo deverão ser visitadas com o preenchimento do <strong>Roteiro de Visitas</strong>, com todos os membros presentes.</p>
           </div>
         </div>
 
@@ -820,8 +835,8 @@
         <div class="etapa reveal" role="listitem">
           <div class="etapa-num dourado">6</div>
           <div class="etapa-corpo">
-            <h3>Olhar Externo e Comitê de Verificação</h3>
-            <p>Quando todas as unidades do Grupo forem consideradas aptas pelos seus integrantes, o coordenador encaminhará a solicitação de <strong>Olhar Externo</strong> ao Núcleo. O Núcleo organizará o <strong>Comitê de Verificação</strong> para visitar uma amostragem das unidades produtivas, avaliando documentações e Roteiros de Visitas realizados no ano.</p>
+            <h3 data-i18n="cert.etapa6_titulo">Olhar Externo e Comitê de Verificação</h3>
+            <p data-i18n="cert.etapa6_desc">Quando todas as unidades do Grupo forem consideradas aptas pelos seus integrantes, o coordenador encaminhará a solicitação de <strong>Olhar Externo</strong> ao Núcleo. O Núcleo organizará o <strong>Comitê de Verificação</strong> para visitar uma amostragem das unidades produtivas, avaliando documentações e Roteiros de Visitas realizados no ano.</p>
           </div>
         </div>
 
@@ -829,8 +844,8 @@
         <div class="etapa reveal" role="listitem">
           <div class="etapa-num verde">7</div>
           <div class="etapa-corpo">
-            <h3>Emissão do Certificado de Conformidade Orgânica</h3>
-            <p>Após aprovação pelo Comitê de Verificação, é emitido o <strong>Certificado de Conformidade Orgânica</strong>, válido por um ano. Durante esse período, serão realizadas visitas periódicas pelos Grupos para acompanhar os processos e trocar informações e conhecimentos.</p>
+            <h3 data-i18n="cert.etapa7_titulo">Emissão do Certificado de Conformidade Orgânica</h3>
+            <p data-i18n="cert.etapa7_desc">Após aprovação pelo Comitê de Verificação, é emitido o <strong>Certificado de Conformidade Orgânica</strong>, válido por um ano. Durante esse período, serão realizadas visitas periódicas pelos Grupos para acompanhar os processos e trocar informações e conhecimentos.</p>
           </div>
         </div>
 
@@ -838,8 +853,8 @@
         <div class="etapa reveal" role="listitem">
           <div class="etapa-num terra">8</div>
           <div class="etapa-corpo alerta">
-            <h3>Caso não seja aprovado</h3>
-            <p>Não havendo aprovação pelo Comitê de Verificação, o produtor não recebe o Certificado e são estabelecidos <strong>prazos para as adequações necessárias</strong>. O produtor pode adaptar sua produção às práticas e critérios exigidos e solicitar novo Olhar Externo no ciclo seguinte.</p>
+            <h3 data-i18n="cert.etapa8_titulo">Caso não seja aprovado</h3>
+            <p data-i18n="cert.etapa8_desc">Não havendo aprovação pelo Comitê de Verificação, o produtor não recebe o Certificado e são estabelecidos <strong>prazos para as adequações necessárias</strong>. O produtor pode adaptar sua produção às práticas e critérios exigidos e solicitar novo Olhar Externo no ciclo seguinte.</p>
           </div>
         </div>
 
@@ -848,28 +863,28 @@
   </section>
 
   <!-- ===== COMO ENCONTRAR PRODUTORES ORGÂNICOS ===== -->
-  <section class="cert-registro" aria-label="Como encontrar produtores orgânicos certificados">
+  <section class="cert-registro" data-i18n-attr="aria-label:cert.reg_aria" aria-label="Como encontrar produtores orgânicos certificados">
     <div class="cert-registro-inner">
-      <div class="secao-tag">🔍 Consulta pública</div>
-      <h2 class="secao-titulo" style="margin-bottom:16px;">Quais são os agricultores certificados?</h2>
-      <p>
+      <div class="secao-tag" data-i18n="cert.reg_tag">🔍 Consulta pública</div>
+      <h2 class="secao-titulo" style="margin-bottom:16px;" data-i18n="cert.reg_titulo">Quais são os agricultores certificados?</h2>
+      <p data-i18n="cert.reg_p">
         Para encontrar qualquer produtor orgânico certificado no Brasil, o Ministério da Agricultura disponibiliza o <strong>Cadastro Nacional de Produtores Orgânicos (CNPO)</strong>. Basta acessar o painel abaixo, escolher o estado e o município desejado.
       </p>
       <a href="https://mapa-indicadores.agricultura.gov.br/publico/extensions/CNPO_Painel_de_Indicadores/CNPO_Painel_de_Indicadores.html"
          target="_blank" rel="noopener noreferrer" class="cert-registro-link">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        Consultar Cadastro Nacional (CNPO)
+        <span data-i18n="cert.reg_link">Consultar Cadastro Nacional (CNPO)</span>
       </a>
     </div>
   </section>
 
   <!-- ===== AGRICULTORES CERTIFICADOS ===== -->
-  <section class="cert-agricultores" id="agricultores" aria-label="Agricultores certificados pelo programa">
+  <section class="cert-agricultores" id="agricultores" data-i18n-attr="aria-label:cert.agric_aria" aria-label="Agricultores certificados pelo programa">
     <div class="cert-agricultores-inner">
       <div class="section-header" style="text-align:center;margin-bottom:0;">
-        <div class="secao-tag">🌾 Nossos certificados</div>
-        <h2 class="secao-titulo">Agricultores certificados pelo programa</h2>
-        <p class="secao-desc" style="max-width:600px;margin:0 auto;">Conheça as famílias e produtores que conquistaram a certificação orgânica pelo Orgânico Inteligente e pela Rede Povos da Mata.</p>
+        <div class="secao-tag" data-i18n="cert.agric_tag">🌾 Nossos certificados</div>
+        <h2 class="secao-titulo" data-i18n="cert.agric_titulo">Agricultores certificados pelo programa</h2>
+        <p class="secao-desc" style="max-width:600px;margin:0 auto;" data-i18n="cert.agric_desc">Conheça as famílias e produtores que conquistaram a certificação orgânica pelo Orgânico Inteligente e pela Rede Povos da Mata.</p>
       </div>
 
       <div class="cert-agricultores-grid">
@@ -1098,12 +1113,12 @@
   </section>
 
   <!-- ===== CTA CONTATO ===== -->
-  <section class="cert-contato" aria-label="Entre em contato para iniciar a certificação">
-    <h2>Pronto para começar sua jornada orgânica?</h2>
-    <p>Entre em contato com o Núcleo Sertão Feliz pelo WhatsApp ou Instagram e dê o primeiro passo rumo à certificação orgânica participativa.</p>
+  <section class="cert-contato" data-i18n-attr="aria-label:cert.cta_aria" aria-label="Entre em contato para iniciar a certificação">
+    <h2 data-i18n="cert.cta_titulo">Pronto para começar sua jornada orgânica?</h2>
+    <p data-i18n="cert.cta_desc">Entre em contato com o Núcleo Sertão Feliz pelo WhatsApp ou Instagram e dê o primeiro passo rumo à certificação orgânica participativa.</p>
     <div class="cert-cta-group">
-      <a href="https://wa.me/5577999501979" target="_blank" rel="noopener noreferrer" class="btn-primario">📱 Falar pelo WhatsApp</a>
-      <a href="https://instagram.com/organicointeligente" target="_blank" rel="noopener noreferrer" class="btn-secundario">📷 Instagram</a>
+      <a href="https://wa.me/5577999501979" target="_blank" rel="noopener noreferrer" class="btn-primario" data-i18n="cert.cta_btn1">📱 Falar pelo WhatsApp</a>
+      <a href="https://instagram.com/organicointeligente" target="_blank" rel="noopener noreferrer" class="btn-secundario" data-i18n="cert.cta_btn2">📷 Instagram</a>
     </div>
   </section>
 
@@ -1111,11 +1126,11 @@
 
 <!-- Rodapé dinâmico -->
 <footer id="site-footer" role="contentinfo"></footer>
-<script src="../assets/js/footer.js?v=202605122028"></script>
+<script src="../assets/js/footer.js?v=202606111820"></script>
 
 <div id="toast" style="position:fixed; bottom:24px; right:24px; background:var(--verde); color:white; padding:16px 24px; border-radius:12px; font-size:14px; font-weight:600; opacity:0; transform:translateY(20px); transition:all 0.3s; z-index:9999; max-width:300px; box-shadow:0 8px 24px rgba(0,0,0,0.2);" role="alert" aria-live="polite"></div>
 
-<script src="../assets/js/main.js?v=202605122028"></script>
+<script src="../assets/js/main.js?v=202606111820"></script>
 
 </body>
 </html>

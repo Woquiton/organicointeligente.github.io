@@ -12,7 +12,27 @@
     btn.setAttribute('aria-expanded', open);
   }
 
+  // === Alternância de idioma ===
+  function toggleLang() {
+    var current = '';
+    try { current = localStorage.getItem('oi-lang') || 'pt'; } catch(e) { current = 'pt'; }
+    try { localStorage.setItem('oi-lang', current === 'pt' ? 'en' : 'pt'); } catch(e) {}
+    location.reload();
+  }
+
+  // Destacar idioma ativo no botão
+  (function () {
+    var lang = 'pt';
+    try { lang = localStorage.getItem('oi-lang') || 'pt'; } catch(e) {}
+    var btn = document.getElementById('lang-toggle');
+    if (!btn) return;
+    var active = btn.querySelector('.lang-' + lang);
+    if (active) active.style.cssText = 'font-weight:700;color:var(--verde)';
+  })();
+
   // === Acessibilidade ===
+  var t = window.i18n ? window.i18n.t.bind(window.i18n) : function (k) { return k; };
+
   let fonteAtual = parseInt(localStorage.getItem('acess-fonte') || '100', 10);
   if (fonteAtual !== 100) document.body.style.zoom = fonteAtual / 100;
   if (localStorage.getItem('acess-contraste') === '1') document.body.classList.add('alto-contraste');
@@ -22,30 +42,30 @@
     fonteAtual = Math.min(fonteAtual + 10, 140);
     document.body.style.zoom = fonteAtual / 100;
     localStorage.setItem('acess-fonte', fonteAtual);
-    showToast('Fonte aumentada para ' + fonteAtual + '%');
+    showToast(t('toast.font_increased', { size: fonteAtual }));
   }
   function diminuirFonte() {
     fonteAtual = Math.max(fonteAtual - 10, 80);
     document.body.style.zoom = fonteAtual / 100;
     localStorage.setItem('acess-fonte', fonteAtual);
-    showToast('Fonte reduzida para ' + fonteAtual + '%');
+    showToast(t('toast.font_decreased', { size: fonteAtual }));
   }
   function resetarFonte() {
     fonteAtual = 100;
     document.body.style.zoom = 1;
     localStorage.setItem('acess-fonte', fonteAtual);
-    showToast('Fonte redefinida para o padrão');
+    showToast(t('toast.font_reset'));
   }
   function toggleContraste() {
     document.body.classList.toggle('alto-contraste');
     const on = document.body.classList.contains('alto-contraste');
     localStorage.setItem('acess-contraste', on ? '1' : '0');
-    showToast(on ? 'Alto contraste ativado' : 'Contraste normal');
+    showToast(on ? t('toast.contrast_on') : t('toast.contrast_off'));
   }
   function toggleLeituraSimples() {
     const on = document.body.classList.toggle('leitura-simples');
     localStorage.setItem('acess-leitura', on ? '1' : '0');
-    showToast(on ? 'Modo leitura fácil ativado' : 'Modo normal');
+    showToast(on ? t('toast.reading_on') : t('toast.reading_off'));
   }
 
   // === Toast ===
@@ -63,10 +83,10 @@
     const municipio = document.getElementById('municipio').value;
     const perfil = document.getElementById('perfil').value;
     if (!nome || !municipio || !perfil) {
-      showToast('⚠️ Preencha os campos obrigatórios');
+      showToast(t('form.required'));
       return;
     }
-    showToast('✅ Cadastro realizado! Entraremos em contato em breve.');
+    showToast(t('form.register_ok'));
     document.getElementById('nome').value = '';
     document.getElementById('municipio').value = '';
     document.getElementById('perfil').value = '';
@@ -76,7 +96,7 @@
   // === Form contato ===
   function enviarMensagem(e) {
     e.preventDefault();
-    showToast('✅ Mensagem enviada! Responderemos em breve.');
+    showToast(t('form.contact_ok'));
     e.target.reset();
   }
 
