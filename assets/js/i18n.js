@@ -661,7 +661,7 @@
       'index.sobre_aria':      'About Organic Intelligence',
       'index.sobre_tag':       '🏛️ Institutional',
       'index.sobre_titulo':    'Connecting the Federal Institute, the Field, and the Community',
-      'index.sobre_p1':        'The <strong>Organic Intelligence</strong> program is a teaching, research, and extension initiative aimed at strengthening organic and agroecological agriculture in the Bahian semi-arid region. The program works directly in the Productive Sertão (Brazil's semi-arid Northeast) territory of Bahia, in the Southwest Bahia Identity Territory, with emphasis on the municipality of Guajeru, and also in the Velho Chico Territory, especially in Igaporã. These regions are characterized by the strong presence of family farming, irregular rainfall, the resilience of the sertanejo people, and rich cultural and environmental heritage.',
+      'index.sobre_p1':        'The <strong>Organic Intelligence</strong> program is a teaching, research, and extension initiative aimed at strengthening organic and agroecological agriculture in the Bahian semi-arid region. The program works directly in the Productive Sertão (Brazil\'s semi-arid Northeast) territory of Bahia, in the Southwest Bahia Identity Territory, with emphasis on the municipality of Guajeru, and also in the Velho Chico Territory, especially in Igaporã. These regions are characterized by the strong presence of family farming, irregular rainfall, the resilience of the sertanejo people, and rich cultural and environmental heritage.',
       'index.sobre_p2':        'The program works alongside family farmers, promoting the transition from conventional farming to sustainable agroecological systems through to the achievement of organic certification. Activities include technical assistance, training, participatory certification, development of low-cost technologies, applied research, and support for access to institutional markets and government programs such as the Food Acquisition Program (PAA) and the National School Feeding Program (PNAE).',
       'index.sobre_p3':        'The Organic Intelligence methodology begins from the real needs faced by farmers, seeking practical and scientifically grounded solutions that make production systems more sustainable, resilient, and economically viable. The program also encourages the appreciation of traditional knowledge and regional biodiversity, strengthening the autonomy of farming families.',
       'index.sobre_p4':        'Furthermore, Organic Intelligence integrates students, teachers, researchers, extensionists, and rural communities in a collaborative knowledge-building network. This interaction promotes academic training, innovation in the field, and tangible impacts on people\'s quality of life, the strengthening of family farming, and the conservation of the environment in the Bahian semi-arid region.',
@@ -1120,19 +1120,26 @@
 
   /* -------------------------------------------------------
      DETECÇÃO DE IDIOMA
+     Prioridade: localStorage (preferência do toggle) > param URL > padrão PT
   ------------------------------------------------------- */
   function detectLang() {
-    var param = (typeof URLSearchParams !== 'undefined')
-      ? new URLSearchParams(window.location.search).get('lang')
-      : null;
-    if (param === 'pt' || param === 'en') {
-      try { localStorage.setItem('oi-lang', param); } catch(e) {}
-      return param;
-    }
+    /* 1. localStorage tem prioridade — respeita o toggle do usuário */
     try {
       var stored = localStorage.getItem('oi-lang');
       if (stored === 'pt' || stored === 'en') return stored;
     } catch(e) {}
+
+    /* 2. Parâmetro ?lang= na URL como idioma inicial (links compartilhados,
+          resultados de busca via hreflang). Armazena no localStorage para
+          que o toggle funcione corretamente em recargas subsequentes. */
+    if (typeof URLSearchParams !== 'undefined') {
+      var param = new URLSearchParams(window.location.search).get('lang');
+      if (param === 'pt' || param === 'en') {
+        try { localStorage.setItem('oi-lang', param); } catch(e) {}
+        return param;
+      }
+    }
+
     return 'pt';
   }
 
