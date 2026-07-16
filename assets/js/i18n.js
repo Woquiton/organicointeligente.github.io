@@ -393,6 +393,10 @@
       'seapo.mc12_titulo':       'Cultivo Orgânico de Cogumelos',
       'seapo.mc13_titulo':       'Oficina: Professoralidades em Ágora',
       'seapo.mc13_vagas':        'Limite de 10 vagas externas',
+      'seapo.mc14_titulo':       'Oficina: Conflitos Agrários na Bahia e Quais Perspectivas para Amenizar e Promover o Desenvolvimento dos Territórios',
+      'seapo.mc14_speaker':      'Dr. Carlos Tadeu Correia de Carvalho — Analista Advogado MDA',
+      'seapo.mc15_titulo':       'Oficina: Plano Safra da Agricultura Familiar 2026/2027',
+      'seapo.mc15_speaker':      'Patrícia Rejane Martins Bastos — Economista do Ministério do Desenvolvimento Agrário',
       'seapo.mc_horario':        '13h00 – 17h00',
 
       /* Dia 22 */
@@ -425,11 +429,17 @@
       'seapo.hosp_aria':         'Hotéis em Guanambi',
       'seapo.hosp_tag':          '🏘️ Hospedagem',
       'seapo.hosp_titulo':       'Hotéis em Guanambi',
-      'seapo.hosp_desc':         'Sugestões de hospedagem em Guanambi para facilitar o planejamento dos participantes. As informações e valores são de responsabilidade de cada estabelecimento — recomendamos confirmar disponibilidade e preços diretamente com os hotéis antes de realizar a reserva. O X SEAPO não possui vínculo com nenhum dos estabelecimentos listados.',
+      'seapo.hosp_desc':         'Sugestões de hospedagem em Guanambi para facilitar o planejamento dos participantes. As informações e valores são de responsabilidade de cada estabelecimento — recomendamos confirmar disponibilidade e preços diretamente com os hotéis antes de realizar a reserva. O SEAPO não possui vínculo com nenhum dos estabelecimentos listados.',
       'seapo.hosp_individual':   'Individual',
       'seapo.hosp_duplo':        'Duplo',
       'seapo.hosp_triplo':       'Triplo',
       'seapo.hosp_ligar':        'Ligar agora',
+      'seapo.hosp_airbnb_desc':  'Espaço inteiro: casa em Guanambi, Brasil',
+      'seapo.hosp_hospedes':     'Hóspedes',
+      'seapo.hosp_quarto':       'Quarto',
+      'seapo.hosp_cama':         'Cama',
+      'seapo.hosp_banheiro':     'Banheiro',
+      'seapo.hosp_ver_airbnb':   'Ver no Airbnb',
 
       /* Inscrições */
       'seapo.inscricoes_aria':   'Inscrições X SEAPO',
@@ -946,6 +956,10 @@
       'seapo.mc12_titulo':       'Organic Mushroom Cultivation',
       'seapo.mc13_titulo':       'Workshop: Professoralities in Ágora',
       'seapo.mc13_vagas':        'Limited to 10 external spots',
+      'seapo.mc14_titulo':       'Workshop: Agrarian Conflicts in Bahia and Perspectives to Ease Them and Promote Territorial Development',
+      'seapo.mc14_speaker':      'Dr. Carlos Tadeu Correia de Carvalho — Attorney Analyst, MDA (Ministry of Agrarian Development)',
+      'seapo.mc15_titulo':       'Workshop: 2026/2027 Family Farming Harvest Plan',
+      'seapo.mc15_speaker':      'Patrícia Rejane Martins Bastos — Economist, Ministry of Agrarian Development',
       'seapo.mc_horario':        '1:00 PM – 5:00 PM',
 
       /* Dia 22 */
@@ -978,11 +992,17 @@
       'seapo.hosp_aria':         'Hotels in Guanambi',
       'seapo.hosp_tag':          '🏘️ Accommodation',
       'seapo.hosp_titulo':       'Hotels in Guanambi',
-      'seapo.hosp_desc':         'Accommodation suggestions in Guanambi to help participants plan their stay. Rates and availability are managed by each establishment — we recommend confirming directly before booking. The X SEAPO has no affiliation with any of the listed hotels.',
+      'seapo.hosp_desc':         'Accommodation suggestions in Guanambi to help participants plan their stay. Rates and availability are managed by each establishment — we recommend confirming directly before booking. The SEAPO has no affiliation with any of the listed hotels.',
       'seapo.hosp_individual':   'Single',
       'seapo.hosp_duplo':        'Double',
       'seapo.hosp_triplo':       'Triple',
       'seapo.hosp_ligar':        'Call now',
+      'seapo.hosp_airbnb_desc':  'Entire home: house in Guanambi, Brazil',
+      'seapo.hosp_hospedes':     'Guests',
+      'seapo.hosp_quarto':       'Bedroom',
+      'seapo.hosp_cama':         'Bed',
+      'seapo.hosp_banheiro':     'Bathroom',
+      'seapo.hosp_ver_airbnb':   'View on Airbnb',
 
       /* Inscrições */
       'seapo.inscricoes_aria':   'X SEAPO Registration',
