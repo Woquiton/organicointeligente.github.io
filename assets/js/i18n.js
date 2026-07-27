@@ -412,7 +412,7 @@
       /* Dia 22 */
       'seapo.feira_tag':         'Feira',
       'seapo.feira_titulo':      'Feira Orgânica de Guanambi',
-      'seapo.feira_local':       'Praça Gercino Coelho (Praça do Bradesco) — Guanambi',
+      'seapo.feira_local':       'Estacionamento coberto do IFBaiano campus Guanambi',
       'seapo.feira_encomendas':  'Encomendas:',
       'seapo.seapinho_tag':      'Stand',
       'seapo.seapinho_titulo':   'ÁGORA INFÂNCIAS / I SEAPINHO',
@@ -987,7 +987,7 @@
       /* Dia 22 */
       'seapo.feira_tag':         'Fair',
       'seapo.feira_titulo':      'Guanambi Organic Fair',
-      'seapo.feira_local':       'Praça Gercino Coelho (Bradesco Square) — Guanambi',
+      'seapo.feira_local':       'Covered parking lot, IF Baiano Guanambi Campus',
       'seapo.feira_encomendas':  'Pre-orders:',
       'seapo.seapinho_tag':      'Stand',
       'seapo.seapinho_titulo':   'ÁGORA INFÂNCIAS / I SEAPINHO',
