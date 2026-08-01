@@ -407,6 +407,8 @@
       'seapo.mc14_speaker':      'Dr. Carlos Tadeu Correia de Carvalho — Analista Advogado MDA',
       'seapo.mc15_titulo':       'Oficina: Plano Safra da Agricultura Familiar 2026/2027',
       'seapo.mc15_speaker':      'Patrícia Rejane Martins Bastos — Economista do Ministério do Desenvolvimento Agrário',
+      'seapo.mc16_titulo':       'Agroecologia, a Avaliação da Aprendizagem e a Educação do Campo: instrumentos avaliativos para a emancipação e a formação para a felicidade',
+      'seapo.mc16_speaker':      'Profa. Dra. Hildonice Batista',
       'seapo.mc_horario':        '13h00 – 17h00',
 
       /* Dia 22 */
@@ -982,6 +984,8 @@
       'seapo.mc14_speaker':      'Dr. Carlos Tadeu Correia de Carvalho — Attorney Analyst, MDA (Ministry of Agrarian Development)',
       'seapo.mc15_titulo':       'Workshop: 2026/2027 Family Farming Harvest Plan',
       'seapo.mc15_speaker':      'Patrícia Rejane Martins Bastos — Economist, Ministry of Agrarian Development',
+      'seapo.mc16_titulo':       'Agroecology, Learning Assessment, and Rural Education: assessment tools for emancipation and education for happiness',
+      'seapo.mc16_speaker':      'Prof. Dr. Hildonice Batista',
       'seapo.mc_horario':        '1:00 PM – 5:00 PM',
 
       /* Dia 22 */
