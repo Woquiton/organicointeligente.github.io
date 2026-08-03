@@ -409,6 +409,8 @@
       'seapo.mc15_speaker':      'Patrícia Rejane Martins Bastos — Economista do Ministério do Desenvolvimento Agrário',
       'seapo.mc16_titulo':       'Agroecologia, a Avaliação da Aprendizagem e a Educação do Campo: instrumentos avaliativos para a emancipação e a formação para a felicidade',
       'seapo.mc16_speaker':      'Profa. Dra. Hildonice Batista',
+      'seapo.mc17_titulo':       'Pela Responsabilidade e pelo Afeto: filosofia e agroecologia entre Hans Jonas e Byung Chul Han',
+      'seapo.mc17_speaker':      'Diógenes Galdino Morais Silva',
       'seapo.mc_horario':        '13h00 – 17h00',
 
       /* Dia 22 */
@@ -986,6 +988,8 @@
       'seapo.mc15_speaker':      'Patrícia Rejane Martins Bastos — Economist, Ministry of Agrarian Development',
       'seapo.mc16_titulo':       'Agroecology, Learning Assessment, and Rural Education: assessment tools for emancipation and education for happiness',
       'seapo.mc16_speaker':      'Prof. Dr. Hildonice Batista',
+      'seapo.mc17_titulo':       'For Responsibility and Affection: philosophy and agroecology between Hans Jonas and Byung-Chul Han',
+      'seapo.mc17_speaker':      'Diógenes Galdino Morais Silva',
       'seapo.mc_horario':        '1:00 PM – 5:00 PM',
 
       /* Dia 22 */
