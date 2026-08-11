@@ -25,23 +25,24 @@
   <link rel="canonical" href="https://organicointeligente.com.br/pages/seapo.html">
   <link rel="alternate" hreflang="pt-BR" href="https://organicointeligente.com.br/pages/seapo.html">
   <link rel="alternate" hreflang="en" href="https://organicointeligente.com.br/pages/seapo.html?lang=en">
+  <link rel="alternate" hreflang="es" href="https://organicointeligente.com.br/pages/seapo.html?lang=es">
   <link rel="alternate" hreflang="x-default" href="https://organicointeligente.com.br/pages/seapo.html">
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://organicointeligente.com.br/pages/seapo.html">
   <meta property="og:site_name" content="Orgânico Inteligente">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:title" content="X SEAPO 2026 – Seminário de Agroecologia e Produção Orgânica">
-  <meta property="og:description" content="21 e 22 de agosto de 2026 · IF Baiano Campus Guanambi, Bahia. Palestras, minicursos, certificação orgânica e feira agroecológica. Gratuito e aberto ao público.">
+  <meta property="og:title" content="X SEAPO 2026 – Seminário de Agroecologia e Produção Orgânica" data-i18n-content="seapo.og_title">
+  <meta property="og:description" content="21 e 22 de agosto de 2026 · IF Baiano Campus Guanambi, Bahia. Palestras, minicursos, certificação orgânica e feira agroecológica. Gratuito e aberto ao público." data-i18n-content="seapo.og_desc">
   <meta property="og:image" content="https://organicointeligente.com.br/assets/images/seapo/iii-seapo-seminario.jpeg">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="X SEAPO 2026 – Seminário de Agroecologia e Produção Orgânica">
-  <meta name="twitter:description" content="21 e 22 de agosto de 2026 · IF Baiano Campus Guanambi, Bahia. Gratuito e aberto ao público.">
+  <meta name="twitter:title" content="X SEAPO 2026 – Seminário de Agroecologia e Produção Orgânica" data-i18n-content="seapo.og_title">
+  <meta name="twitter:description" content="21 e 22 de agosto de 2026 · IF Baiano Campus Guanambi, Bahia. Gratuito e aberto ao público." data-i18n-content="seapo.twitter_desc">
   <meta name="twitter:image" content="https://organicointeligente.com.br/assets/images/seapo/iii-seapo-seminario.jpeg">
   <title>X SEAPO 2026 – Seminário de Agroecologia e Produção Orgânica | Orgânico Inteligente</title>
   <!-- JSON-LD: Evento -->
-  <script type="application/ld+json">
+  <script type="application/ld+json" id="event-jsonld" data-i18n-json="name:seapo.og_title;description:seapo.event_json_desc">
   {
     "@context": "https://schema.org",
     "@type": "Event",
@@ -72,7 +73,7 @@
   }
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css?v=202608101635">
+  <link rel="stylesheet" href="../assets/css/style.css?v=202608112002">
   <style>
     .xseapo-hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--verde);overflow:hidden;text-align:center}
     .xseapo-hero-bg{position:absolute;inset:0;background-image:url('../assets/images/seapo/iii-seapo-seminario.jpeg');background-size:cover;background-position:center;opacity:.18}
@@ -193,10 +194,12 @@
     @media(max-width:640px){.xseapo-destaques-grid{grid-template-columns:1fr}.minicursos-grid{grid-template-columns:1fr}.prog-item{grid-template-columns:1fr;gap:4px}.prog-foto{width:44px;height:44px}.memoria-mini-grid{grid-template-columns:repeat(2,1fr)}.xseapo-video-grid{grid-template-columns:1fr}.submissao-modalidades{grid-template-columns:1fr}.hoteis-grid{grid-template-columns:1fr}.submissao-prazo-banner{flex-direction:column;gap:12px;text-align:center}}
   </style>
   <style>
-    .nav-lang-toggle{background:none;border:1px solid rgba(74,124,47,.3);color:var(--texto-suave);font-family:'Space Mono',monospace;font-size:12px;padding:4px 10px;border-radius:8px;cursor:pointer;transition:.2s;display:flex;align-items:center;gap:2px;white-space:nowrap;flex-shrink:0;}
-    .nav-lang-toggle:hover{background:rgba(74,124,47,.1);color:var(--verde);}
+    .nav-lang-toggle{display:flex;align-items:center;gap:2px;background:rgba(74,124,47,.06);border:1px solid rgba(74,124,47,.3);border-radius:9px;padding:3px;flex-shrink:0;}
+    .nav-lang-toggle .lang-opt{background:none;border:0;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:var(--texto-suave);padding:5px 9px;border-radius:6px;cursor:pointer;transition:.15s;line-height:1;}
+    .nav-lang-toggle .lang-opt:hover{color:var(--verde);}
+    .nav-lang-toggle .lang-opt[aria-current="true"]{background:var(--verde);color:#fff;}
   </style>
-  <script src="../assets/js/i18n.js?v=202608101635"></script>
+  <script src="../assets/js/i18n.js?v=202608112002"></script>
 </head>
 <body id="topo" data-i18n-title="seapo.page_title">
 
@@ -224,16 +227,14 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="nav-links" role="menubar"></ul>
-    <button class="nav-lang-toggle" id="lang-toggle" onclick="toggleLang()"
-            aria-label="Mudar para inglês"
-            data-i18n-attr="aria-label:lang.toggle_aria">
-      <span class="lang-pt" aria-hidden="true">PT</span>
-      <span class="lang-sep" aria-hidden="true"> | </span>
-      <span class="lang-en" aria-hidden="true">EN</span>
-    </button>
+    <div class="nav-lang-toggle" role="group" data-i18n-attr="aria-label:lang.toggle_aria" aria-label="Selecionar idioma">
+      <button type="button" class="lang-opt" data-lang="pt" onclick="setLang('pt')" data-i18n-attr="aria-label:lang.pt_label" aria-label="Português">PT</button>
+      <button type="button" class="lang-opt" data-lang="en" onclick="setLang('en')" data-i18n-attr="aria-label:lang.en_label" aria-label="English">EN</button>
+      <button type="button" class="lang-opt" data-lang="es" onclick="setLang('es')" data-i18n-attr="aria-label:lang.es_label" aria-label="Español">ES</button>
+    </div>
   </div>
 </nav>
-<script src="../assets/js/nav.js?v=202608101635"></script>
+<script src="../assets/js/nav.js?v=202608112002"></script>
 
 <main id="main-content">
 
@@ -807,15 +808,15 @@
       </div>
       <div class="seapo-photo-grid" style="margin-top:48px;">
         <figure>
-          <img src="../assets/images/seapo/iii-seapo-feira.jpeg" alt="Feira agroecol&#243;gica no III SEAPO">
+          <img src="../assets/images/seapo/iii-seapo-feira.jpeg" alt="Feira agroecol&#243;gica no III SEAPO" data-i18n-attr="alt:seapo.photo1_alt">
           <figcaption data-i18n="seapo.photo1_caption">A feira agroecol&#243;gica &#233; uma das marcas permanentes do evento.</figcaption>
         </figure>
         <figure>
-          <img src="../assets/images/seapo/certificacao-organicos.jpeg" alt="Entrega de certificados org&#226;nicos">
+          <img src="../assets/images/seapo/certificacao-organicos.jpeg" alt="Entrega de certificados org&#226;nicos" data-i18n-attr="alt:seapo.photo2_alt">
           <figcaption data-i18n="seapo.photo2_caption">Entrega de certificados: o reconhecimento que transforma trajet&#243;rias.</figcaption>
         </figure>
         <figure>
-          <img src="../assets/images/seapo/vii-seapo-card.png" alt="Card VII SEAPO">
+          <img src="../assets/images/seapo/vii-seapo-card.png" alt="Card VII SEAPO" data-i18n-attr="alt:seapo.photo3_alt">
           <figcaption data-i18n="seapo.photo3_caption">VII SEAPO &mdash; 2023: debate, ci&#234;ncia e comunidade.</figcaption>
         </figure>
       </div>
@@ -831,15 +832,15 @@
       </div>
       <div class="xseapo-video-grid">
         <div class="xseapo-video-item reveal">
-          <iframe src="https://www.youtube.com/embed/iEi2y3k1BB8" title="VII Semin&#225;rio de Agroecologia e Produ&#231;&#227;o Org&#226;nica" loading="lazy" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/iEi2y3k1BB8" title="VII Semin&#225;rio de Agroecologia e Produ&#231;&#227;o Org&#226;nica" data-i18n-attr="title:seapo.video1_iframe_title" loading="lazy" allowfullscreen></iframe>
           <div><h3>VII SEAPO</h3><p data-i18n="seapo.video1_desc">Produ&#231;&#227;o org&#226;nica, oficinas e feira agroecol&#243;gica.</p></div>
         </div>
         <div class="xseapo-video-item reveal reveal-delay-1">
-          <iframe src="https://www.youtube.com/embed/IceU5ckoIcM" title="VI Semin&#225;rio de Agroecologia e Produ&#231;&#227;o Org&#226;nica" loading="lazy" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/IceU5ckoIcM" title="VI Semin&#225;rio de Agroecologia e Produ&#231;&#227;o Org&#226;nica" data-i18n-attr="title:seapo.video2_iframe_title" loading="lazy" allowfullscreen></iframe>
           <div><h3>VI SEAPO</h3><p data-i18n="seapo.video2_desc">Palestras e atividades da sexta edi&#231;&#227;o.</p></div>
         </div>
         <div class="xseapo-video-item reveal reveal-delay-2">
-          <iframe src="https://www.youtube.com/embed/pGqZ2fwKD1Y" title="III Semin&#225;rio de Agroecologia e Produ&#231;&#227;o Org&#226;nica" loading="lazy" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/pGqZ2fwKD1Y" title="III Semin&#225;rio de Agroecologia e Produ&#231;&#227;o Org&#226;nica" data-i18n-attr="title:seapo.video3_iframe_title" loading="lazy" allowfullscreen></iframe>
           <div><h3>III SEAPO</h3><p data-i18n="seapo.video3_desc">Mem&#243;ria da feira de base agroecol&#243;gica.</p></div>
         </div>
       </div>
@@ -849,10 +850,10 @@
 </main>
 
 <footer role="contentinfo" id="site-footer"></footer>
-<script src="../assets/js/footer.js?v=202608101635"></script>
+<script src="../assets/js/footer.js?v=202608112002"></script>
 
 <div id="toast" style="position:fixed;bottom:24px;right:24px;background:var(--verde);color:white;padding:16px 24px;border-radius:12px;font-size:14px;font-weight:600;opacity:0;transform:translateY(20px);transition:all 0.3s;z-index:9999;max-width:300px;box-shadow:0 8px 24px rgba(0,0,0,.2);" role="alert" aria-live="polite"></div>
 
-<script src="../assets/js/main.js?v=202608101635"></script>
+<script src="../assets/js/main.js?v=202608112002"></script>
 </body>
 </html>

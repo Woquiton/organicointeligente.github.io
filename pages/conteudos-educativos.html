@@ -24,22 +24,25 @@
   <link rel="canonical" href="https://organicointeligente.com.br/pages/conteudos-educativos.html">
   <link rel="alternate" hreflang="pt-BR" href="https://organicointeligente.com.br/pages/conteudos-educativos.html">
   <link rel="alternate" hreflang="en" href="https://organicointeligente.com.br/pages/conteudos-educativos.html?lang=en">
+  <link rel="alternate" hreflang="es" href="https://organicointeligente.com.br/pages/conteudos-educativos.html?lang=es">
   <link rel="alternate" hreflang="x-default" href="https://organicointeligente.com.br/pages/conteudos-educativos.html">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://organicointeligente.com.br/pages/conteudos-educativos.html">
   <meta property="og:site_name" content="Orgânico Inteligente">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:title" content="Conteúdos Educativos sobre Agroecologia | Orgânico Inteligente">
-  <meta property="og:description" content="Artigos, resumos e pesquisas gratuitas sobre agroecologia, produção orgânica e agricultura familiar no Sertão Produtivo da Bahia.">
+  <meta property="og:title" content="Conteúdos Educativos sobre Agroecologia | Orgânico Inteligente" data-i18n-content="edu.page_title">
+  <meta property="og:description" content="Artigos, resumos e pesquisas gratuitas sobre agroecologia, produção orgânica e agricultura familiar no Sertão Produtivo da Bahia." data-i18n-content="edu.og_desc">
   <meta property="og:image" content="https://organicointeligente.com.br/assets/images/slideshow/img0.jpeg">
   <title>Conteúdos Educativos sobre Agroecologia | Orgânico Inteligente</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css?v=202608101635">
+  <link rel="stylesheet" href="../assets/css/style.css?v=202608112002">
   <style>
-    .nav-lang-toggle{background:none;border:1px solid rgba(74,124,47,.3);color:var(--texto-suave);font-family:'Space Mono',monospace;font-size:12px;padding:4px 10px;border-radius:8px;cursor:pointer;transition:.2s;display:flex;align-items:center;gap:2px;white-space:nowrap;flex-shrink:0;}
-    .nav-lang-toggle:hover{background:rgba(74,124,47,.1);color:var(--verde);}
+    .nav-lang-toggle{display:flex;align-items:center;gap:2px;background:rgba(74,124,47,.06);border:1px solid rgba(74,124,47,.3);border-radius:9px;padding:3px;flex-shrink:0;}
+    .nav-lang-toggle .lang-opt{background:none;border:0;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:var(--texto-suave);padding:5px 9px;border-radius:6px;cursor:pointer;transition:.15s;line-height:1;}
+    .nav-lang-toggle .lang-opt:hover{color:var(--verde);}
+    .nav-lang-toggle .lang-opt[aria-current="true"]{background:var(--verde);color:#fff;}
   </style>
-  <script src="../assets/js/i18n.js?v=202608101635"></script>
+  <script src="../assets/js/i18n.js?v=202608112002"></script>
 </head>
 <body id="topo" data-i18n-title="edu.page_title">
 
@@ -69,16 +72,14 @@
     </button>
 
     <ul class="nav-links" id="nav-links" role="menubar"></ul>
-    <button class="nav-lang-toggle" id="lang-toggle" onclick="toggleLang()"
-            aria-label="Mudar para inglês"
-            data-i18n-attr="aria-label:lang.toggle_aria">
-      <span class="lang-pt" aria-hidden="true">PT</span>
-      <span class="lang-sep" aria-hidden="true"> | </span>
-      <span class="lang-en" aria-hidden="true">EN</span>
-    </button>
+    <div class="nav-lang-toggle" role="group" data-i18n-attr="aria-label:lang.toggle_aria" aria-label="Selecionar idioma">
+      <button type="button" class="lang-opt" data-lang="pt" onclick="setLang('pt')" data-i18n-attr="aria-label:lang.pt_label" aria-label="Português">PT</button>
+      <button type="button" class="lang-opt" data-lang="en" onclick="setLang('en')" data-i18n-attr="aria-label:lang.en_label" aria-label="English">EN</button>
+      <button type="button" class="lang-opt" data-lang="es" onclick="setLang('es')" data-i18n-attr="aria-label:lang.es_label" aria-label="Español">ES</button>
+    </div>
   </div>
 </nav>
-<script src="../assets/js/nav.js?v=202608101635"></script>
+<script src="../assets/js/nav.js?v=202608112002"></script>
 
 <main id="main-content">
   <section class="biblioteca-hero" data-i18n-attr="aria-label:edu.hero_aria" aria-label="Conteúdos educativos">
@@ -106,421 +107,421 @@
       <div class="materiais-grid" id="materiais-grid">        <!-- Cards ordenados alfabeticamente pelo título -->
 
         <article class="material-card reveal">
-          <span class="material-tag">Anais SEAPO</span>
-          <h2>Anais do VII Seminário de Agroecologia e Produção Orgânica – VII SEAPO Internacional</h2>
-          <p>Coletânea do VII SEAPO Internacional com trabalhos sobre agroecologia, manejo orgânico, biodiversidade e agricultura familiar no Sertão Produtivo.</p>
-          <a href="https://revista.lapprudes.net/CM/article/view/1087" target="_blank" rel="noopener noreferrer">Acessar publicação</a>
+          <span class="material-tag" data-i18n="edu.card01_tag">Anais SEAPO</span>
+          <h2 data-i18n="edu.card01_titulo">Anais do VII Seminário de Agroecologia e Produção Orgânica – VII SEAPO Internacional</h2>
+          <p data-i18n="edu.card01_desc">Coletânea do VII SEAPO Internacional com trabalhos sobre agroecologia, manejo orgânico, biodiversidade e agricultura familiar no Sertão Produtivo.</p>
+          <a href="https://revista.lapprudes.net/CM/article/view/1087" target="_blank" rel="noopener noreferrer" data-i18n="edu.acessar">Acessar publicação</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Anais SEAPO</span>
-          <h2>Anais IX Seminário de Agroecologia e Produção Orgânica – Território Sertão Produtivo</h2>
-          <p>Coletânea de trabalhos apresentados no IX SEAPO, reunindo pesquisas e relatos de experiências em agroecologia, produção orgânica e agricultura familiar do Sertão Produtivo.</p>
-          <a href="https://revista.lapprudes.net/CM/article/view/1750" target="_blank" rel="noopener noreferrer">Acessar publicação</a>
+          <span class="material-tag" data-i18n="edu.card02_tag">Anais SEAPO</span>
+          <h2 data-i18n="edu.card02_titulo">Anais IX Seminário de Agroecologia e Produção Orgânica – Território Sertão Produtivo</h2>
+          <p data-i18n="edu.card02_desc">Coletânea de trabalhos apresentados no IX SEAPO, reunindo pesquisas e relatos de experiências em agroecologia, produção orgânica e agricultura familiar do Sertão Produtivo.</p>
+          <a href="https://revista.lapprudes.net/CM/article/view/1750" target="_blank" rel="noopener noreferrer" data-i18n="edu.acessar">Acessar publicação</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Anais SEAPO</span>
-          <h2>Anais VIII Seminário de Agroecologia e Produção Orgânica do Território Sertão Produtivo</h2>
-          <p>Coletânea de trabalhos do VIII SEAPO com pesquisas sobre agroecologia, bioinsumos, segurança alimentar e produção orgânica no Sertão Produtivo baiano.</p>
-          <a href="https://revista.lapprudes.net/CM/article/view/1444" target="_blank" rel="noopener noreferrer">Acessar publicação</a>
+          <span class="material-tag" data-i18n="edu.card03_tag">Anais SEAPO</span>
+          <h2 data-i18n="edu.card03_titulo">Anais VIII Seminário de Agroecologia e Produção Orgânica do Território Sertão Produtivo</h2>
+          <p data-i18n="edu.card03_desc">Coletânea de trabalhos do VIII SEAPO com pesquisas sobre agroecologia, bioinsumos, segurança alimentar e produção orgânica no Sertão Produtivo baiano.</p>
+          <a href="https://revista.lapprudes.net/CM/article/view/1444" target="_blank" rel="noopener noreferrer" data-i18n="edu.acessar">Acessar publicação</a>
         </article>
         <article class="material-card reveal">
-          <span class="material-tag">Água e segurança alimentar</span>
-          <h2>Análise bacteriológica das águas de irrigação no cultivo de hortaliças do semiárido</h2>
-          <p>Avalia a qualidade microbiológica da água usada na irrigação de hortaliças em comunidades rurais, mostrando a importância do monitoramento para a certificação orgânica e a segurança alimentar.</p>
-          <a href="../assets/conteudosEducativos/ANÁLISE BACTERIOLÓGICA DAS ÁGUAS DE IRRIGAÇÃO NO CULTIVO DE HORTALIÇAS DO SEMIÁRIDO.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
-        </article>
-
-        <article class="material-card reveal">
-          <span class="material-tag">Coentro</span>
-          <h2>Análise do potencial germinativo do Coriandrum sativum por meio da adubação orgânica</h2>
-          <p>Investiga a germinação do coentro em substratos orgânicos, comparando solo sem adição, terra de quixaba e carvão vegetal como alternativas para melhorar o estabelecimento das sementes.</p>
-          <a href="../assets/conteudosEducativos/ANÁLISE DO POTENCIAL GERMINATIVO DO Coriandrum sativum POR MEIO DA ADUBAÇÃO ORGÂNICA.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
-        </article>
-        <article class="material-card reveal">
-          <span class="material-tag">Material didático</span>
-          <h2>Apostila do agricultor orgânico</h2>
-          <p>Material didático voltado à formação de agricultores orgânicos, abordando fundamentos da produção agroecológica, manejo do solo, bioinsumos e práticas sustentáveis para a agricultura familiar.</p>
-          <a href="../assets/conteudosEducativos/Apostila agricultor orgânico.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card04_tag">Água e segurança alimentar</span>
+          <h2 data-i18n="edu.card04_titulo">Análise bacteriológica das águas de irrigação no cultivo de hortaliças do semiárido</h2>
+          <p data-i18n="edu.card04_desc">Avalia a qualidade microbiológica da água usada na irrigação de hortaliças em comunidades rurais, mostrando a importância do monitoramento para a certificação orgânica e a segurança alimentar.</p>
+          <a href="../assets/conteudosEducativos/ANÁLISE BACTERIOLÓGICA DAS ÁGUAS DE IRRIGAÇÃO NO CULTIVO DE HORTALIÇAS DO SEMIÁRIDO.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Material didático</span>
-          <h2>Apostila do curso de formação</h2>
-          <p>Material de apoio ao curso de formação do Programa Orgânico Inteligente, reunindo conteúdos sobre agroecologia, certificação, manejo orgânico e agricultura familiar no Sertão Produtivo.</p>
-          <a href="../assets/conteudosEducativos/Apostila curso de formação.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card05_tag">Coentro</span>
+          <h2 data-i18n="edu.card05_titulo">Análise do potencial germinativo do Coriandrum sativum por meio da adubação orgânica</h2>
+          <p data-i18n="edu.card05_desc">Investiga a germinação do coentro em substratos orgânicos, comparando solo sem adição, terra de quixaba e carvão vegetal como alternativas para melhorar o estabelecimento das sementes.</p>
+          <a href="../assets/conteudosEducativos/ANÁLISE DO POTENCIAL GERMINATIVO DO Coriandrum sativum POR MEIO DA ADUBAÇÃO ORGÂNICA.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
+        </article>
+        <article class="material-card reveal">
+          <span class="material-tag" data-i18n="edu.card06_tag">Material didático</span>
+          <h2 data-i18n="edu.card06_titulo">Apostila do agricultor orgânico</h2>
+          <p data-i18n="edu.card06_desc">Material didático voltado à formação de agricultores orgânicos, abordando fundamentos da produção agroecológica, manejo do solo, bioinsumos e práticas sustentáveis para a agricultura familiar.</p>
+          <a href="../assets/conteudosEducativos/Apostila agricultor orgânico.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Solo</span>
-          <h2>Avaliação de solos sob diferentes períodos de fertirrigação com vinhaça e alterações na qualidade do efluente</h2>
-          <p>Estuda os efeitos da fertirrigação com vinhaça sobre as propriedades do solo e a qualidade do efluente ao longo do tempo, com implicações para o manejo agroecológico.</p>
-          <a href="https://www.lareferencia.info/vufind/Record/BR_0b3c87deba690ac9639599aa9a1bebc9" target="_blank" rel="noopener noreferrer">Acessar publicação</a>
+          <span class="material-tag" data-i18n="edu.card07_tag">Material didático</span>
+          <h2 data-i18n="edu.card07_titulo">Apostila do curso de formação</h2>
+          <p data-i18n="edu.card07_desc">Material de apoio ao curso de formação do Programa Orgânico Inteligente, reunindo conteúdos sobre agroecologia, certificação, manejo orgânico e agricultura familiar no Sertão Produtivo.</p>
+          <a href="../assets/conteudosEducativos/Apostila curso de formação.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Milho crioulo</span>
-          <h2>Características de crescimento e desenvolvimento do milho crioulo com diferentes adubações orgânicas</h2>
-          <p>Avalia o efeito de diferentes adubos orgânicos no crescimento e desenvolvimento do milho crioulo como alternativa sustentável para a agricultura familiar.</p>
-          <a href="https://periodicos.ufmg.br/index.php/ccaufmg/article/view/15949" target="_blank" rel="noopener noreferrer">Acessar publicação</a>
+          <span class="material-tag" data-i18n="edu.card08_tag">Solo</span>
+          <h2 data-i18n="edu.card08_titulo">Avaliação de solos sob diferentes períodos de fertirrigação com vinhaça e alterações na qualidade do efluente</h2>
+          <p data-i18n="edu.card08_desc">Estuda os efeitos da fertirrigação com vinhaça sobre as propriedades do solo e a qualidade do efluente ao longo do tempo, com implicações para o manejo agroecológico.</p>
+          <a href="https://www.lareferencia.info/vufind/Record/BR_0b3c87deba690ac9639599aa9a1bebc9" target="_blank" rel="noopener noreferrer" data-i18n="edu.acessar">Acessar publicação</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Produção orgânica</span>
-          <h2>Cartilha de produção orgânica no Sertão Produtivo (atualizada)</h2>
-          <p>Cartilha atualizada com orientações práticas sobre produção orgânica no Sertão Produtivo baiano, voltada a agricultores familiares e técnicos que atuam na transição agroecológica da região.</p>
-          <a href="../assets/conteudosEducativos/cartilha prod org sertao prod atualizada.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card09_tag">Milho crioulo</span>
+          <h2 data-i18n="edu.card09_titulo">Características de crescimento e desenvolvimento do milho crioulo com diferentes adubações orgânicas</h2>
+          <p data-i18n="edu.card09_desc">Avalia o efeito de diferentes adubos orgânicos no crescimento e desenvolvimento do milho crioulo como alternativa sustentável para a agricultura familiar.</p>
+          <a href="https://periodicos.ufmg.br/index.php/ccaufmg/article/view/15949" target="_blank" rel="noopener noreferrer" data-i18n="edu.acessar">Acessar publicação</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Agricultura familiar</span>
-          <h2>Cenário da agricultura familiar no Território Sertão</h2>
-          <p>Caracteriza a agricultura familiar em Candiba-BA, destacando pequenas propriedades, acesso a políticas públicas, desafios de assistência técnica e o papel econômico e alimentar da produção familiar.</p>
-          <a href="../assets/conteudosEducativos/CENÁRIO DA AGRICULTURA FAMILIAR NO TERRITÓRIO SERTÃO.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card10_tag">Produção orgânica</span>
+          <h2 data-i18n="edu.card10_titulo">Cartilha de produção orgânica no Sertão Produtivo (atualizada)</h2>
+          <p data-i18n="edu.card10_desc">Cartilha atualizada com orientações práticas sobre produção orgânica no Sertão Produtivo baiano, voltada a agricultores familiares e técnicos que atuam na transição agroecológica da região.</p>
+          <a href="../assets/conteudosEducativos/cartilha prod org sertao prod atualizada.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Alho-poró</span>
-          <h2>Crescimento do alho-poró com uso de torta de mamona</h2>
-          <p>Analisa o uso da torta de mamona como fonte orgânica de nitrogênio no crescimento do alho-poró, buscando doses adequadas para cultivo agroecológico.</p>
-          <a href="../assets/conteudosEducativos/CRESCIMENTO DO ALHO-PORÓ COM USO DE TORTA DE MAMONA.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card11_tag">Agricultura familiar</span>
+          <h2 data-i18n="edu.card11_titulo">Cenário da agricultura familiar no Território Sertão</h2>
+          <p data-i18n="edu.card11_desc">Caracteriza a agricultura familiar em Candiba-BA, destacando pequenas propriedades, acesso a políticas públicas, desafios de assistência técnica e o papel econômico e alimentar da produção familiar.</p>
+          <a href="../assets/conteudosEducativos/CENÁRIO DA AGRICULTURA FAMILIAR NO TERRITÓRIO SERTÃO.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Beterraba</span>
-          <h2>Cultivo de beterraba sob diferentes tipos de cobertura</h2>
-          <p>Compara coberturas de solo com folhas de amora, moringa e capim-elefante no cultivo da beterraba, com melhores respostas associadas à cobertura com folhas de amora.</p>
-          <a href="../assets/conteudosEducativos/CULTIVO DE BETERRABA SOB DIFERENTES TIPOS DE COBERTURA.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card12_tag">Alho-poró</span>
+          <h2 data-i18n="edu.card12_titulo">Crescimento do alho-poró com uso de torta de mamona</h2>
+          <p data-i18n="edu.card12_desc">Analisa o uso da torta de mamona como fonte orgânica de nitrogênio no crescimento do alho-poró, buscando doses adequadas para cultivo agroecológico.</p>
+          <a href="../assets/conteudosEducativos/CRESCIMENTO DO ALHO-PORÓ COM USO DE TORTA DE MAMONA.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Rabanete</span>
-          <h2>Cultivo de rabanete com utilização de biofertilizante</h2>
-          <p>Reúne evidências sobre o uso de biofertilizantes no rabanete, ressaltando ganhos no crescimento, no rendimento e na melhoria biológica do solo.</p>
-          <a href="../assets/conteudosEducativos/CULTIVO DE RABANETE COM UTILIZAÇÃO DE BIOFERTILZANTE.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card13_tag">Beterraba</span>
+          <h2 data-i18n="edu.card13_titulo">Cultivo de beterraba sob diferentes tipos de cobertura</h2>
+          <p data-i18n="edu.card13_desc">Compara coberturas de solo com folhas de amora, moringa e capim-elefante no cultivo da beterraba, com melhores respostas associadas à cobertura com folhas de amora.</p>
+          <a href="../assets/conteudosEducativos/CULTIVO DE BETERRABA SOB DIFERENTES TIPOS DE COBERTURA.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Tomateiro</span>
-          <h2>Cultivo de tomate em horta escolar com o uso do biofertilizante</h2>
-          <p>Relata experiência de cultivo de tomate em horta escolar com aplicação de biofertilizante, integrando educação ambiental e produção orgânica no ambiente escolar.</p>
-          <a href="https://revista.lapprudes.net/CM/article/view/1610" target="_blank" rel="noopener noreferrer">Acessar publicação</a>
+          <span class="material-tag" data-i18n="edu.card14_tag">Rabanete</span>
+          <h2 data-i18n="edu.card14_titulo">Cultivo de rabanete com utilização de biofertilizante</h2>
+          <p data-i18n="edu.card14_desc">Reúne evidências sobre o uso de biofertilizantes no rabanete, ressaltando ganhos no crescimento, no rendimento e na melhoria biológica do solo.</p>
+          <a href="../assets/conteudosEducativos/CULTIVO DE RABANETE COM UTILIZAÇÃO DE BIOFERTILZANTE.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Cobertura de solo</span>
-          <h2>Desempenho agronômico de Allium porrum submetido a diferentes tipos de cobertura de solo</h2>
-          <p>Avalia alho-poró cultivado com biomassas vegetais como cobertura, indicando melhores resultados com moringa e amora e desempenho inferior sem cobertura.</p>
-          <a href="../assets/conteudosEducativos/DESEMPENHO AGRONÔMICO DE Allium porrumSUBMETIDO A DIFERENTES TIPOS DE COBERTURA DE SOLO.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card15_tag">Tomateiro</span>
+          <h2 data-i18n="edu.card15_titulo">Cultivo de tomate em horta escolar com o uso do biofertilizante</h2>
+          <p data-i18n="edu.card15_desc">Relata experiência de cultivo de tomate em horta escolar com aplicação de biofertilizante, integrando educação ambiental e produção orgânica no ambiente escolar.</p>
+          <a href="https://revista.lapprudes.net/CM/article/view/1610" target="_blank" rel="noopener noreferrer" data-i18n="edu.acessar">Acessar publicação</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Moringa</span>
-          <h2>Desempenho vegetativo da moringa sob diferentes doses do biofertilizante</h2>
-          <p>Estuda o crescimento da moringa no semiárido sob aplicação de biofertilizante líquido, considerando seu potencial alimentar, nutricional e produtivo.</p>
-          <a href="../assets/conteudosEducativos/DESEMPENHO VEGETATIVO DA MORINGA SOB DIFERENTES DOSES DO BIOFERTILIZANTE.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card16_tag">Cobertura de solo</span>
+          <h2 data-i18n="edu.card16_titulo">Desempenho agronômico de Allium porrum submetido a diferentes tipos de cobertura de solo</h2>
+          <p data-i18n="edu.card16_desc">Avalia alho-poró cultivado com biomassas vegetais como cobertura, indicando melhores resultados com moringa e amora e desempenho inferior sem cobertura.</p>
+          <a href="../assets/conteudosEducativos/DESEMPENHO AGRONÔMICO DE Allium porrumSUBMETIDO A DIFERENTES TIPOS DE COBERTURA DE SOLO.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Alface</span>
-          <h2>Desenvolvimento da alface americana adubada com biofertilizantes</h2>
-          <p>Compara diferentes biofertilizantes no desenvolvimento da alface americana em casa de vegetação, com destaque para o tratamento com urina de vaca.</p>
-          <a href="../assets/conteudosEducativos/DESENVOLVIMENTO DA ALFACE AMERICANA ADUBADA COM BIOFERTILIZANTES.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card17_tag">Moringa</span>
+          <h2 data-i18n="edu.card17_titulo">Desempenho vegetativo da moringa sob diferentes doses do biofertilizante</h2>
+          <p data-i18n="edu.card17_desc">Estuda o crescimento da moringa no semiárido sob aplicação de biofertilizante líquido, considerando seu potencial alimentar, nutricional e produtivo.</p>
+          <a href="../assets/conteudosEducativos/DESEMPENHO VEGETATIVO DA MORINGA SOB DIFERENTES DOSES DO BIOFERTILIZANTE.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Alface</span>
-          <h2>Desenvolvimento de alface americana com uso de biofertilizante à base do pseudocaule de bananeira</h2>
-          <p>Acompanha o cultivo de alface americana com diferentes doses de biofertilizante de pseudocaule de bananeira, buscando alternativas sustentáveis para a fertilidade do solo.</p>
-          <a href="../assets/conteudosEducativos/DESENVOLVIMENTO DE ALFACE AMERICANA COM USO DE BIOFERTILIZANTE À BASE DO PSEUDOCAULE DE BANANEIRA.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card18_tag">Alface</span>
+          <h2 data-i18n="edu.card18_titulo">Desenvolvimento da alface americana adubada com biofertilizantes</h2>
+          <p data-i18n="edu.card18_desc">Compara diferentes biofertilizantes no desenvolvimento da alface americana em casa de vegetação, com destaque para o tratamento com urina de vaca.</p>
+          <a href="../assets/conteudosEducativos/DESENVOLVIMENTO DA ALFACE AMERICANA ADUBADA COM BIOFERTILIZANTES.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Beterraba</span>
-          <h2>Desenvolvimento de beterraba com o uso de biofertilizante</h2>
-          <p>Avalia doses de biofertilizante na beterraba em casa de vegetação, observando efeitos sobre folhas, massa fresca e diâmetro das raízes.</p>
-          <a href="../assets/conteudosEducativos/DESENVOLVIMENTO DE BETERRABA COM O USO DE BIOFERTILIZANTE.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card19_tag">Alface</span>
+          <h2 data-i18n="edu.card19_titulo">Desenvolvimento de alface americana com uso de biofertilizante à base do pseudocaule de bananeira</h2>
+          <p data-i18n="edu.card19_desc">Acompanha o cultivo de alface americana com diferentes doses de biofertilizante de pseudocaule de bananeira, buscando alternativas sustentáveis para a fertilidade do solo.</p>
+          <a href="../assets/conteudosEducativos/DESENVOLVIMENTO DE ALFACE AMERICANA COM USO DE BIOFERTILIZANTE À BASE DO PSEUDOCAULE DE BANANEIRA.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Sorgo</span>
-          <h2>Desenvolvimento do sorgo sob aplicação de esterco bovino enriquecido</h2>
-          <p>Avalia o efeito de doses crescentes de esterco bovino enriquecido sobre o desenvolvimento vegetativo do sorgo, cultura importante para a silagem na agricultura familiar do semiárido.</p>
-          <a href="https://revista.lapprudes.net/CM/article/view/57" target="_blank" rel="noopener noreferrer">Acessar publicação</a>
+          <span class="material-tag" data-i18n="edu.card20_tag">Beterraba</span>
+          <h2 data-i18n="edu.card20_titulo">Desenvolvimento de beterraba com o uso de biofertilizante</h2>
+          <p data-i18n="edu.card20_desc">Avalia doses de biofertilizante na beterraba em casa de vegetação, observando efeitos sobre folhas, massa fresca e diâmetro das raízes.</p>
+          <a href="../assets/conteudosEducativos/DESENVOLVIMENTO DE BETERRABA COM O USO DE BIOFERTILIZANTE.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Adubos verdes</span>
-          <h2>Desenvolvimento e produção de alface e cenoura com uso de adubos verdes</h2>
-          <p>Compara espécies de adubos verdes no consórcio de alface e cenoura, apontando feijão-de-porco e mucuna-preta como alternativas produtivas para a agricultura familiar.</p>
-          <a href="../assets/conteudosEducativos/DESENVOLVIMENTO E PRODUÇÃO DE ALFACE E CENOURA COM USO DE ADUBOS VERDES.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card21_tag">Sorgo</span>
+          <h2 data-i18n="edu.card21_titulo">Desenvolvimento do sorgo sob aplicação de esterco bovino enriquecido</h2>
+          <p data-i18n="edu.card21_desc">Avalia o efeito de doses crescentes de esterco bovino enriquecido sobre o desenvolvimento vegetativo do sorgo, cultura importante para a silagem na agricultura familiar do semiárido.</p>
+          <a href="https://revista.lapprudes.net/CM/article/view/57" target="_blank" rel="noopener noreferrer" data-i18n="edu.acessar">Acessar publicação</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Tomateiro</span>
-          <h2>Efeito de diferentes dosagens de cinza vegetal no crescimento de mudas de tomateiro</h2>
-          <p>Testa doses de cinza vegetal em mudas de tomateiro e alerta que doses elevadas podem prejudicar altura, diâmetro do caule e equilíbrio nutricional.</p>
-          <a href="../assets/conteudosEducativos/EFEITO DE DIFERENTES DOSAGENS DE CINZA VEGETAL NO CRESCIMENTO DE MUDAS DE TOMATEIRO (Solanum lycopersicumL.).pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card22_tag">Adubos verdes</span>
+          <h2 data-i18n="edu.card22_titulo">Desenvolvimento e produção de alface e cenoura com uso de adubos verdes</h2>
+          <p data-i18n="edu.card22_desc">Compara espécies de adubos verdes no consórcio de alface e cenoura, apontando feijão-de-porco e mucuna-preta como alternativas produtivas para a agricultura familiar.</p>
+          <a href="../assets/conteudosEducativos/DESENVOLVIMENTO E PRODUÇÃO DE ALFACE E CENOURA COM USO DE ADUBOS VERDES.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Pimentão</span>
-          <h2>Efeito de diferentes doses de biofertilizante em mudas de pimentão</h2>
-          <p>Investiga doses de biofertilizante na produção de mudas de pimentão, buscando reduzir custos e impactos ambientais da adubação mineral.</p>
-          <a href="../assets/conteudosEducativos/EFEITO DE DIFERENTES DOSES DE BIOFERTILIZANTE EM MUDAS DE PIMENTÃO.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card23_tag">Tomateiro</span>
+          <h2 data-i18n="edu.card23_titulo">Efeito de diferentes dosagens de cinza vegetal no crescimento de mudas de tomateiro</h2>
+          <p data-i18n="edu.card23_desc">Testa doses de cinza vegetal em mudas de tomateiro e alerta que doses elevadas podem prejudicar altura, diâmetro do caule e equilíbrio nutricional.</p>
+          <a href="../assets/conteudosEducativos/EFEITO DE DIFERENTES DOSAGENS DE CINZA VEGETAL NO CRESCIMENTO DE MUDAS DE TOMATEIRO (Solanum lycopersicumL.).pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Controle biológico</span>
-          <h2>Efeito de extratos naturais de alho, babosa e nim na germinação de picão-preto (Bidens pilosa L.)</h2>
-          <p>Testa extratos de alho, babosa e nim como bioherbicidas naturais sobre a germinação do picão-preto, planta daninha frequente em cultivos orgânicos do semiárido.</p>
-          <a href="https://revista.lapprudes.net/CM/article/view/1726" target="_blank" rel="noopener noreferrer">Acessar publicação</a>
+          <span class="material-tag" data-i18n="edu.card24_tag">Pimentão</span>
+          <h2 data-i18n="edu.card24_titulo">Efeito de diferentes doses de biofertilizante em mudas de pimentão</h2>
+          <p data-i18n="edu.card24_desc">Investiga doses de biofertilizante na produção de mudas de pimentão, buscando reduzir custos e impactos ambientais da adubação mineral.</p>
+          <a href="../assets/conteudosEducativos/EFEITO DE DIFERENTES DOSES DE BIOFERTILIZANTE EM MUDAS DE PIMENTÃO.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Palma forrageira</span>
-          <h2>Estratégia de utilização de água salina no cultivo de palma forrageira</h2>
-          <p>Estuda estratégias de irrigação com água salina no cultivo da palma forrageira, planta essencial para a sobrevivência animal no semiárido em períodos de estiagem.</p>
-          <a href="https://repositorio.ifbaiano.edu.br/jspui/handle/123456789/61" target="_blank" rel="noopener noreferrer">Acessar publicação</a>
+          <span class="material-tag" data-i18n="edu.card25_tag">Controle biológico</span>
+          <h2 data-i18n="edu.card25_titulo">Efeito de extratos naturais de alho, babosa e nim na germinação de picão-preto (Bidens pilosa L.)</h2>
+          <p data-i18n="edu.card25_desc">Testa extratos de alho, babosa e nim como bioherbicidas naturais sobre a germinação do picão-preto, planta daninha frequente em cultivos orgânicos do semiárido.</p>
+          <a href="https://revista.lapprudes.net/CM/article/view/1726" target="_blank" rel="noopener noreferrer" data-i18n="edu.acessar">Acessar publicação</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Estudos ambientais</span>
-          <h2>Estudos ambientais e agroecológicos em propriedades rurais</h2>
-          <p>Livro que reúne estudos sobre manejo agroecológico, qualidade do solo, biodiversidade e práticas sustentáveis em propriedades rurais do Sertão Produtivo baiano.</p>
-          <a href="https://books.google.com.br/books?id=t7YmEAAAQBAJ" target="_blank" rel="noopener noreferrer">Acessar publicação</a>
+          <span class="material-tag" data-i18n="edu.card26_tag">Palma forrageira</span>
+          <h2 data-i18n="edu.card26_titulo">Estratégia de utilização de água salina no cultivo de palma forrageira</h2>
+          <p data-i18n="edu.card26_desc">Estuda estratégias de irrigação com água salina no cultivo da palma forrageira, planta essencial para a sobrevivência animal no semiárido em períodos de estiagem.</p>
+          <a href="https://repositorio.ifbaiano.edu.br/jspui/handle/123456789/61" target="_blank" rel="noopener noreferrer" data-i18n="edu.acessar">Acessar publicação</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Extensão rural</span>
-          <h2>Extensão rural agroecológica no Território Sertão Produtivo</h2>
-          <p>Relata ações do Programa Orgânico Inteligente em oficinas, palestras, feiras e atividades de difusão agroecológica em municípios do Sertão Produtivo.</p>
-          <a href="../assets/conteudosEducativos/EXTENSÃO RURAL AGROECOLÓGICA NO TERRITÓRIO SERTÃO PRODUTIVO.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card27_tag">Estudos ambientais</span>
+          <h2 data-i18n="edu.card27_titulo">Estudos ambientais e agroecológicos em propriedades rurais</h2>
+          <p data-i18n="edu.card27_desc">Livro que reúne estudos sobre manejo agroecológico, qualidade do solo, biodiversidade e práticas sustentáveis em propriedades rurais do Sertão Produtivo baiano.</p>
+          <a href="https://books.google.com.br/books?id=t7YmEAAAQBAJ" target="_blank" rel="noopener noreferrer" data-i18n="edu.acessar">Acessar publicação</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Feijão-caupi</span>
-          <h2>Feijão-caupi irrigado com água salina e adubado com esterco bovino</h2>
-          <p>Aborda o cultivo de feijão-caupi sob irrigação com água salina e adubação orgânica, tema relevante para produção em condições do semiárido.</p>
-          <a href="../assets/conteudosEducativos/Feijão-Caupi irrigado com água salina e adubado com esterco bovino.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card28_tag">Extensão rural</span>
+          <h2 data-i18n="edu.card28_titulo">Extensão rural agroecológica no Território Sertão Produtivo</h2>
+          <p data-i18n="edu.card28_desc">Relata ações do Programa Orgânico Inteligente em oficinas, palestras, feiras e atividades de difusão agroecológica em municípios do Sertão Produtivo.</p>
+          <a href="../assets/conteudosEducativos/EXTENSÃO RURAL AGROECOLÓGICA NO TERRITÓRIO SERTÃO PRODUTIVO.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Tomateiro</span>
-          <h2>Fornecimento de nutrientes para tomateiro adubado com biofertilizante</h2>
-          <p>Avalia mudas de tomate cereja adubadas com diferentes doses de biofertilizante, observando respostas em vigor, diâmetro do caule e desenvolvimento inicial.</p>
-          <a href="../assets/conteudosEducativos/FORNECIMENTO DE NUTRIENTES PARA TOMATEIRO ADUBADO COM BIOFERTILIZANTE.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card29_tag">Feijão-caupi</span>
+          <h2 data-i18n="edu.card29_titulo">Feijão-caupi irrigado com água salina e adubado com esterco bovino</h2>
+          <p data-i18n="edu.card29_desc">Aborda o cultivo de feijão-caupi sob irrigação com água salina e adubação orgânica, tema relevante para produção em condições do semiárido.</p>
+          <a href="../assets/conteudosEducativos/Feijão-Caupi irrigado com água salina e adubado com esterco bovino.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Horta escolar</span>
-          <h2>Horta escolar como espaço didático pedagógico na promoção da segurança alimentar e nutricional no semiárido</h2>
-          <p>Relata o uso de hortas escolares como ferramenta pedagógica para promover segurança alimentar e nutricional em escolas do semiárido baiano.</p>
-          <a href="https://repositorio.ifbaiano.edu.br/jspui/handle/123456789/50" target="_blank" rel="noopener noreferrer">Acessar publicação</a>
+          <span class="material-tag" data-i18n="edu.card30_tag">Tomateiro</span>
+          <h2 data-i18n="edu.card30_titulo">Fornecimento de nutrientes para tomateiro adubado com biofertilizante</h2>
+          <p data-i18n="edu.card30_desc">Avalia mudas de tomate cereja adubadas com diferentes doses de biofertilizante, observando respostas em vigor, diâmetro do caule e desenvolvimento inicial.</p>
+          <a href="../assets/conteudosEducativos/FORNECIMENTO DE NUTRIENTES PARA TOMATEIRO ADUBADO COM BIOFERTILIZANTE.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Inclusão</span>
-          <h2>Hortas acessíveis: contribuição para produção orgânica doméstica e inclusão</h2>
-          <p>Discute hortas acessíveis como prática de educação ambiental, inclusão e produção orgânica doméstica para pessoas idosas ou com mobilidade reduzida.</p>
-          <a href="../assets/conteudosEducativos/HORTAS ACESSIVEIS CONTRIBUIÇÃO PARA PRODUÇÃO ORGÂNICA DOMÉSTICA E INCLUSÃO.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card31_tag">Horta escolar</span>
+          <h2 data-i18n="edu.card31_titulo">Horta escolar como espaço didático pedagógico na promoção da segurança alimentar e nutricional no semiárido</h2>
+          <p data-i18n="edu.card31_desc">Relata o uso de hortas escolares como ferramenta pedagógica para promover segurança alimentar e nutricional em escolas do semiárido baiano.</p>
+          <a href="https://repositorio.ifbaiano.edu.br/jspui/handle/123456789/50" target="_blank" rel="noopener noreferrer" data-i18n="edu.acessar">Acessar publicação</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Capacitação</span>
-          <h2>IF Mais Empreendedor no Sertão Produtivo: capacitação de agricultores agroecológicos</h2>
-          <p>Apresenta ações de capacitação e assistência técnica em Caetité e Pindaí, conectando manejo produtivo, feiras agroecológicas e gestão dos empreendimentos familiares.</p>
-          <a href="../assets/conteudosEducativos/IF MAIS EMPREENDEDOR NO SERTÃO PRODUTIVO CAPACITAÇÃO DE AGRICULTORES AGROECOLÓGICOS.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card32_tag">Inclusão</span>
+          <h2 data-i18n="edu.card32_titulo">Hortas acessíveis: contribuição para produção orgânica doméstica e inclusão</h2>
+          <p data-i18n="edu.card32_desc">Discute hortas acessíveis como prática de educação ambiental, inclusão e produção orgânica doméstica para pessoas idosas ou com mobilidade reduzida.</p>
+          <a href="../assets/conteudosEducativos/HORTAS ACESSIVEIS CONTRIBUIÇÃO PARA PRODUÇÃO ORGÂNICA DOMÉSTICA E INCLUSÃO.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Educação ambiental</span>
-          <h2>Impactos no descarte incorreto do lixo doméstico em zonas rurais</h2>
-          <p>Registra impactos ambientais do descarte irregular de lixo em comunidades rurais e reforça a necessidade de educação ambiental e ação pública contínua.</p>
-          <a href="../assets/conteudosEducativos/IMPACTOS NO DESCARTE INCORRETO DO LIXO DOMÉSTICO EM ZONAS RURAIS.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card33_tag">Capacitação</span>
+          <h2 data-i18n="edu.card33_titulo">IF Mais Empreendedor no Sertão Produtivo: capacitação de agricultores agroecológicos</h2>
+          <p data-i18n="edu.card33_desc">Apresenta ações de capacitação e assistência técnica em Caetité e Pindaí, conectando manejo produtivo, feiras agroecológicas e gestão dos empreendimentos familiares.</p>
+          <a href="../assets/conteudosEducativos/IF MAIS EMPREENDEDOR NO SERTÃO PRODUTIVO CAPACITAÇÃO DE AGRICULTORES AGROECOLÓGICOS.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Agrofloresta</span>
-          <h2>Interação entre sistemas agroflorestais, pecuária e agricultura na EFA de Caculé, Bahia</h2>
-          <p>Analisa práticas formativas da Escola Família Agrícola de Caculé, integrando agroflorestas, pecuária, agricultura e pedagogia da alternância.</p>
-          <a href="../assets/conteudosEducativos/INTERAÇÃO ENTRE SISTEMAS AGROFLORESTAIS, PECUÁRIA E AGRICULTURA NA EFA DE CACULÉ, BAHIA.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card34_tag">Educação ambiental</span>
+          <h2 data-i18n="edu.card34_titulo">Impactos no descarte incorreto do lixo doméstico em zonas rurais</h2>
+          <p data-i18n="edu.card34_desc">Registra impactos ambientais do descarte irregular de lixo em comunidades rurais e reforça a necessidade de educação ambiental e ação pública contínua.</p>
+          <a href="../assets/conteudosEducativos/IMPACTOS NO DESCARTE INCORRETO DO LIXO DOMÉSTICO EM ZONAS RURAIS.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Plantas medicinais</span>
-          <h2>Jardins sensoriais contribuindo para a inclusão e difusão do conhecimento de plantas medicinais</h2>
-          <p>Propõe jardins sensoriais como estratégia de inclusão de pessoas com deficiência visual e de valorização do conhecimento sobre plantas medicinais.</p>
-          <a href="../assets/conteudosEducativos/JARDINS SENSORIAIS CONTRIBUINDO PARA A INCLUSÃO E DIFUSÃO DO CONHECIMENTO DE PLANTAS MEDICINAIS.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card35_tag">Agrofloresta</span>
+          <h2 data-i18n="edu.card35_titulo">Interação entre sistemas agroflorestais, pecuária e agricultura na EFA de Caculé, Bahia</h2>
+          <p data-i18n="edu.card35_desc">Analisa práticas formativas da Escola Família Agrícola de Caculé, integrando agroflorestas, pecuária, agricultura e pedagogia da alternância.</p>
+          <a href="../assets/conteudosEducativos/INTERAÇÃO ENTRE SISTEMAS AGROFLORESTAIS, PECUÁRIA E AGRICULTURA NA EFA DE CACULÉ, BAHIA.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Infâncias e clima</span>
-          <h2>Justiça climática e agroecologia na educação infantil</h2>
-          <p>Discute ações extensionistas com crianças, docentes e famílias, envolvendo hortas, árvores frutíferas e práticas agroecológicas para formação socioambiental.</p>
-          <a href="../assets/conteudosEducativos/JUSTIÇA CLIMÁTICA E AGROECOLOGIA NA EDUCAÇÃO INFANTIL O QUE PODE A EXTENSÃO NA FORMAÇÃO DA FUTURIDADE ORGÂNICA.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card36_tag">Plantas medicinais</span>
+          <h2 data-i18n="edu.card36_titulo">Jardins sensoriais contribuindo para a inclusão e difusão do conhecimento de plantas medicinais</h2>
+          <p data-i18n="edu.card36_desc">Propõe jardins sensoriais como estratégia de inclusão de pessoas com deficiência visual e de valorização do conhecimento sobre plantas medicinais.</p>
+          <a href="../assets/conteudosEducativos/JARDINS SENSORIAIS CONTRIBUINDO PARA A INCLUSÃO E DIFUSÃO DO CONHECIMENTO DE PLANTAS MEDICINAIS.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Húmus</span>
-          <h2>Minhocário e produção de húmus na Escola Família Agrícola no município de Licínio de Almeida-BA</h2>
-          <p>Relata a implantação de minhocários em ambiente escolar para produzir húmus e biofertilizante líquido a partir de resíduos orgânicos.</p>
-          <a href="../assets/conteudosEducativos/MINHOCÁRIO E PRODUÇÃO DE HÚMUS NA ESCOLA FAMÍLIA AGRÍCOLA NO MUNICÍPIO DE LICÍNIO DE ALMEIDA – BA.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card37_tag">Infâncias e clima</span>
+          <h2 data-i18n="edu.card37_titulo">Justiça climática e agroecologia na educação infantil</h2>
+          <p data-i18n="edu.card37_desc">Discute ações extensionistas com crianças, docentes e famílias, envolvendo hortas, árvores frutíferas e práticas agroecológicas para formação socioambiental.</p>
+          <a href="../assets/conteudosEducativos/JUSTIÇA CLIMÁTICA E AGROECOLOGIA NA EDUCAÇÃO INFANTIL O QUE PODE A EXTENSÃO NA FORMAÇÃO DA FUTURIDADE ORGÂNICA.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Biodiversidade agrícola</span>
-          <h2>Mudanças no cenário da biodiversidade agrícola: implicação para a nutrição e saúde humana</h2>
-          <p>Reflete sobre sementes crioulas, híbridas e transgênicas, erosão genética, bancos de germoplasma e soberania alimentar.</p>
-          <a href="../assets/conteudosEducativos/mudancas_no_cenario_da_biodiversidade_agricola_implicacao_para_a_nutricao_e_saude_humana.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card38_tag">Húmus</span>
+          <h2 data-i18n="edu.card38_titulo">Minhocário e produção de húmus na Escola Família Agrícola no município de Licínio de Almeida-BA</h2>
+          <p data-i18n="edu.card38_desc">Relata a implantação de minhocários em ambiente escolar para produzir húmus e biofertilizante líquido a partir de resíduos orgânicos.</p>
+          <a href="../assets/conteudosEducativos/MINHOCÁRIO E PRODUÇÃO DE HÚMUS NA ESCOLA FAMÍLIA AGRÍCOLA NO MUNICÍPIO DE LICÍNIO DE ALMEIDA – BA.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Educação básica</span>
-          <h2>O solo como instrumento de agroecologização na educação básica</h2>
-          <p>Relata uma oficina de horta escolar em Urandi-BA, articulando ciências, matemática, bioinsumos, manejo ecológico do solo e alimentação saudável.</p>
-          <a href="../assets/conteudosEducativos/O SOLO COMO INSTRUMENTO DE AGROECOLOGIZAÇÃO NA EDUCAÇÃO BÁSICA.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card39_tag">Biodiversidade agrícola</span>
+          <h2 data-i18n="edu.card39_titulo">Mudanças no cenário da biodiversidade agrícola: implicação para a nutrição e saúde humana</h2>
+          <p data-i18n="edu.card39_desc">Reflete sobre sementes crioulas, híbridas e transgênicas, erosão genética, bancos de germoplasma e soberania alimentar.</p>
+          <a href="../assets/conteudosEducativos/mudancas_no_cenario_da_biodiversidade_agricola_implicacao_para_a_nutricao_e_saude_humana.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Produção orgânica</span>
-          <h2>Panorama da produção orgânica no Estado da Bahia</h2>
-          <p>Versão complementar sobre a expansão dos orgânicos na Bahia, com foco em certificação, crescimento do setor e necessidades dos pequenos e médios agricultores.</p>
-          <a href="../assets/conteudosEducativos/Panorama_da_producao_organica_no_Estado_da_Bahia_e.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card40_tag">Educação básica</span>
+          <h2 data-i18n="edu.card40_titulo">O solo como instrumento de agroecologização na educação básica</h2>
+          <p data-i18n="edu.card40_desc">Relata uma oficina de horta escolar em Urandi-BA, articulando ciências, matemática, bioinsumos, manejo ecológico do solo e alimentação saudável.</p>
+          <a href="../assets/conteudosEducativos/O SOLO COMO INSTRUMENTO DE AGROECOLOGIZAÇÃO NA EDUCAÇÃO BÁSICA.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Produção orgânica</span>
-          <h2>Panorama da produção orgânica no Estado da Bahia entre 2014 e 2023</h2>
-          <p>Apresenta dados oficiais sobre o crescimento da produção orgânica na Bahia, destacando avanço de cadastros, liderança no Nordeste e desafios de assistência técnica.</p>
-          <a href="../assets/conteudosEducativos/Panorama da produção orgânica no Estado da Bahia entre 2014 e 2023.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card41_tag">Produção orgânica</span>
+          <h2 data-i18n="edu.card41_titulo">Panorama da produção orgânica no Estado da Bahia</h2>
+          <p data-i18n="edu.card41_desc">Versão complementar sobre a expansão dos orgânicos na Bahia, com foco em certificação, crescimento do setor e necessidades dos pequenos e médios agricultores.</p>
+          <a href="../assets/conteudosEducativos/Panorama_da_producao_organica_no_Estado_da_Bahia_e.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Agricultura familiar</span>
-          <h2>Perfil socioeconômico em comunidade de agricultores familiares em Carinhanha-BA</h2>
-          <p>Caracteriza o perfil socioeconômico de famílias agricultoras de Carinhanha-BA, levantando dados sobre renda, acesso a políticas públicas e condições de produção.</p>
-          <a href="https://anais.uesb.br/index.php/seagrus/article/view/6316" target="_blank" rel="noopener noreferrer">Acessar publicação</a>
+          <span class="material-tag" data-i18n="edu.card42_tag">Produção orgânica</span>
+          <h2 data-i18n="edu.card42_titulo">Panorama da produção orgânica no Estado da Bahia entre 2014 e 2023</h2>
+          <p data-i18n="edu.card42_desc">Apresenta dados oficiais sobre o crescimento da produção orgânica na Bahia, destacando avanço de cadastros, liderança no Nordeste e desafios de assistência técnica.</p>
+          <a href="../assets/conteudosEducativos/Panorama da produção orgânica no Estado da Bahia entre 2014 e 2023.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">PANCs</span>
-          <h2>Plantas Alimentícias Não Convencionais (PANCs): características e algumas espécies presentes no território brasileiro</h2>
-          <p>Apresenta características, potencial nutritivo e algumas espécies de PANCs presentes no Brasil, destacando sua relevância para a soberania alimentar e a agroecologia.</p>
-          <a href="https://cadernos.aba-agroecologia.org.br/cadernos/article/view/6969" target="_blank" rel="noopener noreferrer">Acessar publicação</a>
+          <span class="material-tag" data-i18n="edu.card43_tag">Agricultura familiar</span>
+          <h2 data-i18n="edu.card43_titulo">Perfil socioeconômico em comunidade de agricultores familiares em Carinhanha-BA</h2>
+          <p data-i18n="edu.card43_desc">Caracteriza o perfil socioeconômico de famílias agricultoras de Carinhanha-BA, levantando dados sobre renda, acesso a políticas públicas e condições de produção.</p>
+          <a href="https://anais.uesb.br/index.php/seagrus/article/view/6316" target="_blank" rel="noopener noreferrer" data-i18n="edu.acessar">Acessar publicação</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Manjericão</span>
-          <h2>Potencial germinativo de sementes de manjericão em condições adversas</h2>
-          <p>Compara o potencial germinativo de sementes de manjericão armazenadas e industrializadas, considerando dormência, vigor e condições ambientais.</p>
-          <a href="../assets/conteudosEducativos/POTENCIAL GERMINATIVO DE SEMENTES DE MANJERIÇÃO (Ocimum basilicum) EM CONDIÇÕES ADVERSAS.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card44_tag">PANCs</span>
+          <h2 data-i18n="edu.card44_titulo">Plantas Alimentícias Não Convencionais (PANCs): características e algumas espécies presentes no território brasileiro</h2>
+          <p data-i18n="edu.card44_desc">Apresenta características, potencial nutritivo e algumas espécies de PANCs presentes no Brasil, destacando sua relevância para a soberania alimentar e a agroecologia.</p>
+          <a href="https://cadernos.aba-agroecologia.org.br/cadernos/article/view/6969" target="_blank" rel="noopener noreferrer" data-i18n="edu.acessar">Acessar publicação</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">EFA Caculé</span>
-          <h2>Práticas agroecológicas na Escola Família Agrícola de Caculé-BA</h2>
-          <p>Analisa reuso de águas residuais e produção de biofertilizantes como práticas agroecológicas para fortalecer a agricultura resiliente ao clima no semiárido.</p>
-          <a href="../assets/conteudosEducativos/PRÁTICAS AGROECOLÓGICAS NA ESCOLA FAMÍLIA AGRÍCOLA DE CACULÉ –BAHIA UM ESTUDO SOBRE AGRICULTURA RESILIENTE AO CLIMA NO SEMIÁRIDO BAIANO.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card45_tag">Manjericão</span>
+          <h2 data-i18n="edu.card45_titulo">Potencial germinativo de sementes de manjericão em condições adversas</h2>
+          <p data-i18n="edu.card45_desc">Compara o potencial germinativo de sementes de manjericão armazenadas e industrializadas, considerando dormência, vigor e condições ambientais.</p>
+          <a href="../assets/conteudosEducativos/POTENCIAL GERMINATIVO DE SEMENTES DE MANJERIÇÃO (Ocimum basilicum) EM CONDIÇÕES ADVERSAS.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Alface</span>
-          <h2>Produção de alface com utilização de biofertilizante à base de folhas de amoreira</h2>
-          <p>Apresenta resultado preliminar sobre biofertilizante de folhas de amoreira no desenvolvimento da alface americana como alternativa de baixo custo para horticultores.</p>
-          <a href="../assets/conteudosEducativos/PRODUÇÃO DE ALFACE COM UTILIZAÇÃO DE BIOFERTILIZANTE A BASE DE FOLHAS DE AMOREIRA RESULTADO PRELIMINAR.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card46_tag">EFA Caculé</span>
+          <h2 data-i18n="edu.card46_titulo">Práticas agroecológicas na Escola Família Agrícola de Caculé-BA</h2>
+          <p data-i18n="edu.card46_desc">Analisa reuso de águas residuais e produção de biofertilizantes como práticas agroecológicas para fortalecer a agricultura resiliente ao clima no semiárido.</p>
+          <a href="../assets/conteudosEducativos/PRÁTICAS AGROECOLÓGICAS NA ESCOLA FAMÍLIA AGRÍCOLA DE CACULÉ –BAHIA UM ESTUDO SOBRE AGRICULTURA RESILIENTE AO CLIMA NO SEMIÁRIDO BAIANO.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Cenoura</span>
-          <h2>Produção de cenoura com utilização de biofertilizante à base de Aloe vera</h2>
-          <p>Estuda o cultivo da cenoura com biofertilizante produzido a partir de babosa, buscando fonte natural de nutrientes para pequenos e médios produtores.</p>
-          <a href="../assets/conteudosEducativos/PRODUÇÃO DE CENOURA COM UTILIZAÇÃO DE BIOFERTILIZANTE A BASE DE Aloe vera.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card47_tag">Alface</span>
+          <h2 data-i18n="edu.card47_titulo">Produção de alface com utilização de biofertilizante à base de folhas de amoreira</h2>
+          <p data-i18n="edu.card47_desc">Apresenta resultado preliminar sobre biofertilizante de folhas de amoreira no desenvolvimento da alface americana como alternativa de baixo custo para horticultores.</p>
+          <a href="../assets/conteudosEducativos/PRODUÇÃO DE ALFACE COM UTILIZAÇÃO DE BIOFERTILIZANTE A BASE DE FOLHAS DE AMOREIRA RESULTADO PRELIMINAR.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Banana</span>
-          <h2>Production, decomposition and chemical characteristics of litterfall</h2>
-          <p>Caracteriza a produção, decomposição e composição química da serapilheira de genótipos de bananeira cultivados em condições de Caatinga no sudoeste da Bahia.</p>
-          <a href="../assets/conteudosEducativos/PRODUCTION, DECOMPOSITION AND CHEMICAL CHARACTERISTICS OF.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card48_tag">Cenoura</span>
+          <h2 data-i18n="edu.card48_titulo">Produção de cenoura com utilização de biofertilizante à base de Aloe vera</h2>
+          <p data-i18n="edu.card48_desc">Estuda o cultivo da cenoura com biofertilizante produzido a partir de babosa, buscando fonte natural de nutrientes para pequenos e médios produtores.</p>
+          <a href="../assets/conteudosEducativos/PRODUÇÃO DE CENOURA COM UTILIZAÇÃO DE BIOFERTILIZANTE A BASE DE Aloe vera.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Extensão rural</span>
-          <h2>Programa de extensão à agricultura orgânica no Sertão Produtivo</h2>
-          <p>Apresenta o programa de extensão do IF Baiano voltado à agricultura orgânica, descrevendo ações, municípios atendidos e impacto na formação de agricultores agroecológicos.</p>
-          <a href="https://revista.lapprudes.net/CM/article/view/1265" target="_blank" rel="noopener noreferrer">Acessar publicação</a>
+          <span class="material-tag" data-i18n="edu.card49_tag">Banana</span>
+          <h2 data-i18n="edu.card49_titulo">Production, decomposition and chemical characteristics of litterfall</h2>
+          <p data-i18n="edu.card49_desc">Caracteriza a produção, decomposição e composição química da serapilheira de genótipos de bananeira cultivados em condições de Caatinga no sudoeste da Bahia.</p>
+          <a href="../assets/conteudosEducativos/PRODUCTION, DECOMPOSITION AND CHEMICAL CHARACTERISTICS OF.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Coentro</span>
-          <h2>Propriedades químicas do solo e desenvolvimento do coentro tratado com biofertilizante e cobertura de moringa</h2>
-          <p>Relaciona manejo orgânico do solo, biofertilizante e cobertura de moringa no desenvolvimento do coentro e na melhoria das propriedades químicas do solo.</p>
-          <a href="../assets/conteudosEducativos/Propriedades químicas do solo e desenvolvimento do coentro tratado com biofertilizante e cobertura de moringa.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card50_tag">Extensão rural</span>
+          <h2 data-i18n="edu.card50_titulo">Programa de extensão à agricultura orgânica no Sertão Produtivo</h2>
+          <p data-i18n="edu.card50_desc">Apresenta o programa de extensão do IF Baiano voltado à agricultura orgânica, descrevendo ações, municípios atendidos e impacto na formação de agricultores agroecológicos.</p>
+          <a href="https://revista.lapprudes.net/CM/article/view/1265" target="_blank" rel="noopener noreferrer" data-i18n="edu.acessar">Acessar publicação</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Solo</span>
-          <h2>Qualidade do solo pelo método da Cromatografia de Pfeiffer</h2>
-          <p>Apresenta a cromatografia de Pfeiffer como ferramenta para avaliação da qualidade do solo em sistemas agroecológicos, destacando sua aplicação prática na agricultura orgânica.</p>
-          <a href="https://books.google.com.br/books?hl=pt-BR&lr=&id=t7YmEAAAQBAJ&oi=fnd&pg=PT72" target="_blank" rel="noopener noreferrer">Acessar publicação</a>
+          <span class="material-tag" data-i18n="edu.card51_tag">Coentro</span>
+          <h2 data-i18n="edu.card51_titulo">Propriedades químicas do solo e desenvolvimento do coentro tratado com biofertilizante e cobertura de moringa</h2>
+          <p data-i18n="edu.card51_desc">Relaciona manejo orgânico do solo, biofertilizante e cobertura de moringa no desenvolvimento do coentro e na melhoria das propriedades químicas do solo.</p>
+          <a href="../assets/conteudosEducativos/Propriedades químicas do solo e desenvolvimento do coentro tratado com biofertilizante e cobertura de moringa.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Água subterrânea</span>
-          <h2>Qualidade sanitária da água subterrânea aplicada na irrigação de hortaliças no Sertão Produtivo baiano</h2>
-          <p>Avalia a qualidade bacteriológica da água de poços usada em hortaliças orgânicas de Caetité e Candiba, com foco em coliformes, legislação e certificação.</p>
-          <a href="../assets/conteudosEducativos/QUALIDADE SANITÁRIA DA ÁGUA SUBTERRÂNEA APLICADA NA IRRIGAÇÃO DE HORTALIÇAS NO SERTÃO PRODUTIVO BAIANO.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card52_tag">Solo</span>
+          <h2 data-i18n="edu.card52_titulo">Qualidade do solo pelo método da Cromatografia de Pfeiffer</h2>
+          <p data-i18n="edu.card52_desc">Apresenta a cromatografia de Pfeiffer como ferramenta para avaliação da qualidade do solo em sistemas agroecológicos, destacando sua aplicação prática na agricultura orgânica.</p>
+          <a href="https://books.google.com.br/books?hl=pt-BR&lr=&id=t7YmEAAAQBAJ&oi=fnd&pg=PT72" target="_blank" rel="noopener noreferrer" data-i18n="edu.acessar">Acessar publicação</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Agrobiodiversidade</span>
-          <h2>Representações da agrobiodiversidade no Território de Identidade Sertão Produtivo-BA</h2>
-          <p>Analisa mudanças históricas na agricultura do Sertão Produtivo, passando da tradição à Revolução Verde e à atual transição agroecológica.</p>
-          <a href="../assets/conteudosEducativos/REPRESENTAÇÕES DA AGROBIODIVERSIDADE NO TERRITÓRIO   DE   IDENTIDADE   SERTÃO   PRODUTIVO -BAHIA.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card53_tag">Água subterrânea</span>
+          <h2 data-i18n="edu.card53_titulo">Qualidade sanitária da água subterrânea aplicada na irrigação de hortaliças no Sertão Produtivo baiano</h2>
+          <p data-i18n="edu.card53_desc">Avalia a qualidade bacteriológica da água de poços usada em hortaliças orgânicas de Caetité e Candiba, com foco em coliformes, legislação e certificação.</p>
+          <a href="../assets/conteudosEducativos/QUALIDADE SANITÁRIA DA ÁGUA SUBTERRÂNEA APLICADA NA IRRIGAÇÃO DE HORTALIÇAS NO SERTÃO PRODUTIVO BAIANO.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Feijão-caupi</span>
-          <h2>Resposta do feijão-caupi submetido a diferentes doses de vinhaça</h2>
-          <p>Investiga a vinhaça como composto orgânico no cultivo do feijão-caupi, considerando a importância socioeconômica da cultura para a agricultura familiar.</p>
-          <a href="../assets/conteudosEducativos/REPOSTA DO FEIJÃO-CAUPI (Vigna unguiculataL.) SUBMETIDO A DIFERENTES DOSES DE VINHAÇA.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card54_tag">Agrobiodiversidade</span>
+          <h2 data-i18n="edu.card54_titulo">Representações da agrobiodiversidade no Território de Identidade Sertão Produtivo-BA</h2>
+          <p data-i18n="edu.card54_desc">Analisa mudanças históricas na agricultura do Sertão Produtivo, passando da tradição à Revolução Verde e à atual transição agroecológica.</p>
+          <a href="../assets/conteudosEducativos/REPRESENTAÇÕES DA AGROBIODIVERSIDADE NO TERRITÓRIO   DE   IDENTIDADE   SERTÃO   PRODUTIVO -BAHIA.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Transição agroecológica</span>
-          <h2>Transição agroecológica de agricultores familiares no Território Sertão Produtivo, Candiba-BA</h2>
-          <p>Analisa o processo de transição agroecológica de famílias agricultoras em Candiba-BA, identificando desafios, motivações e práticas adotadas no caminho para a produção orgânica.</p>
-          <a href="https://anais.uesb.br/index.php/seagrus/article/view/6337" target="_blank" rel="noopener noreferrer">Acessar publicação</a>
+          <span class="material-tag" data-i18n="edu.card55_tag">Feijão-caupi</span>
+          <h2 data-i18n="edu.card55_titulo">Resposta do feijão-caupi submetido a diferentes doses de vinhaça</h2>
+          <p data-i18n="edu.card55_desc">Investiga a vinhaça como composto orgânico no cultivo do feijão-caupi, considerando a importância socioeconômica da cultura para a agricultura familiar.</p>
+          <a href="../assets/conteudosEducativos/REPOSTA DO FEIJÃO-CAUPI (Vigna unguiculataL.) SUBMETIDO A DIFERENTES DOSES DE VINHAÇA.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Mudas de tomate</span>
-          <h2>Uso de resíduos sólidos de biofertilizante líquido como componente de substrato na produção de mudas de tomate perinha</h2>
-          <p>Avalia combinações de substrato comercial com resíduos sólidos de biofertilizante para germinação e crescimento inicial de mudas de tomate perinha.</p>
-          <a href="../assets/conteudosEducativos/USO DE RESÍDUOS SÓLIDOS DE BIOFERTILIZANTE LÍQUIDO COMO COMPONENTE DE SUBSTRATO NA PRODUÇÃO DE MUDAS DE TOMATE PERINHA.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card56_tag">Transição agroecológica</span>
+          <h2 data-i18n="edu.card56_titulo">Transição agroecológica de agricultores familiares no Território Sertão Produtivo, Candiba-BA</h2>
+          <p data-i18n="edu.card56_desc">Analisa o processo de transição agroecológica de famílias agricultoras em Candiba-BA, identificando desafios, motivações e práticas adotadas no caminho para a produção orgânica.</p>
+          <a href="https://anais.uesb.br/index.php/seagrus/article/view/6337" target="_blank" rel="noopener noreferrer" data-i18n="edu.acessar">Acessar publicação</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Água subterrânea</span>
-          <h2>Uso e qualidade de água subterrânea utilizada por agricultores familiares no Território Sertão Produtivo, Bahia</h2>
-          <p>Avalia a qualidade físico-química e microbiológica da água subterrânea usada na produção de alimentos por agricultores familiares do Sertão Produtivo baiano.</p>
-          <a href="https://revista.ecogestaobrasil.net/v7n16/v07n16a15a.html" target="_blank" rel="noopener noreferrer">Acessar publicação</a>
+          <span class="material-tag" data-i18n="edu.card57_tag">Mudas de tomate</span>
+          <h2 data-i18n="edu.card57_titulo">Uso de resíduos sólidos de biofertilizante líquido como componente de substrato na produção de mudas de tomate perinha</h2>
+          <p data-i18n="edu.card57_desc">Avalia combinações de substrato comercial com resíduos sólidos de biofertilizante para germinação e crescimento inicial de mudas de tomate perinha.</p>
+          <a href="../assets/conteudosEducativos/USO DE RESÍDUOS SÓLIDOS DE BIOFERTILIZANTE LÍQUIDO COMO COMPONENTE DE SUBSTRATO NA PRODUÇÃO DE MUDAS DE TOMATE PERINHA.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Coentro</span>
-          <h2>Vista do artigo sobre propriedades químicas do solo e desenvolvimento do coentro</h2>
-          <p>Arquivo complementar do artigo sobre coentro, biofertilizante e cobertura de moringa, voltado ao manejo orgânico e à qualidade química do solo.</p>
-          <a href="../assets/conteudosEducativos/Vista do Propriedades químicas do solo e desenvolvimento do coentro tratado com biofertilizante e cobertura de moringa.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card58_tag">Água subterrânea</span>
+          <h2 data-i18n="edu.card58_titulo">Uso e qualidade de água subterrânea utilizada por agricultores familiares no Território Sertão Produtivo, Bahia</h2>
+          <p data-i18n="edu.card58_desc">Avalia a qualidade físico-química e microbiológica da água subterrânea usada na produção de alimentos por agricultores familiares do Sertão Produtivo baiano.</p>
+          <a href="https://revista.ecogestaobrasil.net/v7n16/v07n16a15a.html" target="_blank" rel="noopener noreferrer" data-i18n="edu.acessar">Acessar publicação</a>
         </article>
 
         <article class="material-card reveal">
-          <span class="material-tag">Horta escolar</span>
-          <h2>Vivências em educação ambiental por meio do cultivo de hortas</h2>
-          <p>Relata uma horta comunitária em creche municipal de Guanambi, promovendo contato das crianças com a natureza, plantio, cuidado e alimentação saudável.</p>
-          <a href="../assets/conteudosEducativos/VIVÊNCIAS EM EDUCAÇÃO AMBIENTAL POR MEIO DO CULTIVO DE HORTAS.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <span class="material-tag" data-i18n="edu.card59_tag">Coentro</span>
+          <h2 data-i18n="edu.card59_titulo">Vista do artigo sobre propriedades químicas do solo e desenvolvimento do coentro</h2>
+          <p data-i18n="edu.card59_desc">Arquivo complementar do artigo sobre coentro, biofertilizante e cobertura de moringa, voltado ao manejo orgânico e à qualidade química do solo.</p>
+          <a href="../assets/conteudosEducativos/Vista do Propriedades químicas do solo e desenvolvimento do coentro tratado com biofertilizante e cobertura de moringa.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
+        </article>
+
+        <article class="material-card reveal">
+          <span class="material-tag" data-i18n="edu.card60_tag">Horta escolar</span>
+          <h2 data-i18n="edu.card60_titulo">Vivências em educação ambiental por meio do cultivo de hortas</h2>
+          <p data-i18n="edu.card60_desc">Relata uma horta comunitária em creche municipal de Guanambi, promovendo contato das crianças com a natureza, plantio, cuidado e alimentação saudável.</p>
+          <a href="../assets/conteudosEducativos/VIVÊNCIAS EM EDUCAÇÃO AMBIENTAL POR MEIO DO CULTIVO DE HORTAS.pdf" target="_blank" rel="noopener noreferrer" data-i18n="edu.abrir_pdf">Abrir PDF</a>
         </article>
 
       </div><!-- fim materiais-grid -->
@@ -533,11 +534,11 @@
 </main>
 
 <footer role="contentinfo" id="site-footer"></footer>
-<script src="../assets/js/footer.js?v=202608101635"></script>
+<script src="../assets/js/footer.js?v=202608112002"></script>
 
 <div id="toast" style="position:fixed; bottom:24px; right:24px; background:var(--verde); color:white; padding:16px 24px; border-radius:12px; font-size:14px; font-weight:600; opacity:0; transform:translateY(20px); transition:all 0.3s; z-index:9999; max-width:300px; box-shadow:0 8px 24px rgba(0,0,0,0.2);" role="alert" aria-live="polite"></div>
 
-<script src="../assets/js/main.js?v=202608101635"></script>
+<script src="../assets/js/main.js?v=202608112002"></script>
 
 <script>
 // Busca em tempo real entre publicações educativas

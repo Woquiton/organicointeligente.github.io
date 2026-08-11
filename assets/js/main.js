@@ -12,22 +12,20 @@
     btn.setAttribute('aria-expanded', open);
   }
 
-  // === Alternância de idioma ===
-  function toggleLang() {
-    var current = '';
-    try { current = localStorage.getItem('oi-lang') || 'pt'; } catch(e) { current = 'pt'; }
-    try { localStorage.setItem('oi-lang', current === 'pt' ? 'en' : 'pt'); } catch(e) {}
+  // === Seleção direta de idioma ===
+  function setLang(lang) {
+    try { localStorage.setItem('oi-lang', lang); } catch(e) {}
     location.reload();
   }
 
-  // Destacar idioma ativo no botão
+  // Destacar idioma ativo no seletor
   (function () {
     var lang = 'pt';
     try { lang = localStorage.getItem('oi-lang') || 'pt'; } catch(e) {}
-    var btn = document.getElementById('lang-toggle');
-    if (!btn) return;
-    var active = btn.querySelector('.lang-' + lang);
-    if (active) active.style.cssText = 'font-weight:700;color:var(--verde)';
+    document.querySelectorAll('.nav-lang-toggle .lang-opt').forEach(function (btn) {
+      if (btn.getAttribute('data-lang') === lang) btn.setAttribute('aria-current', 'true');
+      else btn.removeAttribute('aria-current');
+    });
   })();
 
   // === Acessibilidade ===

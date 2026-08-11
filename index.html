@@ -25,25 +25,26 @@
   <link rel="canonical" href="https://organicointeligente.com.br/">
   <link rel="alternate" hreflang="pt-BR" href="https://organicointeligente.com.br/">
   <link rel="alternate" hreflang="en" href="https://organicointeligente.com.br/?lang=en">
+  <link rel="alternate" hreflang="es" href="https://organicointeligente.com.br/?lang=es">
   <link rel="alternate" hreflang="x-default" href="https://organicointeligente.com.br/">
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://organicointeligente.com.br/">
   <meta property="og:site_name" content="Orgânico Inteligente">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:title" content="Orgânico Inteligente – Cultivando Saúde no Sertão Produtivo">
-  <meta property="og:description" content="Programa de ensino, pesquisa e extensão dedicado à agroecologia e produção orgânica no Sertão Produtivo da Bahia. Mais de 5000 agricultores capacitados e 44 certificações orgânicas emitidas.">
+  <meta property="og:title" content="Orgânico Inteligente – Cultivando Saúde no Sertão Produtivo" data-i18n-content="index.page_title">
+  <meta property="og:description" content="Programa de ensino, pesquisa e extensão dedicado à agroecologia e produção orgânica no Sertão Produtivo da Bahia. Mais de 5000 agricultores capacitados e 44 certificações orgânicas emitidas." data-i18n-content="index.og_desc">
   <meta property="og:image" content="https://organicointeligente.com.br/assets/images/slideshow/img0.jpeg">
   <meta property="og:image:width" content="1600">
   <meta property="og:image:height" content="900">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Orgânico Inteligente – Cultivando Saúde no Sertão Produtivo">
-  <meta name="twitter:description" content="Programa de agroecologia e produção orgânica no Sertão Produtivo da Bahia.">
+  <meta name="twitter:title" content="Orgânico Inteligente – Cultivando Saúde no Sertão Produtivo" data-i18n-content="index.page_title">
+  <meta name="twitter:description" content="Programa de agroecologia e produção orgânica no Sertão Produtivo da Bahia." data-i18n-content="index.twitter_desc">
   <meta name="twitter:image" content="https://organicointeligente.com.br/assets/images/slideshow/img0.jpeg">
   <title>Orgânico Inteligente – Cultivando Saúde no Sertão Produtivo</title>
   <!-- JSON-LD: Organização -->
-  <script type="application/ld+json">
+  <script type="application/ld+json" id="org-jsonld" data-i18n-json="description:index.org_json_desc;contactType:index.org_contact_type">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -76,12 +77,14 @@
   }
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=202608101635">
+  <link rel="stylesheet" href="assets/css/style.css?v=202608112002">
   <style>
-    .nav-lang-toggle{background:none;border:1px solid rgba(74,124,47,.3);color:var(--texto-suave);font-family:'Space Mono',monospace;font-size:12px;padding:4px 10px;border-radius:8px;cursor:pointer;transition:.2s;display:flex;align-items:center;gap:2px;white-space:nowrap;flex-shrink:0;}
-    .nav-lang-toggle:hover{background:rgba(74,124,47,.1);color:var(--verde);}
+    .nav-lang-toggle{display:flex;align-items:center;gap:2px;background:rgba(74,124,47,.06);border:1px solid rgba(74,124,47,.3);border-radius:9px;padding:3px;flex-shrink:0;}
+    .nav-lang-toggle .lang-opt{background:none;border:0;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:var(--texto-suave);padding:5px 9px;border-radius:6px;cursor:pointer;transition:.15s;line-height:1;}
+    .nav-lang-toggle .lang-opt:hover{color:var(--verde);}
+    .nav-lang-toggle .lang-opt[aria-current="true"]{background:var(--verde);color:#fff;}
   </style>
-  <script src="assets/js/i18n.js?v=202608101635"></script>
+  <script src="assets/js/i18n.js?v=202608112002"></script>
 </head>
 <body id="topo" data-i18n-title="index.page_title">
 
@@ -114,16 +117,14 @@
 
     <ul class="nav-links" id="nav-links" role="menubar"></ul>
 
-    <button class="nav-lang-toggle" id="lang-toggle" onclick="toggleLang()"
-            aria-label="Mudar para inglês"
-            data-i18n-attr="aria-label:lang.toggle_aria">
-      <span class="lang-pt" aria-hidden="true">PT</span>
-      <span class="lang-sep" aria-hidden="true"> | </span>
-      <span class="lang-en" aria-hidden="true">EN</span>
-    </button>
+    <div class="nav-lang-toggle" role="group" data-i18n-attr="aria-label:lang.toggle_aria" aria-label="Selecionar idioma">
+      <button type="button" class="lang-opt" data-lang="pt" onclick="setLang('pt')" data-i18n-attr="aria-label:lang.pt_label" aria-label="Português">PT</button>
+      <button type="button" class="lang-opt" data-lang="en" onclick="setLang('en')" data-i18n-attr="aria-label:lang.en_label" aria-label="English">EN</button>
+      <button type="button" class="lang-opt" data-lang="es" onclick="setLang('es')" data-i18n-attr="aria-label:lang.es_label" aria-label="Español">ES</button>
+    </div>
   </div>
 </nav>
-<script src="assets/js/nav.js?v=202608101635"></script>
+<script src="assets/js/nav.js?v=202608112002"></script>
 
 <main id="main-content">
 
@@ -145,15 +146,15 @@
 <section class="hero" data-i18n-attr="aria-label:index.hero_aria" aria-label="Galeria de imagens do projeto">
   <div class="slideshow" id="heroSlideshow">
 
-    <div class="slide active"><img src="assets/images/slideshow/img0.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 1"></div>
-    <div class="slide"><img src="assets/images/slideshow/img2.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 2"></div>
-    <div class="slide"><img src="assets/images/slideshow/img3.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 3"></div>
-    <div class="slide"><img src="assets/images/slideshow/img4.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 4"></div>
-    <div class="slide"><img src="assets/images/slideshow/img5.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 5"></div>
-    <div class="slide"><img src="assets/images/slideshow/img6.jpg"  alt="Orgânico Inteligente – campo e agricultores, imagem 6"></div>
-    <div class="slide"><img src="assets/images/slideshow/img7.jpg"  alt="Orgânico Inteligente – campo e agricultores, imagem 7"></div>
-    <div class="slide"><img src="assets/images/slideshow/img8.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 8"></div>
-    <div class="slide"><img src="assets/images/slideshow/img9.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 9"></div>
+    <div class="slide active"><img src="assets/images/slideshow/img0.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 1" data-i18n-attr="alt:index.slide1_alt"></div>
+    <div class="slide"><img src="assets/images/slideshow/img2.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 2" data-i18n-attr="alt:index.slide2_alt"></div>
+    <div class="slide"><img src="assets/images/slideshow/img3.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 3" data-i18n-attr="alt:index.slide3_alt"></div>
+    <div class="slide"><img src="assets/images/slideshow/img4.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 4" data-i18n-attr="alt:index.slide4_alt"></div>
+    <div class="slide"><img src="assets/images/slideshow/img5.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 5" data-i18n-attr="alt:index.slide5_alt"></div>
+    <div class="slide"><img src="assets/images/slideshow/img6.jpg"  alt="Orgânico Inteligente – campo e agricultores, imagem 6" data-i18n-attr="alt:index.slide6_alt"></div>
+    <div class="slide"><img src="assets/images/slideshow/img7.jpg"  alt="Orgânico Inteligente – campo e agricultores, imagem 7" data-i18n-attr="alt:index.slide7_alt"></div>
+    <div class="slide"><img src="assets/images/slideshow/img8.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 8" data-i18n-attr="alt:index.slide8_alt"></div>
+    <div class="slide"><img src="assets/images/slideshow/img9.jpeg" alt="Orgânico Inteligente – campo e agricultores, imagem 9" data-i18n-attr="alt:index.slide9_alt"></div>
 
     <button class="slide-btn slide-prev" data-i18n-attr="aria-label:index.slide_prev_aria" aria-label="Imagem anterior">&#8249;</button>
     <button class="slide-btn slide-next" data-i18n-attr="aria-label:index.slide_next_aria" aria-label="Próxima imagem">&#8250;</button>
@@ -242,8 +243,8 @@
     <!-- Quem é Felizarda Bebé? -->
     <div class="sobre-fundadora reveal">
       <div class="fundadora-img">
-        <img src="assets/images/profaFelizarda2.png" alt="Professora Felizarda Bebé">
-        <img src="assets/images/profaFelizarda3.jpeg" alt="Professora Felizarda Bebé">
+        <img src="assets/images/profaFelizarda2.png" alt="Professora Felizarda Bebé" data-i18n-attr="alt:index.foto_felizarda_alt">
+        <img src="assets/images/profaFelizarda3.jpeg" alt="Professora Felizarda Bebé" data-i18n-attr="alt:index.foto_felizarda_alt">
       </div>
       <div class="fundadora-texto">
         <div class="section-tag" data-i18n="index.fundadora_tag">👩‍🌾 Fundadora</div>
@@ -654,7 +655,7 @@
 
     <div class="contato-com-foto">
       <div class="contato-foto reveal">
-        <img src="assets/images/DraFeliz.png" alt="Professora Felizarda Bebé">
+        <img src="assets/images/DraFeliz.png" alt="Professora Felizarda Bebé" data-i18n-attr="alt:index.foto_felizarda_alt">
       </div>
       <div class="contato-info reveal reveal-delay-1">
         <div class="contato-items">
@@ -693,12 +694,12 @@
 
 <!-- ===== FOOTER ===== -->
 <footer role="contentinfo" id="site-footer"></footer>
-<script src="assets/js/footer.js?v=202608101635"></script>
+<script src="assets/js/footer.js?v=202608112002"></script>
 
 <!-- Toast notification -->
 <div id="toast" style="position:fixed; bottom:24px; right:24px; background:var(--verde); color:white; padding:16px 24px; border-radius:12px; font-size:14px; font-weight:600; opacity:0; transform:translateY(20px); transition:all 0.3s; z-index:9999; max-width:300px; box-shadow:0 8px 24px rgba(0,0,0,0.2);" role="alert" aria-live="polite"></div>
 
 
-  <script src="assets/js/main.js?v=202608101635"></script>
+  <script src="assets/js/main.js?v=202608112002"></script>
 </body>
 </html>
