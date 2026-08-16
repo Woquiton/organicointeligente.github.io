@@ -73,7 +73,7 @@
   }
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css?v=202608112002">
+  <link rel="stylesheet" href="../assets/css/style.css?v=202608161758">
   <style>
     .xseapo-hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--verde);overflow:hidden;text-align:center}
     .xseapo-hero-bg{position:absolute;inset:0;background-image:url('../assets/images/seapo/iii-seapo-seminario.jpeg');background-size:cover;background-position:center;opacity:.18}
@@ -164,6 +164,9 @@
     .prazo-data{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--verde);line-height:1.1}
     .prazo-data-antiga{font-size:16px;font-weight:500;color:var(--texto-suave);text-decoration:line-through;opacity:.65;margin-right:10px}
     .prazo-note{font-size:13px;color:var(--texto-suave);margin-top:6px;line-height:1.5}
+    .submissao-resultado-banner{display:flex;align-items:center;gap:24px;background:white;border-radius:18px;padding:28px 32px;margin-bottom:44px;border-left:4px solid var(--verde);box-shadow:0 2px 16px rgba(0,0,0,.06)}
+    .resultado-label{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--texto-suave);margin-bottom:6px}
+    .resultado-titulo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--verde);line-height:1.35;margin-bottom:16px}
     .submissao-modalidades{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:40px}
     .submissao-mod-card{background:white;border-radius:16px;padding:28px 24px;box-shadow:0 2px 12px rgba(0,0,0,.05);border-top:3px solid var(--verde-claro)}
     .submissao-mod-card .sm-icon{font-size:30px;display:block;margin-bottom:14px}
@@ -191,7 +194,7 @@
     .hotel-ligar{display:block;text-align:center;background:var(--verde);color:white;font-size:12px;font-weight:700;padding:9px 0;border-radius:100px;text-decoration:none;margin-top:16px;transition:opacity .15s}
     .hotel-ligar:hover{opacity:.85}
     @media(max-width:1024px){.xseapo-destaques-grid{grid-template-columns:repeat(2,1fr)}.minicursos-grid{grid-template-columns:repeat(2,1fr)}.memoria-mini-grid{grid-template-columns:repeat(2,1fr)}.xseapo-video-grid{grid-template-columns:repeat(2,1fr)}.hoteis-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:640px){.xseapo-destaques-grid{grid-template-columns:1fr}.minicursos-grid{grid-template-columns:1fr}.prog-item{grid-template-columns:1fr;gap:4px}.prog-foto{width:44px;height:44px}.memoria-mini-grid{grid-template-columns:repeat(2,1fr)}.xseapo-video-grid{grid-template-columns:1fr}.submissao-modalidades{grid-template-columns:1fr}.hoteis-grid{grid-template-columns:1fr}.submissao-prazo-banner{flex-direction:column;gap:12px;text-align:center}}
+    @media(max-width:640px){.xseapo-destaques-grid{grid-template-columns:1fr}.minicursos-grid{grid-template-columns:1fr}.prog-item{grid-template-columns:1fr;gap:4px}.prog-foto{width:44px;height:44px}.memoria-mini-grid{grid-template-columns:repeat(2,1fr)}.xseapo-video-grid{grid-template-columns:1fr}.submissao-modalidades{grid-template-columns:1fr}.hoteis-grid{grid-template-columns:1fr}.submissao-prazo-banner{flex-direction:column;gap:12px;text-align:center}.submissao-resultado-banner{flex-direction:column;gap:12px;text-align:center}}
   </style>
   <style>
     .nav-lang-toggle{display:flex;align-items:center;gap:2px;background:rgba(74,124,47,.06);border:1px solid rgba(74,124,47,.3);border-radius:9px;padding:3px;flex-shrink:0;}
@@ -199,7 +202,7 @@
     .nav-lang-toggle .lang-opt:hover{color:var(--verde);}
     .nav-lang-toggle .lang-opt[aria-current="true"]{background:var(--verde);color:#fff;}
   </style>
-  <script src="../assets/js/i18n.js?v=202608112002"></script>
+  <script src="../assets/js/i18n.js?v=202608161758"></script>
 </head>
 <body id="topo" data-i18n-title="seapo.page_title">
 
@@ -234,7 +237,7 @@
     </div>
   </div>
 </nav>
-<script src="../assets/js/nav.js?v=202608112002"></script>
+<script src="../assets/js/nav.js?v=202608161758"></script>
 
 <main id="main-content">
 
@@ -395,6 +398,7 @@
               <span class="prog-tag lancamento" data-i18n="seapo.tag_lancamento">Trabalhos Científicos</span>
               <div class="prog-titulo" data-i18n="seapo.trabalhos_titulo">Apresentação de Trabalhos Científicos</div>
               <div class="prog-speaker" data-i18n="seapo.trabalhos_local">Quadra do Campus</div>
+              <div class="prog-speaker" style="margin-top:6px;"><a href="../assets/images/seapo/X SEAPO - Trabalhos para apresenta&#231;&#227;o em Banner.pdf" target="_blank" rel="noopener noreferrer" style="color:var(--verde);font-weight:600;" data-i18n="seapo.trabalhos_pdf_link">&#128196; Ver rela&#231;&#227;o de trabalhos aceitos (PDF)</a></div>
             </div>
           </div>
         </div>
@@ -601,9 +605,18 @@
           </div>
           <div class="prazo-data">
             <span class="prazo-data-antiga" data-i18n="seapo.prazo_data_antiga">31 de julho de 2026</span>
-            <span data-i18n="seapo.prazo_data">09 de agosto de 2026</span>
+            <span class="prazo-data-antiga" data-i18n="seapo.prazo_data">09 de agosto de 2026</span>
           </div>
-          <div class="prazo-note" data-i18n="seapo.prazo_note">Novo prazo! Baixe o template da sua modalidade, siga o tutorial e envie at&eacute; a nova data.</div>
+          <div class="prazo-note" data-i18n="seapo.prazo_note">As submiss&#245;es foram encerradas. Confira abaixo a rela&#231;&#227;o dos trabalhos aceitos para apresenta&#231;&#227;o em banner.</div>
+        </div>
+      </div>
+
+      <div class="submissao-resultado-banner">
+        <div class="prazo-icon">&#128203;</div>
+        <div>
+          <div class="resultado-label" data-i18n="seapo.resultado_label">Resultado da Submiss&#227;o</div>
+          <div class="resultado-titulo" data-i18n="seapo.resultado_titulo">Rela&#231;&#227;o dos Trabalhos Aceitos para Apresenta&#231;&#227;o em Formato de Banner no X SEAPO</div>
+          <a href="../assets/images/seapo/X SEAPO - Trabalhos para apresenta&#231;&#227;o em Banner.pdf" target="_blank" rel="noopener noreferrer" class="btn-drive" data-i18n="seapo.resultado_cta">&#128196; Ver Rela&#231;&#227;o de Trabalhos Aceitos (PDF)</a>
         </div>
       </div>
 
@@ -850,10 +863,10 @@
 </main>
 
 <footer role="contentinfo" id="site-footer"></footer>
-<script src="../assets/js/footer.js?v=202608112002"></script>
+<script src="../assets/js/footer.js?v=202608161758"></script>
 
 <div id="toast" style="position:fixed;bottom:24px;right:24px;background:var(--verde);color:white;padding:16px 24px;border-radius:12px;font-size:14px;font-weight:600;opacity:0;transform:translateY(20px);transition:all 0.3s;z-index:9999;max-width:300px;box-shadow:0 8px 24px rgba(0,0,0,.2);" role="alert" aria-live="polite"></div>
 
-<script src="../assets/js/main.js?v=202608112002"></script>
+<script src="../assets/js/main.js?v=202608161758"></script>
 </body>
 </html>

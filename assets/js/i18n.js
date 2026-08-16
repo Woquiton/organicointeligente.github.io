@@ -338,7 +338,7 @@
       /* Subnav */
       'seapo.nav_prog':          '📅 Programação',
       'seapo.nav_submissao':     '📄 Submissão',
-      'seapo.nav_submissao_badge': 'Prorrogado: 09/08',
+      'seapo.nav_submissao_badge': 'Encerrado',
       'seapo.nav_hospedagem':    '🏘️ Hospedagem',
       'seapo.nav_inscricoes':    '✍️ Inscrições',
       'seapo.nav_videos':        '▶️ Vídeos',
@@ -409,6 +409,7 @@
       /* Trabalhos */
       'seapo.trabalhos_titulo':  'Apresentação de Trabalhos Científicos',
       'seapo.trabalhos_local':   'Quadra do Campus',
+      'seapo.trabalhos_pdf_link': '📄 Ver relação de trabalhos aceitos (PDF)',
 
       /* Minicursos */
       'seapo.mc_titulo_h4':      'Minicursos e Oficinas Simultâneos',
@@ -454,10 +455,13 @@
       'seapo.sub_titulo':        'Submissão de Trabalhos',
       'seapo.sub_desc':          'Compartilhe sua pesquisa em agroecologia e produção orgânica com a comunidade científica do X SEAPO.',
       'seapo.prazo_label':       'Prazo de submissão',
-      'seapo.prazo_tag_prorrogado': 'Prorrogado',
+      'seapo.prazo_tag_prorrogado': 'Encerrado',
       'seapo.prazo_data_antiga': '31 de julho de 2026',
       'seapo.prazo_data':        '09 de agosto de 2026',
-      'seapo.prazo_note':        'Novo prazo! Baixe o template da sua modalidade, siga o tutorial e envie até a nova data.',
+      'seapo.prazo_note':        'As submissões foram encerradas. Confira abaixo a relação dos trabalhos aceitos para apresentação em banner.',
+      'seapo.resultado_label':   'Resultado da Submissão',
+      'seapo.resultado_titulo':  'Relação dos Trabalhos Aceitos para Apresentação em Formato de Banner no X SEAPO',
+      'seapo.resultado_cta':     '📄 Ver Relação de Trabalhos Aceitos (PDF)',
       'seapo.mod1_titulo':       'Resumo',
       'seapo.mod1_desc':         'Apresentação condensada da pesquisa. Utilize o <em>template de resumo</em> disponível no Drive para formatação correta.',
       'seapo.mod2_titulo':       'Relato de Experiência',
@@ -1131,7 +1135,7 @@
       /* Subnav */
       'seapo.nav_prog':          '📅 Schedule',
       'seapo.nav_submissao':     '📄 Submission',
-      'seapo.nav_submissao_badge': 'Extended: Aug 9',
+      'seapo.nav_submissao_badge': 'Closed',
       'seapo.nav_hospedagem':    '🏘️ Accommodation',
       'seapo.nav_inscricoes':    '✍️ Registration',
       'seapo.nav_videos':        '▶️ Videos',
@@ -1202,6 +1206,7 @@
       /* Trabalhos */
       'seapo.trabalhos_titulo':  'Scientific Paper Presentations',
       'seapo.trabalhos_local':   'Campus Sports Court',
+      'seapo.trabalhos_pdf_link': '📄 View list of accepted papers (PDF)',
 
       /* Minicursos */
       'seapo.mc_titulo_h4':      'Simultaneous Workshops and Short Courses',
@@ -1247,10 +1252,13 @@
       'seapo.sub_titulo':        'Paper Submission',
       'seapo.sub_desc':          'Share your research in agroecology and organic production with the X SEAPO scientific community.',
       'seapo.prazo_label':       'Submission deadline',
-      'seapo.prazo_tag_prorrogado': 'Extended',
+      'seapo.prazo_tag_prorrogado': 'Closed',
       'seapo.prazo_data_antiga': 'July 31, 2026',
       'seapo.prazo_data':        'August 9, 2026',
-      'seapo.prazo_note':        'New deadline! Download your format\'s template, follow the tutorial, and submit before the new date.',
+      'seapo.prazo_note':        'Submissions are now closed. See below the list of papers accepted for poster presentation.',
+      'seapo.resultado_label':   'Submission Results',
+      'seapo.resultado_titulo':  'List of Papers Accepted for Poster Presentation at X SEAPO',
+      'seapo.resultado_cta':     '📄 View List of Accepted Papers (PDF)',
       'seapo.mod1_titulo':       'Abstract',
       'seapo.mod1_desc':         'Condensed presentation of the research. Use the <em>abstract template</em> available on Drive for correct formatting.',
       'seapo.mod2_titulo':       'Experience Report',
@@ -1924,7 +1932,7 @@
       /* Subnav */
       'seapo.nav_prog':          '📅 Programación',
       'seapo.nav_submissao':     '📄 Envío de trabajos',
-      'seapo.nav_submissao_badge': 'Prorrogado: 09/08',
+      'seapo.nav_submissao_badge': 'Cerrado',
       'seapo.nav_hospedagem':    '🏘️ Hospedaje',
       'seapo.nav_inscricoes':    '✍️ Inscripciones',
       'seapo.nav_videos':        '▶️ Videos',
@@ -1995,6 +2003,7 @@
       /* Trabajos */
       'seapo.trabalhos_titulo':  'Presentación de Trabajos Científicos',
       'seapo.trabalhos_local':   'Cancha del Campus',
+      'seapo.trabalhos_pdf_link': '📄 Ver relación de trabajos aceptados (PDF)',
 
       /* Minicursos */
       'seapo.mc_titulo_h4':      'Minicursos y Talleres Simultáneos',
@@ -2040,10 +2049,13 @@
       'seapo.sub_titulo':        'Envío de Trabajos',
       'seapo.sub_desc':          'Comparte tu investigación en agroecología y producción orgánica con la comunidad científica del X SEAPO.',
       'seapo.prazo_label':       'Plazo de envío',
-      'seapo.prazo_tag_prorrogado': 'Prorrogado',
+      'seapo.prazo_tag_prorrogado': 'Cerrado',
       'seapo.prazo_data_antiga': '31 de julio de 2026',
       'seapo.prazo_data':        '09 de agosto de 2026',
-      'seapo.prazo_note':        '¡Nuevo plazo! Descarga la plantilla de tu modalidad, sigue el tutorial y envía antes de la nueva fecha.',
+      'seapo.prazo_note':        'Las postulaciones ya están cerradas. Consulta abajo la relación de los trabajos aceptados para presentación en póster.',
+      'seapo.resultado_label':   'Resultado del Envío',
+      'seapo.resultado_titulo':  'Relación de los Trabajos Aceptados para Presentación en Formato de Póster en el X SEAPO',
+      'seapo.resultado_cta':     '📄 Ver Relación de Trabajos Aceptados (PDF)',
       'seapo.mod1_titulo':       'Resumen',
       'seapo.mod1_desc':         'Presentación condensada de la investigación. Utiliza la <em>plantilla de resumen</em> disponible en el Drive para el formato correcto.',
       'seapo.mod2_titulo':       'Relato de Experiencia',
