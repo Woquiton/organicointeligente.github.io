@@ -140,7 +140,7 @@
       'index.fundadora_p3':     'Em 2008, foi aprovada em concurso público para professora substituta do Instituto Federal de Pernambuco – Campus Santo Antão. Em 2009, conquistou aprovação nos concursos do Instituto Agronômico de Pernambuco e do Instituto Federal Baiano, assumindo como docente do Campus Guanambi em abril de 2010.',
       'index.fundadora_p4':     'Atualmente, é professora titular do Instituto Federal Baiano – Campus Guanambi, além de atuar nos programas de mestrado em Ciências Ambientais, no Campus Serrinha, e em Produção Vegetal no Semiárido, no Campus Guanambi. Sua trajetória acadêmica é marcada por uma produção científica expressiva, com mais de 146 publicações entre artigos e resumos científicos, além da coordenação de mais de 50 projetos de pesquisa e extensão aprovados em instituições federais, como Conselho Nacional de Desenvolvimento Científico e Tecnológico, Ministério do Desenvolvimento Agrário e Agricultura Familiar e Ministério da Agricultura e Pecuária, e estaduais, como a Fundação de Amparo à Pesquisa do Estado da Bahia e IF Baiano (Proex e PROPES).',
       'index.fundadora_p5':     'Ao longo da carreira, já orientou mais de 130 bolsistas de graduação e pós-graduação, consolidando uma ampla atuação na área de Agricultura Orgânica no estado da Bahia. Seu trabalho tem impactado diretamente agricultores e comunidades rurais de municípios como Candiba, Guanambi, Caetité, Caculé, Guajeru e Pindaí.',
-      'index.fundadora_p6':     'Entre as iniciativas de destaque está o Programa Orgânico Inteligente em que gerou vários resultados com 44 agricultores certificados e entre eles o "Sítio Gameleira – Comida da Roça", que faz um serviço de entrega de alimentos orgânicos no formato delivery, fortalecendo a agricultura familiar e promovendo alimentação saudável na região.',
+      'index.fundadora_p6':     'Entre as iniciativas de destaque está o Programa Orgânico Inteligente em que gerou vários resultados com 83 agricultores certificados e entre eles o "Sítio Gameleira – Comida da Roça", que faz um serviço de entrega de alimentos orgânicos no formato delivery, fortalecendo a agricultura familiar e promovendo alimentação saudável na região.',
       'index.fundadora_lattes': '📄 Currículo Lattes',
 
       /* Ações */
@@ -295,7 +295,7 @@
       /* Meta */
       'index.page_title':        'Orgânico Inteligente – Cultivando Saúde no Sertão Produtivo',
       'index.meta_desc':         'Orgânico Inteligente – Cultivando Saúde no Sertão Produtivo. Programa de ensino, pesquisa e extensão dedicado à agroecologia e produção orgânica no Sertão Produtivo da Bahia.',
-      'index.og_desc':           'Programa de ensino, pesquisa e extensão dedicado à agroecologia e produção orgânica no Sertão Produtivo da Bahia. Mais de 5000 agricultores capacitados e 44 certificações orgânicas emitidas.',
+      'index.og_desc':           'Programa de ensino, pesquisa e extensão dedicado à agroecologia e produção orgânica no Sertão Produtivo da Bahia. Mais de 5000 agricultores capacitados e 83 certificações orgânicas emitidas.',
       'index.twitter_desc':      'Programa de agroecologia e produção orgânica no Sertão Produtivo da Bahia.',
       'index.org_json_desc':     'Programa de ensino, pesquisa e extensão do IF Baiano dedicado à agroecologia e produção orgânica no Sertão Produtivo da Bahia.',
       'index.org_contact_type':  'Contato geral',
@@ -937,7 +937,7 @@
       'index.fundadora_p3':     'In 2008, she passed a public examination for a substitute professor position at the Federal Institute of Pernambuco — Santo Antão Campus. In 2009, she was approved in the examinations of the Pernambuco Agronomic Institute and the Baiano Federal Institute, joining the Guanambi Campus as a faculty member in April 2010.',
       'index.fundadora_p4':     'Currently, she is a full professor at the Baiano Federal Institute — Guanambi Campus, also working in the master\'s programs in Environmental Sciences at the Serrinha Campus, and in Plant Production in the Semi-Arid Region at the Guanambi Campus. Her academic career is marked by an impressive scientific output, with more than 146 publications including scientific articles and abstracts, as well as the coordination of more than 50 research and extension projects approved by federal institutions — including CNPq, the Ministry of Agrarian Development and Family Agriculture (MDA), and the Ministry of Agriculture and Livestock (MAPA) — and state institutions, including FAPESB and IF Baiano (Proex and PROPES).',
       'index.fundadora_p5':     'Throughout her career, she has supervised more than 130 undergraduate and graduate scholarship holders, establishing a broad presence in the field of Organic Agriculture in the state of Bahia. Her work has directly impacted farmers and rural communities in municipalities such as Candiba, Guanambi, Caetité, Caculé, Guajeru, and Pindaí.',
-      'index.fundadora_p6':     'Among the standout initiatives is the Organic Intelligence Program, which has produced several results — including 44 certified farmers and, among them, "Sítio Gameleira – Comida da Roça," which offers an organic food delivery service, strengthening family farming and promoting healthy eating in the region.',
+      'index.fundadora_p6':     'Among the standout initiatives is the Organic Intelligence Program, which has produced several results — including 83 certified farmers and, among them, "Sítio Gameleira – Comida da Roça," which offers an organic food delivery service, strengthening family farming and promoting healthy eating in the region.',
       'index.fundadora_lattes': '📄 Lattes Curriculum (CV)',
 
       /* Ações */
@@ -1092,7 +1092,7 @@
       /* Meta */
       'index.page_title':        'Organic Intelligence – Cultivating Health in the Productive Sertão',
       'index.meta_desc':         'Organic Intelligence – Cultivating Health in the Productive Sertão. Teaching, research, and extension program dedicated to agroecology and organic production in the Productive Sertão of Bahia.',
-      'index.og_desc':           'Teaching, research, and extension program dedicated to agroecology and organic production in the Productive Sertão of Bahia. More than 5,000 farmers trained and 44 organic certifications issued.',
+      'index.og_desc':           'Teaching, research, and extension program dedicated to agroecology and organic production in the Productive Sertão of Bahia. More than 5,000 farmers trained and 83 organic certifications issued.',
       'index.twitter_desc':      'Agroecology and organic production program in the Productive Sertão of Bahia.',
       'index.org_json_desc':     'IF Baiano\'s teaching, research, and extension program dedicated to agroecology and organic production in the Productive Sertão of Bahia.',
       'index.org_contact_type':  'General inquiries',
@@ -1734,7 +1734,7 @@
       'index.fundadora_p3':     'En 2008, fue aprobada en un concurso público como profesora sustituta del Instituto Federal de Pernambuco – Campus Santo Antão. En 2009, obtuvo aprobación en los concursos del Instituto Agronómico de Pernambuco y del Instituto Federal Baiano, asumiendo como docente del Campus Guanambi en abril de 2010.',
       'index.fundadora_p4':     'Actualmente, es profesora titular del Instituto Federal Baiano – Campus Guanambi, además de participar en los programas de maestría en Ciencias Ambientales, en el Campus Serrinha, y en Producción Vegetal en el Semiárido, en el Campus Guanambi. Su trayectoria académica se caracteriza por una producción científica expresiva, con más de 146 publicaciones entre artículos y resúmenes científicos, además de la coordinación de más de 50 proyectos de investigación y extensión aprobados en instituciones federales, como el Consejo Nacional de Desarrollo Científico y Tecnológico, el Ministerio de Desarrollo Agrario y Agricultura Familiar y el Ministerio de Agricultura y Ganadería, y estatales, como la Fundación de Apoyo a la Investigación del Estado de Bahía e IF Baiano (Proex y PROPES).',
       'index.fundadora_p5':     'A lo largo de su carrera, ya orientó a más de 130 becarios de grado y posgrado, consolidando una amplia trayectoria en el área de Agricultura Orgánica en el estado de Bahía. Su trabajo ha impactado directamente a agricultores y comunidades rurales de municipios como Candiba, Guanambi, Caetité, Caculé, Guajeru y Pindaí.',
-      'index.fundadora_p6':     'Entre las iniciativas destacadas está el Programa Orgánico Inteligente, que generó varios resultados con 44 agricultores certificados, entre ellos el "Sítio Gameleira – Comida da Roça", que ofrece un servicio de entrega de alimentos orgánicos a domicilio, fortaleciendo la agricultura familiar y promoviendo la alimentación saludable en la región.',
+      'index.fundadora_p6':     'Entre las iniciativas destacadas está el Programa Orgánico Inteligente, que generó varios resultados con 83 agricultores certificados, entre ellos el "Sítio Gameleira – Comida da Roça", que ofrece un servicio de entrega de alimentos orgánicos a domicilio, fortaleciendo la agricultura familiar y promoviendo la alimentación saludable en la región.',
       'index.fundadora_lattes': '📄 Currículum Lattes',
 
       /* Acciones */
@@ -1889,7 +1889,7 @@
       /* Meta */
       'index.page_title':        'Orgánico Inteligente – Cultivando Salud en el Sertão Productivo',
       'index.meta_desc':         'Orgánico Inteligente – Cultivando Salud en el Sertão Productivo. Programa de enseñanza, investigación y extensión dedicado a la agroecología y la producción orgánica en el Sertão Productivo de Bahía.',
-      'index.og_desc':           'Programa de enseñanza, investigación y extensión dedicado a la agroecología y la producción orgánica en el Sertão Productivo de Bahía. Más de 5000 agricultores capacitados y 44 certificaciones orgánicas emitidas.',
+      'index.og_desc':           'Programa de enseñanza, investigación y extensión dedicado a la agroecología y la producción orgánica en el Sertão Productivo de Bahía. Más de 5000 agricultores capacitados y 83 certificaciones orgánicas emitidas.',
       'index.twitter_desc':      'Programa de agroecología y producción orgánica en el Sertão Productivo de Bahía.',
       'index.org_json_desc':     'Programa de enseñanza, investigación y extensión del IF Baiano dedicado a la agroecología y la producción orgánica en el Sertão Productivo de Bahía.',
       'index.org_contact_type':  'Contacto general',
