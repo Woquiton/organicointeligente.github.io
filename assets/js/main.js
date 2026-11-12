@@ -118,7 +118,7 @@
 
   // Stat cards counter
   const statNums = document.querySelectorAll('.stat-num');
-  const statVals = [5000, 44, 11, 50];
+  const statVals = [5000, 83, 11, 50];
   const statSuffs = ['+', '', '', '+'];
   const statObserver = new IntersectionObserver((entries) => {
     entries.forEach(e => {
